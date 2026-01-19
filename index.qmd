@@ -1,6 +1,6 @@
 ---
-title: "Yujun Lian"
-image: images/lianyujun_2025.png
+title: "Yucheng Chen"
+image: images/yuchengchen_2025.png
 about:
   id: hero-heading
   template: trestles
