@@ -1,6 +1,6 @@
 ---
 title: "Yucheng Chen"
-image: images/yuchengchen_2025.png
+image: images/yuchengchen_2025.jpg
 about:
   id: hero-heading
   template: trestles
