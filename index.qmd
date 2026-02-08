@@ -9,17 +9,34 @@ about:
   links:
     - icon: mailbox
       text: wangyi1113795069@163.com
-      href: wangyi1113795069@163.com
+      href: mailto:wangyi1113795069@163.com
     - icon: brands zhihu
       text: 知乎
       href: https://www.zhihu.com/people/chen-yu-cheng-67-47  
 ---
 
-::: {#hero-heading}
+::: {#hero-heading .profile-card fade-in}
+
+# Yucheng Chen
 
 Chen Yucheng, male, enrolled in the School of Mechanical Science and Engineering at Huazhong University of Science and Technology in 2022.
 
+:::
 
+::: {.card fade-in delay-1}
 ## Background
 - September 2022 – Present: Undergraduate student in Mechanical Design, Manufacturing and Automation, School of Mechanical Science and Engineering, Huazhong University of Science and Technology
+:::
+
+::: {.card fade-in delay-2}
+## Research Interests
+- Optimal Control
+- Path Planning
+- Reinforcement Learning
+:::
+
+::: {.card fade-in delay-3}
+## Contact
+- Email: wangyi1113795069@163.com
+- Zhihu: [Chen Yucheng](https://www.zhihu.com/people/chen-yu-cheng-67-47)
 :::

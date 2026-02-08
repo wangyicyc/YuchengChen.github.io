@@ -1,52 +1,47 @@
 /*-- scss:defaults --*/
 
-/* 主题颜色定义 */
-$theme-black: #4c4c4c;
-$theme-white: white;
-$theme-grey: #e9ecef;
+/* 主题颜色定义 - 现代清新配色 */
+$theme-primary: #4361ee;      /* 主色调：蓝色 */
+$theme-primary-light: #4895ef;
+$theme-primary-dark: #3a0ca3;
 
-$theme-purple3: #88398A;
-$theme-purple4: #9d709e;
-$theme-purple5: #562457;
-$theme-purplebrown1: #b996a4;
-$theme-purplebrown2: #7c6c84;
-$theme-darkcoffee1: #570e06;
-$theme-darkcoffee2: #78504b;
-$theme-darkcoffee3: #632e0d;
-$theme-milkcoffee0: #f2ece3;
-$theme-milkcoffee3: #cca79f;
-$theme-milkcoffee2: #b98f68;
-$theme-milkcoffee1: #9e736a;
-$theme-mocha1: #7f2606;
-$theme-mocha2: #9a4c28;
-$theme-mocha3: #b46939;
-$theme-orange: #f9af11;
-$theme-pumpkin: #d05808;
-$theme-darkgreen1: #355E3B;
-$theme-darkgreen2: #445740;
+$theme-secondary: #f72585;    /* 辅助色：粉色 */
+$theme-accent: #4cc9f0;       /* 强调色：天蓝色 */
 
-/* 新增红色变量定义 */
-$red: #ff0000; /* 定义红色变量 */
-$blue: #0000ff;  /* 定义蓝色变量 */
+$theme-neutral-100: #f8f9fa;  /* 浅灰 */
+$theme-neutral-200: #e9ecef;
+$theme-neutral-300: #dee2e6;
+$theme-neutral-400: #ced4da;
+$theme-neutral-500: #adb5bd;
+$theme-neutral-600: #6c757d;
+$theme-neutral-700: #495057;
+$theme-neutral-800: #343a40;
+$theme-neutral-900: #212529;  /* 深灰 */
+
+$theme-success: #4cc9f0;
+$theme-warning: #fca311;
+$theme-error: #f72585;
+$theme-info: #4895ef;
 
 /* 主要背景和字体颜色 */
-$body-bg: $theme-white;
-$body-color: $theme-darkcoffee1; /* 正文字体颜色 */
-$headings-color: $theme-milkcoffee2; /* 标题字体颜色 */
-$link-color: $red; /* 默认超链接颜色 */
+$body-bg: $theme-neutral-100;
+$body-color: $theme-neutral-800; /* 正文字体颜色 */
+$headings-color: $theme-primary-dark; /* 标题字体颜色 */
+$link-color: $theme-primary; /* 默认超链接颜色 */
 
 /* 代码样式 */
-$code-color: $theme-mocha2; /* 代码文本颜色 */
-$code-bg: $theme-milkcoffee0; /* 代码背景颜色 */
+$code-color: $theme-neutral-800; /* 代码文本颜色 */
+$code-bg: $theme-neutral-200; /* 代码背景颜色 */
 $code-block-bg-alpha: -0.8; /* 代码块背景的透明度 */
-$background-color: $theme-milkcoffee0; /* 页面背景色 */
+$background-color: $theme-neutral-100; /* 页面背景色 */
 
 /* 导航栏 */
-$navbar-bg: $theme-darkgreen1; /* 导航栏背景颜色 */
+$navbar-bg: $theme-primary; /* 导航栏背景颜色 */
+$navbar-color: white; /* 导航栏文字颜色 */
 
 /* 提示框颜色 */
-$callout-color-note: $theme-darkgreen2; /* 提示框的注释颜色 */
-$callout-color-tip: $theme-darkgreen1; /* 提示框的小贴士颜色 */
+$callout-color-note: $theme-info;
+$callout-color-tip: $theme-success;
 
 /* 字体设置 */
 @import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
@@ -69,61 +64,76 @@ $font-prompt: 'Prompt', sans-serif;
 $font-size-root: 16px; /* 根字体大小 */
 
 /* 链接颜色 */
-$link-color: $red; /* 链接的颜色为红色 */
-$link-hover-color: $blue; /* 链接悬停时的颜色 */
+$link-color: $theme-primary; /* 链接的颜色为主色调 */
+$link-hover-color: $theme-primary-dark; /* 链接悬停时的颜色为深主色调 */
 
 /*-- scss:rules --*/
 
 /* 1. 正文行间距和字体颜色调整 */
 body {
-  line-height: 1.7; /* 正文的行间距设置为 1.7 */
-  color: #000000; /* 正文字体颜色为黑色 */
+  line-height: 1.8; /* 正文的行间距设置为 1.8，更加舒适 */
+  color: $theme-neutral-800; /* 正文字体颜色为深灰色 */
+  font-family: $font-family-sans-serif;
 }
 
 /* 2. 列表项的行间距调整 */
 ul, ol {
-  line-height: 1.7; /* 列表项的行间距设置为 1.7 */
+  line-height: 1.8; /* 列表项的行间距设置为 1.8 */
 }
 
 /* 3. 超链接颜色和悬停颜色调整 */
 a {
-  color: #0066cc; /* 超链接的颜色设置为蓝色 */
+  color: $theme-primary; /* 超链接的颜色设置为主色调 */
   text-decoration: none; /* 去除默认的下划线 */
+  transition: color 0.3s ease; /* 添加过渡效果 */
 }
 
 a:hover {
-  color: #006400; /* 悬停时的颜色设置为深绿色 */
+  color: $theme-primary-dark; /* 悬停时的颜色设置为深主色调 */
+  text-decoration: underline; /* 悬停时显示下划线 */
 }
 
 /* 4. 代码样式高亮调整，背景为浅灰色，github 风格 */
 code {
-  color: #d63384; /* 代码文本的颜色，使用 GitHub 风格的红色 */
-  background-color: #f5f5f5; /* 代码块的背景色为浅灰色 */
-  padding: 2px 4px; /* 增加内边距，使代码更加突出 */
-  border-radius: 3px; /* 为代码块添加圆角 */
-  font-family: Consolas, 'Courier New', monospace; /* 设置字体为等宽字体 */
+  color: $theme-primary-dark; /* 代码文本的颜色，使用主色调 */
+  background-color: $theme-neutral-200; /* 代码块的背景色为浅灰色 */
+  padding: 2px 6px; /* 增加内边距，使代码更加突出 */
+  border-radius: 4px; /* 为代码块添加圆角 */
+  font-family: $font-family-monospace; /* 设置字体为等宽字体 */
+  font-size: 0.9em;
 }
 
 /* 标题样式 */
 h1 {
-  color: $theme-darkcoffee3;
-  font-family: $font-pt;
-  font-size: 40px;
+  color: $theme-primary-dark;
+  font-family: $font-montserrat;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 h2 {
-  color: $theme-darkcoffee3;
-  font-family: $font-pt;
-  font-size: 30px;
+  color: $theme-primary-dark;
+  font-family: $font-montserrat;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
 }
 
-h3, h4 {
-  color: $theme-mocha1;
-  font-family: $font-pt;
+h3 {
+  color: $theme-primary;
+  font-family: $font-montserrat;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
 }
 
 h4 {
-  color: $theme-darkgreen1;
+  color: $theme-primary;
+  font-family: $font-montserrat;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
 }
 
 /* 代码块和推送样式 */
@@ -147,4 +157,134 @@ h4 {
   border-bottom: 1px solid #E0A890;
   background-size: 1em;
   background-position: 1em 0.5em;
+}
+
+/* 容器样式 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 卡片样式 */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 个人信息卡片 */
+.profile-card {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+/* 按钮样式 */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background-color: $theme-primary;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: $theme-primary-dark;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 导航栏样式增强 */
+.navbar {
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: white !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: $theme-accent !important;
+}
+
+/* 页脚样式 */
+.page-footer {
+  background-color: $theme-neutral-800;
+  color: white;
+  padding: 30px 0;
+  margin-top: 60px;
+}
+
+/* 响应式设计增强 */
+@media (max-width: 768px) {
+  .profile-card {
+    padding: 30px 15px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+  
+  .card {
+    padding: 15px;
+  }
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+/* 延迟动画 */
+.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.delay-3 {
+  animation-delay: 0.6s;
 }

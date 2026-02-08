@@ -11,17 +11,26 @@ website:
   repo-actions: [edit, issue]
   
   page-footer:
+    left: |
+      © 2026 Yucheng Chen<br>
+      All rights reserved
     right: |
       Made with [Quarto](https://quarto.org/)<br>
     
   navbar: 
-    background: "#A9CCE3"
+    background: "#4361ee"
     search: true
+    logo: images/site-logo.png
+    logo-alt: "Yucheng Chen"
     right: 
       - text: "Home"
         href: index.qmd
       - text: "中文"
         href: Chinese.qmd
+      - icon: github
+        href: https://github.com
+      - icon: envelope
+        href: mailto:wangyi1113795069@163.com
 
 format:
   html:
