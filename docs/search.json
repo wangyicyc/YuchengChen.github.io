@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "portfolio.html",
+    "href": "portfolio.html",
+    "title": "Portfolio",
+    "section": "",
+    "text": "My project showcase and works"
+  },
+  {
+    "objectID": "portfolio.html#project-gallery",
+    "href": "portfolio.html#project-gallery",
+    "title": "Portfolio",
+    "section": "Project Gallery",
+    "text": "Project Gallery\n\nMulti-UAV Connected Coverage Search\n\n\n\nMulti-UAV System\n\n\nProject Description: Deployed distributed multi-UAVs for cooperative search in an information map, aligning UAV trajectories with information distribution to acquire more information. Implemented frequency domain-based coverage search algorithm and ensured multi-UAV connectivity through probability-based path planning.\nTechnologies Used: - ROS (Robot Operating System) - iLQR Trajectory Optimization - Python/C++ - Gazebo Simulation"
+  },
+  {
+    "objectID": "portfolio.html#skills-demonstrated",
+    "href": "portfolio.html#skills-demonstrated",
+    "title": "Portfolio",
+    "section": "Skills Demonstrated",
+    "text": "Skills Demonstrated\n\nTechnical Skills\n\nRobotics: UAV control, path planning, obstacle avoidance\nProgramming: C++, Python, ROS, MATLAB\nControl Systems: PID, MPC, LQR, Fuzzy Control\nSimulation: Gazebo, ROS Gazebo, MATLAB Simulink\n\n\n\nProject Management\n\nLeadership: Led multiple UAV projects from concept to implementation\nProblem Solving: Developed solutions for wind disturbances and obstacle avoidance\nTeam Collaboration: Coordinated with team members for system integration"
+  },
+  {
     "objectID": "English.html",
     "href": "English.html",
     "title": "Yucheng Chen",
@@ -68,6 +89,27 @@
     "title": "中文简历",
     "section": "奖项荣誉",
     "text": "奖项荣誉\n\n中国机器人大赛暨 ROBOCUP 机器人世界杯中国赛\n\n国家二等奖（2023）\n\n国家三等奖（2024）\n\n\n中国大学生飞行器设计创新大赛\n\n个人/团队一等奖（2023）\n\n\n奖学金\n\n机缘奖学金（2023.10）\n\n学优奖学金（2023.10）\n\n新生学优奖学金（2023.03）"
+  },
+  {
+    "objectID": "portfolio-zh.html",
+    "href": "portfolio-zh.html",
+    "title": "作品展示",
+    "section": "",
+    "text": "我的项目展示和作品"
+  },
+  {
+    "objectID": "portfolio-zh.html#项目-gallery",
+    "href": "portfolio-zh.html#项目-gallery",
+    "title": "作品展示",
+    "section": "项目 gallery",
+    "text": "项目 gallery\n\n多无人机联通遍历搜索\n\n\n\n多无人机系统\n\n\n项目描述： 部署分布式多无人机在一个信息地图中进行协同搜索，使无人轨迹分布对齐地图的信息分布，以获取更多信息。实现了基于频域分析的覆盖搜索算法，并通过基于概率的路径规划确保多机连通性。\n使用技术： - ROS（机器人操作系统） - iLQR 轨迹优化 - Python/C++ - Gazebo 仿真"
+  },
+  {
+    "objectID": "portfolio-zh.html#展示技能",
+    "href": "portfolio-zh.html#展示技能",
+    "title": "作品展示",
+    "section": "展示技能",
+    "text": "展示技能\n\n技术技能\n\n机器人技术：无人机控制、路径规划、避障\n编程：C++、Python、ROS、MATLAB\n控制系统：PID、MPC、LQR、模糊控制\n仿真：Gazebo、ROS Gazebo、MATLAB Simulink\n\n\n\n项目管理\n\n领导力：领导多个无人机项目从概念到实现\n问题解决：开发了应对风扰动和避障的解决方案\n团队协作：与团队成员协调系统集成"
   },
   {
     "objectID": "readme.html",
