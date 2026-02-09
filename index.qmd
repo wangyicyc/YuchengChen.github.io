@@ -8,35 +8,54 @@ about:
   image-shape: round
   links:
     - icon: mailbox
-      text: wangyi1113795069@163.com
-      href: mailto:wangyi1113795069@163.com
+      text: "Yucheng__Chen@163.com"
+      href: "mailto:Yucheng__Chen@163.com"
+    - icon: phone
+      text: "18759135762"
+      href: "tel:18759135762"
     - icon: brands zhihu
-      text: 知乎
-      href: https://www.zhihu.com/people/chen-yu-cheng-67-47  
+      text: "知乎"
+      href: "https://www.zhihu.com/people/chen-yu-cheng-67-47"  
 ---
 
-::: {#hero-heading .profile-card fade-in}
+::: {#hero-heading .profile-card .fade-in}
 
 # Yucheng Chen
 
-Chen Yucheng, male, enrolled in the School of Mechanical Science and Engineering at Huazhong University of Science and Technology in 2022.
+Born in December 2003, undergraduate student in Mechanical Design, Manufacturing and Automation (Robotics Direction) at Huazhong University of Science and Technology, expected to graduate in June 2026. Admitted to Shanghai Jiao Tong University for master's degree in Control Science and Engineering starting from September 2026.
 
 :::
 
-::: {.card fade-in delay-1}
-## Background
-- September 2022 – Present: Undergraduate student in Mechanical Design, Manufacturing and Automation, School of Mechanical Science and Engineering, Huazhong University of Science and Technology
+::: {.card .fade-in .delay-1}
+## Education Background
+- **2022.09 – 2026.06**  
+  **Huazhong University of Science and Technology (985)**  
+  Mechanical Design, Manufacturing and Automation (Robotics Direction) | Bachelor's degree (Senior year)
+  - Weighted GPA: 90/100 (Top 10% in major)
+  - Core course grades:
+    - Calculus (I/II): 93 / 95
+    - Mechanics of Materials: 92
+    - Linear Algebra: 91
+    - Complex Variables and Integral Transforms: 93
+    - Theoretical Mechanics: 96
+    - Probability Theory and Mathematical Statistics: 96
+    - Comprehensive English: 93
+
+- **2026.09 – TBD**  
+  **Shanghai Jiao Tong University (Admitted for postgraduate study)**  
+  Control Science and Engineering (Master's degree)
 :::
 
-::: {.card fade-in delay-2}
+::: {.card .fade-in .delay-2}
 ## Research Interests
 - Optimal Control
 - Path Planning
 - Reinforcement Learning
 :::
 
-::: {.card fade-in delay-3}
+::: {.card .fade-in .delay-3}
 ## Contact
-- Email: wangyi1113795069@163.com
+- Email: Yucheng__Chen@163.com
+- Phone: 18759135762
 - Zhihu: [Chen Yucheng](https://www.zhihu.com/people/chen-yu-cheng-67-47)
 :::
