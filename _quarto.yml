@@ -23,10 +23,12 @@ website:
     logo: images/site-logo.png
     logo-alt: "Yucheng Chen"
     right: 
-      - text: "Home"
-        href: index.qmd
-      - text: "中文"
-        href: Chinese.qmd
+      - text: "Language"
+        menu:
+          - text: "English"
+            href: English.qmd
+          - text: "中文"
+            href: Chinese.qmd
       - icon: github
         href: https://github.com
       - icon: envelope
