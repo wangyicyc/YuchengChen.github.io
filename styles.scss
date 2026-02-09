@@ -215,18 +215,41 @@ h4 {
 
 /* 导航栏样式增强 */
 .navbar {
-  padding: 15px 0;
+  padding: 10px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar a {
-  color: white !important;
+  color: #f0f4ff !important;
   font-weight: 500;
   transition: color 0.3s ease;
+  padding: 8px 12px !important;
 }
 
 .navbar a:hover {
-  color: $theme-accent !important;
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 4px;
+}
+
+/* 导航栏下拉菜单 */
+.navbar .dropdown-menu {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 8px;
+}
+
+.navbar .dropdown-item {
+  color: #333 !important;
+  padding: 10px 16px;
+  transition: all 0.3s ease;
+}
+
+.navbar .dropdown-item:hover {
+  color: $theme-primary !important;
+  background-color: #f8f9fa !important;
 }
 
 /* 页脚样式 */
