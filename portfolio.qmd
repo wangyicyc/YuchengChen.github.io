@@ -1,0 +1,78 @@
+---
+title: "Portfolio"
+---
+
+::: {.profile-card .fade-in}
+
+# Portfolio
+
+My project showcase and works
+
+:::
+
+::: {.card .fade-in .delay-1}
+## Project Gallery
+
+### Multi-UAV Connected Coverage Search
+
+![Multi-UAV System](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Multiple%20drones%20flying%20in%20coordinated%20formation%20over%20a%20landscape%2C%20high%20quality%2C%20realistic%20rendering&image_size=landscape_16_9)
+
+**Project Description:**
+Deployed distributed multi-UAVs for cooperative search in an information map, aligning UAV trajectories with information distribution to acquire more information. Implemented frequency domain-based coverage search algorithm and ensured multi-UAV connectivity through probability-based path planning.
+
+**Technologies Used:**
+- ROS (Robot Operating System)
+- iLQR Trajectory Optimization
+- Python/C++
+- Gazebo Simulation
+
+:::
+
+::: {.card .fade-in .delay-2}
+### Wind-Disturbed UAV Target Search & Delivery
+
+![UAV Delivery System](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Drone%20carrying%20package%20flying%20in%20windy%20conditions%2C%20searching%20for%20target%20landing%20zone%2C%20high%20quality%2C%20realistic%20rendering&image_size=landscape_16_9)
+
+**Project Description:**
+Outdoor environment: Load-carrying UAV autonomously flew and searched for target white barrels in an 8×5m area, delivered payloads, and returned to base for landing. Implemented fuzzy PID controller for wind disturbance rejection.
+
+**Technologies Used:**
+- C++
+- Fuzzy PID Control
+- VFH Path Planning
+- Kalman Filtering
+
+:::
+
+::: {.card .fade-in .delay-3}
+### Obstacle Forest Express Delivery UAV
+
+![Obstacle Avoidance Drone](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Drone%20flying%20through%20indoor%20environment%20with%20obstacles%2C%20carrying%20small%20packages%2C%20high%20quality%2C%20realistic%20rendering&image_size=landscape_16_9)
+
+**Project Description:**
+Indoor environment: Load-carrying UAV (3×100g express boxes) performed tasks in a 10×10m area: searched for 5 targets, delivered packages, and avoided dense obstacles. Deployed FAST-LIO for localization and Ego-Planner for path planning.
+
+**Technologies Used:**
+- ROS
+- FAST-LIO
+- Ego-Planner
+- MPC Controller
+- C++
+
+:::
+
+::: {.card .fade-in .delay-4}
+## Skills Demonstrated
+
+### Technical Skills
+- **Robotics**: UAV control, path planning, obstacle avoidance
+- **Programming**: C++, Python, ROS, MATLAB
+- **Control Systems**: PID, MPC, LQR, Fuzzy Control
+- **Simulation**: Gazebo, ROS Gazebo, MATLAB Simulink
+
+### Project Management
+- **Leadership**: Led multiple UAV projects from concept to implementation
+- **Problem Solving**: Developed solutions for wind disturbances and obstacle avoidance
+- **Team Collaboration**: Coordinated with team members for system integration
+
+:::

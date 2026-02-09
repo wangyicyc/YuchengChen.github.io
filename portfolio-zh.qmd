@@ -1,0 +1,78 @@
+---
+title: "作品展示"
+---
+
+::: {.profile-card .fade-in}
+
+# 作品展示
+
+我的项目展示和作品
+
+:::
+
+::: {.card .fade-in .delay-1}
+## 项目 gallery
+
+### 多无人机联通遍历搜索
+
+![多无人机系统](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Multiple%20drones%20flying%20in%20coordinated%20formation%20over%20a%20landscape%2C%20high%20quality%2C%20realistic%20rendering&image_size=landscape_16_9)
+
+**项目描述：**
+部署分布式多无人机在一个信息地图中进行协同搜索，使无人轨迹分布对齐地图的信息分布，以获取更多信息。实现了基于频域分析的覆盖搜索算法，并通过基于概率的路径规划确保多机连通性。
+
+**使用技术：**
+- ROS（机器人操作系统）
+- iLQR 轨迹优化
+- Python/C++
+- Gazebo 仿真
+
+:::
+
+::: {.card .fade-in .delay-2}
+### 风扰动下无人机目标搜索+投放
+
+![无人机投放系统](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Drone%20carrying%20package%20flying%20in%20windy%20conditions%2C%20searching%20for%20target%20landing%20zone%2C%20high%20quality%2C%20realistic%20rendering&image_size=landscape_16_9)
+
+**项目描述：**
+室外环境下，载重无人机自主飞行并在 8×5m 区域内寻找目标白桶投放载重物，完成后自主返航降落。实现了模糊 PID 控制器以应对风扰动。
+
+**使用技术：**
+- C++
+- 模糊 PID 控制
+- VFH 路径规划
+- 卡尔曼滤波
+
+:::
+
+::: {.card .fade-in .delay-3}
+### 障碍物森林中的快递无人机
+
+![避障无人机](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Drone%20flying%20through%20indoor%20environment%20with%20obstacles%2C%20carrying%20small%20packages%2C%20high%20quality%2C%20realistic%20rendering&image_size=landscape_16_9)
+
+**项目描述：**
+室内环境下，载重（3×100g 快递盒）无人机在 10×10m 区域执行任务：寻找 5 个目标并投放，同时躲避密集障碍物。部署了 FAST-LIO 进行定位，Ego-Planner 进行路径规划。
+
+**使用技术：**
+- ROS
+- FAST-LIO
+- Ego-Planner
+- MPC 控制器
+- C++
+
+:::
+
+::: {.card .fade-in .delay-4}
+## 展示技能
+
+### 技术技能
+- **机器人技术**：无人机控制、路径规划、避障
+- **编程**：C++、Python、ROS、MATLAB
+- **控制系统**：PID、MPC、LQR、模糊控制
+- **仿真**：Gazebo、ROS Gazebo、MATLAB Simulink
+
+### 项目管理
+- **领导力**：领导多个无人机项目从概念到实现
+- **问题解决**：开发了应对风扰动和避障的解决方案
+- **团队协作**：与团队成员协调系统集成
+
+:::

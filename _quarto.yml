@@ -26,9 +26,15 @@ website:
       - text: "Language"
         menu:
           - text: "English"
-            href: English.qmd
+            href: index.qmd
           - text: "中文"
             href: Chinese.qmd
+      - text: "Portfolio"
+        menu:
+          - text: "English"
+            href: portfolio.qmd
+          - text: "中文"
+            href: portfolio-zh.qmd
       - icon: github
         href: https://github.com
       - icon: envelope
