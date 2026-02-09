@@ -25,7 +25,7 @@
     "href": "CV.html",
     "title": "中文简历",
     "section": "",
-    "text": "出生年月：2003年12月\n\n联系电话：18759135762\n\n电子邮箱：Yucheng__Chen@163.com\n\n英语水平：CET-6（504分）\n\n\n\n\n2022.09 – 2026.06\n华中科技大学（985）\n机械设计制造及其自动化（机器人方向）｜本科（大四在读）\n\n加权成绩：90/100（专业前10%）\n\n核心课程成绩：\n\n微积分（上/下）：93 / 95\n\n材料力学：92\n\n线性代数：91\n\n复变函数与积分变换：93\n\n理论力学：96\n\n概率论与数理统计：96\n\n综合英语：93\n\n\n2026.09 – 待定\n上海交通大学（保研待入学）\n控制科学与工程（硕士）\n\n\n\n\n\n\n项目负责人｜2025.09 – 至今\n- 部署分布式多无人机在一个信息地图中进行协同搜索，使无人轨迹分布对齐地图的信息分布，以获取更多信息。\n- 主要工作：\n1. 遍历搜索：部署基于频域分析的无人机遍历搜索算法，提升对信息密集区域的覆盖效率。\n2. 多无人机连通：将无人机间的连通概率作为代价项引入路径规划器，保障多机通信与协同。\n3. 使用 iLQR 进行轨迹优化。\n\n\n\n项目负责人｜2024.07 – 2024.10\n- 室外环境下，载重无人机自主飞行并在 8×5m 区域内寻找目标白桶投放载重物，完成后自主返航降落。\n- 主要工作：\n1. 模糊 PID 控制器（C++）：通过模糊规则自适应调整 PID 系数，实现风扰动下的精准控制。\n2. 路径规划算法 VFH：求解当前可行点，并通过 B 样条曲线优化生成光滑路径。\n3. 滤波算法部署：结合卡尔曼滤波与低通滤波器，滤除噪声，使控制器输出平滑。\n\n\n\n项目负责人｜2023.10 – 2024.05\n- 室内环境下，载重（3×100g 快递盒）无人机在 10×10m 区域执行任务：寻找 5 个目标并投放，同时躲避密集障碍物。\n- 主要工作：\n1. 基于 ROS 的飞行代码（C++）：实现障碍森林、狭窄走廊环境下的避障与投放任务。\n2. 定位与路径生成：部署 FAST-LIO 与 Ego-Planner 实现高精度定位与避障路径规划。\n3. MPC 控制器（C++）：根据目标点与约束条件在线计算控制量，实现对全局路径的高精度跟踪。\n\n\n\n\n\n中国机器人大赛暨 ROBOCUP 机器人世界杯中国赛\n\n国家二等奖（2024）\n\n国家三等奖（2024）\n\n\n中国大学生飞行器设计创新大赛\n\n个人/团队一等奖（2023）\n\n\n奖学金\n\n机缘奖学金（2023.10）\n\n学优奖学金（2023.10）\n\n新生学优奖学金（2023.03）\n\n\n\n\n\n\n机器人操作系统：熟练使用 ROS（ROS1），掌握 Ubuntu 命令行及 Gazebo 仿真\n\n强化学习算法：熟悉 Actor-Critic、TRPO、PPO、SAC、DDPG 等\n\n机器人学基础：掌握 IK（逆运动学）、旋转矩阵、四元数等\n\n最优控制方法：熟悉 LQR、MPC、iLQR、DDP 等控制器"
+    "text": "出生年月：2003年12月\n\n联系电话：18759135762\n\n电子邮箱：Yucheng__Chen@163.com\n\n英语水平：CET-6（504分）\n\n\n\n\n2022.09 – 2026.06\n华中科技大学（985）\n机械设计制造及其自动化（机器人方向）｜本科（大四在读）\n\n加权成绩：90/100（专业前10%）\n\n核心课程成绩：\n\n微积分（上/下）：93 / 95\n\n材料力学：92\n\n线性代数：91\n\n复变函数与积分变换：93\n\n理论力学：96\n\n概率论与数理统计：96\n\n综合英语：93\n\n\n2026.09 – 待定\n上海交通大学（保研待入学）\n控制科学与工程（硕士）\n\n\n\n\n\n\n项目负责人｜2025.09 – 至今\n- 部署分布式多无人机在一个信息地图中进行协同搜索，使无人轨迹分布对齐地图的信息分布，以获取更多信息。\n- 主要工作：\n1. 遍历搜索：部署基于频域分析的无人机遍历搜索算法，提升对信息密集区域的覆盖效率。\n2. 多无人机连通：将无人机间的连通概率作为代价项引入路径规划器，保障多机通信与协同。\n3. 使用 iLQR 进行轨迹优化。\n\n\n\n项目负责人｜2024.07 – 2024.10\n- 室外环境下，载重无人机自主飞行并在 8×5m 区域内寻找目标白桶投放载重物，完成后自主返航降落。\n- 主要工作：\n1. 模糊 PID 控制器（C++）：通过模糊规则自适应调整 PID 系数，实现风扰动下的精准控制。\n2. 路径规划算法 VFH：求解当前可行点，并通过 B 样条曲线优化生成光滑路径。\n3. 滤波算法部署：结合卡尔曼滤波与低通滤波器，滤除噪声，使控制器输出平滑。\n\n\n\n项目负责人｜2023.10 – 2024.05\n- 室内环境下，载重（3×100g 快递盒）无人机在 10×10m 区域执行任务：寻找 5 个目标并投放，同时躲避密集障碍物。\n- 主要工作：\n1. 基于 ROS 的飞行代码（C++）：实现障碍森林、狭窄走廊环境下的避障与投放任务。\n2. 定位与路径生成：部署 FAST-LIO 与 Ego-Planner 实现高精度定位与避障路径规划。\n3. MPC 控制器（C++）：根据目标点与约束条件在线计算控制量，实现对全局路径的高精度跟踪。\n\n\n\n\n\n中国机器人大赛暨 ROBOCUP 机器人世界杯中国赛\n\n国家二等奖（2023）\n\n国家三等奖（2024）\n\n\n中国大学生飞行器设计创新大赛\n\n个人/团队一等奖（2023）\n\n\n奖学金\n\n机缘奖学金（2023.10）\n\n学优奖学金（2023.10）\n\n新生学优奖学金（2023.03）\n\n\n\n\n\n\n机器人操作系统：熟练使用 ROS（ROS1），掌握 Ubuntu 命令行及 Gazebo 仿真\n\n强化学习算法：熟悉 Actor-Critic、TRPO、PPO、SAC、DDPG 等\n\n机器人学基础：掌握 IK（逆运动学）、旋转矩阵、四元数等\n\n最优控制方法：熟悉 LQR、MPC、iLQR、DDP 等控制器"
   },
   {
     "objectID": "CV.html#教育背景",
@@ -46,7 +46,7 @@
     "href": "CV.html#奖项荣誉",
     "title": "中文简历",
     "section": "",
-    "text": "中国机器人大赛暨 ROBOCUP 机器人世界杯中国赛\n\n国家二等奖（2024）\n\n国家三等奖（2024）\n\n\n中国大学生飞行器设计创新大赛\n\n个人/团队一等奖（2023）\n\n\n奖学金\n\n机缘奖学金（2023.10）\n\n学优奖学金（2023.10）\n\n新生学优奖学金（2023.03）"
+    "text": "中国机器人大赛暨 ROBOCUP 机器人世界杯中国赛\n\n国家二等奖（2023）\n\n国家三等奖（2024）\n\n\n中国大学生飞行器设计创新大赛\n\n个人/团队一等奖（2023）\n\n\n奖学金\n\n机缘奖学金（2023.10）\n\n学优奖学金（2023.10）\n\n新生学优奖学金（2023.03）"
   },
   {
     "objectID": "CV.html#专业技能",
@@ -63,25 +63,32 @@
     "text": "陈宇城，男，2003年12月出生，华中科技大学机械科学与工程学院机械设计制造及其自动化（机器人方向）本科在读，预计2026年6月毕业。已保送至上海交通大学控制科学与工程专业攻读硕士研究生，将于2026年9月入学。"
   },
   {
-    "objectID": "Chinese.html#个人简介",
-    "href": "Chinese.html#个人简介",
+    "objectID": "Chinese.html#个人信息与教育背景",
+    "href": "Chinese.html#个人信息与教育背景",
     "title": "中文简历",
-    "section": "个人简介",
-    "text": "个人简介\n\n出生年月：2003年12月\n联系电话：18759135762\n电子邮箱：Yucheng__Chen@163.com\n英语水平：CET-6（504分）\n个人主页：https://wangyicyc.github.io/YuchengChen.github.io"
+    "section": "个人信息与教育背景",
+    "text": "个人信息与教育背景\n\n个人简介\n\n出生年月：2003年12月\n联系电话：18759135762\n电子邮箱：Yucheng__Chen@163.com\n英语水平：CET-6（504分）\n个人主页：https://wangyicyc.github.io/YuchengChen.github.io\n\n\n\n教育背景\n\n2022.09 – 2026.06\n华中科技大学（985）\n机械设计制造及其自动化（机器人方向）｜本科（大四在读）\n\n加权成绩：90/100（专业前10%）\n\n核心课程成绩：\n\n微积分（上/下）：93 / 95\n\n材料力学：92\n\n线性代数：91\n\n复变函数与积分变换：93\n\n理论力学：96\n\n概率论与数理统计：96\n\n综合英语：93\n\n\n2026.09 – 待定\n上海交通大学（保研待入学）\n控制科学与工程（硕士）"
   },
   {
-    "objectID": "Chinese.html#教育背景",
-    "href": "Chinese.html#教育背景",
+    "objectID": "Chinese.html#项目经历",
+    "href": "Chinese.html#项目经历",
     "title": "中文简历",
-    "section": "教育背景",
-    "text": "教育背景\n\n2022.09 – 2026.06\n华中科技大学（985）\n机械设计制造及其自动化（机器人方向）｜本科（大四在读）\n\n加权成绩：90/100（专业前10%）\n\n核心课程成绩：\n\n微积分（上/下）：93 / 95\n\n材料力学：92\n\n线性代数：91\n\n复变函数与积分变换：93\n\n理论力学：96\n\n概率论与数理统计：96\n\n综合英语：93\n\n\n2026.09 – 待定\n上海交通大学（保研待入学）\n控制科学与工程（硕士）"
+    "section": "项目经历",
+    "text": "项目经历\n\n多无人机联通遍历搜索\n项目负责人｜2025.09 – 至今\n- 部署分布式多无人机在一个信息地图中进行协同搜索，使无人轨迹分布对齐地图的信息分布，以获取更多信息。\n- 主要工作：\n1. 遍历搜索：部署基于频域分析的无人机遍历搜索算法，提升对信息密集区域的覆盖效率。\n2. 多无人机连通：将无人机间的连通概率作为代价项引入路径规划器，保障多机通信与协同。\n3. 使用 iLQR 进行轨迹优化。\n\n\n风扰动下无人机目标搜索+投放\n项目负责人｜2024.07 – 2024.10\n- 室外环境下，载重无人机自主飞行并在 8×5m 区域内寻找目标白桶投放载重物，完成后自主返航降落。\n- 主要工作：\n1. 模糊 PID 控制器（C++）：通过模糊规则自适应调整 PID 系数，实现风扰动下的精准控制。\n2. 路径规划算法 VFH：求解当前可行点，并通过 B 样条曲线优化生成光滑路径。\n3. 滤波算法部署：结合卡尔曼滤波与低通滤波器，滤除噪声，使控制器输出平滑。\n\n\n障碍物森林中的快递无人机\n项目负责人｜2023.10 – 2024.05\n- 室内环境下，载重（3×100g 快递盒）无人机在 10×10m 区域执行任务：寻找 5 个目标并投放，同时躲避密集障碍物。\n- 主要工作：\n1. 基于 ROS 的飞行代码（C++）：实现障碍森林、狭窄走廊环境下的避障与投放任务。\n2. 定位与路径生成：部署 FAST-LIO 与 Ego-Planner 实现高精度定位与避障路径规划。\n3. MPC 控制器（C++）：根据目标点与约束条件在线计算控制量，实现对全局路径的高精度跟踪。"
   },
   {
-    "objectID": "Chinese.html#研究兴趣",
-    "href": "Chinese.html#研究兴趣",
+    "objectID": "Chinese.html#研究兴趣与专业技能",
+    "href": "Chinese.html#研究兴趣与专业技能",
     "title": "中文简历",
-    "section": "研究兴趣",
-    "text": "研究兴趣\n\n最优控制\n路径规划\n强化学习"
+    "section": "研究兴趣与专业技能",
+    "text": "研究兴趣与专业技能\n\n研究兴趣\n\n最优控制\n路径规划\n强化学习\n\n\n\n专业技能\n\n机器人操作系统：熟练使用 ROS，掌握 Ubuntu 命令行及 Gazebo 仿真\n\n强化学习算法：熟悉 Actor-Critic、TRPO、PPO、SAC、DDPG 等\n\n机器人学基础：掌握 IK（逆运动学）、旋转矩阵、四元数等\n\n最优控制方法：熟悉 LQR、MPC、iLQR、DDP 等控制器"
+  },
+  {
+    "objectID": "Chinese.html#奖项荣誉",
+    "href": "Chinese.html#奖项荣誉",
+    "title": "中文简历",
+    "section": "奖项荣誉",
+    "text": "奖项荣誉\n\n中国机器人大赛暨 ROBOCUP 机器人世界杯中国赛\n\n国家二等奖（2023）\n\n国家三等奖（2024）\n\n\n中国大学生飞行器设计创新大赛\n\n个人/团队一等奖（2023）\n\n\n奖学金\n\n机缘奖学金（2023.10）\n\n学优奖学金（2023.10）\n\n新生学优奖学金（2023.03）"
   },
   {
     "objectID": "blog.html",
@@ -161,25 +168,32 @@
     "text": "Yucheng__Chen@163.com\n  \n  \n    \n     18759135762\n  \n  \n    \n     知乎\n  \n\n  \n  \n\n\nBorn in December 2003, undergraduate student in Mechanical Design, Manufacturing and Automation (Robotics Direction) at Huazhong University of Science and Technology, expected to graduate in June 2026. Admitted to Shanghai Jiao Tong University for master’s degree in Control Science and Engineering starting from September 2026."
   },
   {
-    "objectID": "index.html#education-background",
-    "href": "index.html#education-background",
+    "objectID": "index.html#education-background-contact",
+    "href": "index.html#education-background-contact",
     "title": "Yucheng Chen",
-    "section": "Education Background",
-    "text": "Education Background\n\n2022.09 – 2026.06\nHuazhong University of Science and Technology (985)\nMechanical Design, Manufacturing and Automation (Robotics Direction) | Bachelor’s degree (Senior year)\n\nWeighted GPA: 90/100 (Top 10% in major)\nCore course grades:\n\nCalculus (I/II): 93 / 95\nMechanics of Materials: 92\nLinear Algebra: 91\nComplex Variables and Integral Transforms: 93\nTheoretical Mechanics: 96\nProbability Theory and Mathematical Statistics: 96\nComprehensive English: 93\n\n\n2026.09 – TBD\nShanghai Jiao Tong University (Admitted for postgraduate study)\nControl Science and Engineering (Master’s degree)"
+    "section": "Education Background & Contact",
+    "text": "Education Background & Contact\n\nEducation Background\n\n2022.09 – 2026.06\nHuazhong University of Science and Technology (985)\nMechanical Design, Manufacturing and Automation (Robotics Direction) | Bachelor’s degree (Senior year)\n\nWeighted GPA: 90/100 (Top 10% in major)\nCore course grades:\n\nCalculus (I/II): 93 / 95\nMechanics of Materials: 92\nLinear Algebra: 91\nComplex Variables and Integral Transforms: 93\nTheoretical Mechanics: 96\nProbability Theory and Mathematical Statistics: 96\nComprehensive English: 93\n\n\n2026.09 – TBD\nShanghai Jiao Tong University (Admitted for postgraduate study)\nControl Science and Engineering (Master’s degree)\n\n\n\nContact\n\nEmail: Yucheng__Chen@163.com\nPhone: 18759135762\nZhihu: Chen Yucheng"
   },
   {
-    "objectID": "index.html#research-interests",
-    "href": "index.html#research-interests",
+    "objectID": "index.html#project-experience",
+    "href": "index.html#project-experience",
     "title": "Yucheng Chen",
-    "section": "Research Interests",
-    "text": "Research Interests\n\nOptimal Control\nPath Planning\nReinforcement Learning"
+    "section": "Project Experience",
+    "text": "Project Experience\n\nMulti-UAV Connected Coverage Search\nProject Leader｜2025.09 – Present\n- Deployed distributed multi-UAVs for cooperative search in an information map, aligning UAV trajectories with information distribution to acquire more information.\n- Key Contributions：\n1. Coverage Search: Implemented frequency domain-based UAV coverage search algorithm to improve coverage efficiency in information-dense areas.\n2. Multi-UAV Connectivity: Introduced connectivity probability as a cost term into the path planner to ensure multi-UAV communication and cooperation.\n3. Used iLQR for trajectory optimization.\n\n\nWind-Disturbed UAV Target Search and Delivery\nProject Leader｜2024.07 – 2024.10\n- Outdoor environment: Load-carrying UAV autonomously flew and searched for target white barrels in an 8×5m area, delivered payloads, and returned to base for landing.\n- Key Contributions：\n1. Fuzzy PID Controller (C++): Implemented fuzzy rules to adaptively adjust PID coefficients for precise control under wind disturbances.\n2. Path Planning Algorithm VFH: Solved current feasible points and generated smooth paths through B-spline curve optimization.\n3. Filter Algorithm Deployment: Combined Kalman filter and low-pass filter to remove noise and smooth controller output.\n\n\nObstacle Forest Express Delivery UAV\nProject Leader｜2023.10 – 2024.05\n- Indoor environment: Load-carrying UAV (3×100g express boxes) performed tasks in a 10×10m area: searched for 5 targets, delivered packages, and avoided dense obstacles.\n- Key Contributions：\n1. ROS-based Flight Code (C++): Implemented obstacle avoidance and delivery tasks in obstacle forest and narrow corridor environments.\n2. Localization and Path Generation: Deployed FAST-LIO and Ego-Planner for high-precision localization and obstacle avoidance path planning.\n3. MPC Controller (C++): Computed control inputs online based on target points and constraints to achieve high-precision tracking of global paths."
   },
   {
-    "objectID": "index.html#contact",
-    "href": "index.html#contact",
+    "objectID": "index.html#research-interests-professional-skills",
+    "href": "index.html#research-interests-professional-skills",
     "title": "Yucheng Chen",
-    "section": "Contact",
-    "text": "Contact\n\nEmail: Yucheng__Chen@163.com\nPhone: 18759135762\nZhihu: Chen Yucheng"
+    "section": "Research Interests & Professional Skills",
+    "text": "Research Interests & Professional Skills\n\nResearch Interests\n\nOptimal Control\nPath Planning\nReinforcement Learning\n\n\n\nProfessional Skills\n\nRobot Operating System: Proficient in ROS (ROS1), familiar with Ubuntu command line and Gazebo simulation\n\nReinforcement Learning Algorithms: Familiar with Actor-Critic, TRPO, PPO, SAC, DDPG, etc.\n\nRobotics Fundamentals: Mastered IK (Inverse Kinematics), rotation matrices, quaternions, etc.\n\nOptimal Control Methods: Familiar with LQR, MPC, iLQR, DDP controllers"
+  },
+  {
+    "objectID": "index.html#awards-and-honors",
+    "href": "index.html#awards-and-honors",
+    "title": "Yucheng Chen",
+    "section": "Awards and Honors",
+    "text": "Awards and Honors\n\nChina Robot Competition and ROBOCUP Robot World Cup China Selection\n\nNational Second Prize (2023)\n\nNational Third Prize (2024)\n\n\nChina University Student Aircraft Design Innovation Competition\n\nIndividual/Team First Prize (2023)\n\n\nScholarships\n\nJiyuan Scholarship (2023.10)\n\nAcademic Excellence Scholarship (2023.10)\n\nFreshman Academic Excellence Scholarship (2023.03)"
   },
   {
     "objectID": "readme.html",

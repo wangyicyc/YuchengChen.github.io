@@ -27,7 +27,9 @@ Born in December 2003, undergraduate student in Mechanical Design, Manufacturing
 :::
 
 ::: {.card .fade-in .delay-1}
-## Education Background
+## Education Background & Contact
+
+### Education Background
 - **2022.09 – 2026.06**  
   **Huazhong University of Science and Technology (985)**  
   Mechanical Design, Manufacturing and Automation (Robotics Direction) | Bachelor's degree (Senior year)
@@ -44,18 +46,66 @@ Born in December 2003, undergraduate student in Mechanical Design, Manufacturing
 - **2026.09 – TBD**  
   **Shanghai Jiao Tong University (Admitted for postgraduate study)**  
   Control Science and Engineering (Master's degree)
-:::
 
-::: {.card .fade-in .delay-2}
-## Research Interests
-- Optimal Control
-- Path Planning
-- Reinforcement Learning
-:::
-
-::: {.card .fade-in .delay-3}
-## Contact
+### Contact
 - Email: Yucheng__Chen@163.com
 - Phone: 18759135762
 - Zhihu: [Chen Yucheng](https://www.zhihu.com/people/chen-yu-cheng-67-47)
+:::
+
+::: {.card .fade-in .delay-2}
+## Project Experience
+
+### Multi-UAV Connected Coverage Search  
+**Project Leader**｜2025.09 – Present  
+- Deployed distributed multi-UAVs for cooperative search in an information map, aligning UAV trajectories with information distribution to acquire more information.  
+- **Key Contributions**：  
+  1. **Coverage Search**: Implemented frequency domain-based UAV coverage search algorithm to improve coverage efficiency in information-dense areas.  
+  2. **Multi-UAV Connectivity**: Introduced connectivity probability as a cost term into the path planner to ensure multi-UAV communication and cooperation.  
+  3. Used **iLQR** for trajectory optimization. 
+
+### Wind-Disturbed UAV Target Search and Delivery  
+**Project Leader**｜2024.07 – 2024.10  
+- Outdoor environment: Load-carrying UAV autonomously flew and searched for target white barrels in an 8×5m area, delivered payloads, and returned to base for landing.  
+- **Key Contributions**：  
+  1. **Fuzzy PID Controller (C++)**: Implemented fuzzy rules to adaptively adjust PID coefficients for precise control under wind disturbances.  
+  2. **Path Planning Algorithm VFH**: Solved current feasible points and generated smooth paths through B-spline curve optimization.  
+  3. **Filter Algorithm Deployment**: Combined Kalman filter and low-pass filter to remove noise and smooth controller output. 
+
+### Obstacle Forest Express Delivery UAV  
+**Project Leader**｜2023.10 – 2024.05  
+- Indoor environment: Load-carrying UAV (3×100g express boxes) performed tasks in a 10×10m area: searched for 5 targets, delivered packages, and avoided dense obstacles.  
+- **Key Contributions**：  
+  1. **ROS-based Flight Code (C++)**: Implemented obstacle avoidance and delivery tasks in obstacle forest and narrow corridor environments.  
+  2. **Localization and Path Generation**: Deployed FAST-LIO and Ego-Planner for high-precision localization and obstacle avoidance path planning.  
+  3. **MPC Controller (C++)**: Computed control inputs online based on target points and constraints to achieve high-precision tracking of global paths. 
+
+:::
+
+::: {.card .fade-in .delay-3}
+## Research Interests & Professional Skills
+### Research Interests
+- Optimal Control
+- Path Planning
+- Reinforcement Learning
+
+### Professional Skills
+- **Robot Operating System**: Proficient in ROS (ROS1), familiar with Ubuntu command line and Gazebo simulation  
+- **Reinforcement Learning Algorithms**: Familiar with Actor-Critic, TRPO, PPO, SAC, DDPG, etc.  
+- **Robotics Fundamentals**: Mastered IK (Inverse Kinematics), rotation matrices, quaternions, etc.  
+- **Optimal Control Methods**: Familiar with LQR, MPC, iLQR, DDP controllers
+:::
+
+::: {.card .fade-in .delay-4}
+## Awards and Honors
+
+- **China Robot Competition and ROBOCUP Robot World Cup China Selection**  
+  - National Second Prize (2023)  
+  - National Third Prize (2024)  
+- **China University Student Aircraft Design Innovation Competition**  
+  - Individual/Team First Prize (2023)  
+- **Scholarships**  
+  - Jiyuan Scholarship (2023.10)  
+  - Academic Excellence Scholarship (2023.10)  
+  - Freshman Academic Excellence Scholarship (2023.03)
 :::
