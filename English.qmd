@@ -80,6 +80,14 @@ Born in December 2003, undergraduate student in Mechanical Design, Manufacturing
   2. **Localization and Path Generation**: Deployed FAST-LIO and Ego-Planner for high-precision localization and obstacle avoidance path planning.  
   3. **MPC Controller (C++)**: Computed control inputs online based on target points and constraints to achieve high-precision tracking of global paths. 
 
+### 3rd University Intelligent Robot Creativity Competition - UAV Group A Competition  
+**Participant**｜2024.08 – 2024.11  
+- Participated in the UAV Group A Competition, focusing on autonomous flight tasks with obstacle avoidance and target recognition.  
+- **Key Contributions**：  
+  1. **Autonomous Flight Control**: Developed robust flight control algorithms for UAVs in dynamic environments.  
+  2. **Obstacle Avoidance System**: Implemented real-time obstacle detection and avoidance using sensor fusion.  
+  3. **Target Recognition**: Integrated computer vision systems for target detection and identification. 
+
 :::
 
 ::: {.card .fade-in .delay-3}

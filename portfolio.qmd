@@ -14,9 +14,6 @@ My project showcase and works
 ## Project Gallery
 
 ### Multi-UAV Connected Coverage Search
-
-![Multi-UAV System](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Multiple%20drones%20flying%20in%20coordinated%20formation%20over%20a%20landscape%2C%20high%20quality%2C%20realistic%20rendering&image_size=landscape_16_9)
-
 **Project Description:**
 Deployed distributed multi-UAVs for cooperative search in an information map, aligning UAV trajectories with information distribution to acquire more information. Implemented frequency domain-based coverage search algorithm and ensured multi-UAV connectivity through probability-based path planning.
 
@@ -31,8 +28,7 @@ Deployed distributed multi-UAVs for cooperative search in an information map, al
 ::: {.card .fade-in .delay-2}
 ### Wind-Disturbed UAV Target Search & Delivery
 
-![UAV Delivery System](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Drone%20carrying%20package%20flying%20in%20windy%20conditions%2C%20searching%20for%20target%20landing%20zone%2C%20high%20quality%2C%20realistic%20rendering&image_size=landscape_16_9)
-
+![UAV Delivery System](images/Fuzzy_PID.gif)
 **Project Description:**
 Outdoor environment: Load-carrying UAV autonomously flew and searched for target white barrels in an 8×5m area, delivered payloads, and returned to base for landing. Implemented fuzzy PID controller for wind disturbance rejection.
 
@@ -47,8 +43,7 @@ Outdoor environment: Load-carrying UAV autonomously flew and searched for target
 ::: {.card .fade-in .delay-3}
 ### Obstacle Forest Express Delivery UAV
 
-![Obstacle Avoidance Drone](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Drone%20flying%20through%20indoor%20environment%20with%20obstacles%2C%20carrying%20small%20packages%2C%20high%20quality%2C%20realistic%20rendering&image_size=landscape_16_9)
-
+![Obstacle Avoidance Drone](images/EGO-Planner.gif)
 **Project Description:**
 Indoor environment: Load-carrying UAV (3×100g express boxes) performed tasks in a 10×10m area: searched for 5 targets, delivered packages, and avoided dense obstacles. Deployed FAST-LIO for localization and Ego-Planner for path planning.
 
@@ -62,17 +57,18 @@ Indoor environment: Load-carrying UAV (3×100g express boxes) performed tasks in
 :::
 
 ::: {.card .fade-in .delay-4}
-## Skills Demonstrated
+### 3rd University Intelligent Robot Creativity Competition - UAV Group A Competition
 
-### Technical Skills
-- **Robotics**: UAV control, path planning, obstacle avoidance
-- **Programming**: C++, Python, ROS, MATLAB
-- **Control Systems**: PID, MPC, LQR, Fuzzy Control
-- **Simulation**: Gazebo, ROS Gazebo, MATLAB Simulink
+![UAV Competition](images/Fuzzy_PID.gif)
 
-### Project Management
-- **Leadership**: Led multiple UAV projects from concept to implementation
-- **Problem Solving**: Developed solutions for wind disturbances and obstacle avoidance
-- **Team Collaboration**: Coordinated with team members for system integration
+**Project Description:**
+Participated in the UAV Group A Competition, focusing on autonomous flight tasks with obstacle avoidance and target recognition. Developed robust flight control algorithms for UAVs in dynamic environments and implemented real-time obstacle detection and avoidance using sensor fusion.
+
+**Technologies Used:**
+- ROS (Robot Operating System)
+- Computer Vision
+- Sensor Fusion
+- Autonomous Flight Control
+- C++
 
 :::

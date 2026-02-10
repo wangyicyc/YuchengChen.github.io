@@ -100,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-language">    
         <li>
-    <a class="dropdown-item" href="./index.qmd">
+    <a class="dropdown-item" href="./English.html">
  <span class="dropdown-text">English</span></a>
   </li>  
         <li>
@@ -157,11 +157,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#wind-disturbed-uav-target-search-delivery" id="toc-wind-disturbed-uav-target-search-delivery" class="nav-link" data-scroll-target="#wind-disturbed-uav-target-search-delivery">Wind-Disturbed UAV Target Search &amp; Delivery</a></li>
   <li><a href="#obstacle-forest-express-delivery-uav" id="toc-obstacle-forest-express-delivery-uav" class="nav-link" data-scroll-target="#obstacle-forest-express-delivery-uav">Obstacle Forest Express Delivery UAV</a></li>
-  <li><a href="#skills-demonstrated" id="toc-skills-demonstrated" class="nav-link" data-scroll-target="#skills-demonstrated">Skills Demonstrated</a>
-  <ul class="collapse">
-  <li><a href="#technical-skills" id="toc-technical-skills" class="nav-link" data-scroll-target="#technical-skills">Technical Skills</a></li>
-  <li><a href="#project-management" id="toc-project-management" class="nav-link" data-scroll-target="#project-management">Project Management</a></li>
-  </ul></li>
+  <li><a href="#rd-university-intelligent-robot-creativity-competition---uav-group-a-competition" id="toc-rd-university-intelligent-robot-creativity-competition---uav-group-a-competition" class="nav-link" data-scroll-target="#rd-university-intelligent-robot-creativity-competition---uav-group-a-competition">3rd University Intelligent Robot Creativity Competition - UAV Group A Competition</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://wangyicyc.github.io/YuchengChen.github.io/edit/main/portfolio.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://wangyicyc.github.io/YuchengChen.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -195,57 +191,30 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="project-gallery">Project Gallery</h2>
 <section id="multi-uav-connected-coverage-search" class="level3">
 <h3 class="anchored" data-anchor-id="multi-uav-connected-coverage-search">Multi-UAV Connected Coverage Search</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Multiple%20drones%20flying%20in%20coordinated%20formation%20over%20a%20landscape%2C%20high%20quality%2C%20realistic%20rendering&amp;image_size=landscape_16_9.png" class="img-fluid figure-img"></p>
-<figcaption>Multi-UAV System</figcaption>
-</figure>
-</div>
 <p><strong>Project Description:</strong> Deployed distributed multi-UAVs for cooperative search in an information map, aligning UAV trajectories with information distribution to acquire more information. Implemented frequency domain-based coverage search algorithm and ensured multi-UAV connectivity through probability-based path planning.</p>
 <p><strong>Technologies Used:</strong> - ROS (Robot Operating System) - iLQR Trajectory Optimization - Python/C++ - Gazebo Simulation</p>
 </section>
 </section>
 <section id="wind-disturbed-uav-target-search-delivery" class="level3 card fade-in delay-2">
 <h3 class="anchored" data-anchor-id="wind-disturbed-uav-target-search-delivery">Wind-Disturbed UAV Target Search &amp; Delivery</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Drone%20carrying%20package%20flying%20in%20windy%20conditions%2C%20searching%20for%20target%20landing%20zone%2C%20high%20quality%2C%20realistic%20rendering&amp;image_size=landscape_16_9.png" class="img-fluid figure-img"></p>
-<figcaption>UAV Delivery System</figcaption>
-</figure>
-</div>
-<p><strong>Project Description:</strong> Outdoor environment: Load-carrying UAV autonomously flew and searched for target white barrels in an 8×5m area, delivered payloads, and returned to base for landing. Implemented fuzzy PID controller for wind disturbance rejection.</p>
+<p><img src="images/Fuzzy_PID.gif" class="img-fluid" alt="UAV Delivery System"> <strong>Project Description:</strong> Outdoor environment: Load-carrying UAV autonomously flew and searched for target white barrels in an 8×5m area, delivered payloads, and returned to base for landing. Implemented fuzzy PID controller for wind disturbance rejection.</p>
 <p><strong>Technologies Used:</strong> - C++ - Fuzzy PID Control - VFH Path Planning - Kalman Filtering</p>
 </section>
 <section id="obstacle-forest-express-delivery-uav" class="level3 card fade-in delay-3">
 <h3 class="anchored" data-anchor-id="obstacle-forest-express-delivery-uav">Obstacle Forest Express Delivery UAV</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Drone%20flying%20through%20indoor%20environment%20with%20obstacles%2C%20carrying%20small%20packages%2C%20high%20quality%2C%20realistic%20rendering&amp;image_size=landscape_16_9.png" class="img-fluid figure-img"></p>
-<figcaption>Obstacle Avoidance Drone</figcaption>
-</figure>
-</div>
-<p><strong>Project Description:</strong> Indoor environment: Load-carrying UAV (3×100g express boxes) performed tasks in a 10×10m area: searched for 5 targets, delivered packages, and avoided dense obstacles. Deployed FAST-LIO for localization and Ego-Planner for path planning.</p>
+<p><img src="images/EGO-Planner.gif" class="img-fluid" alt="Obstacle Avoidance Drone"> <strong>Project Description:</strong> Indoor environment: Load-carrying UAV (3×100g express boxes) performed tasks in a 10×10m area: searched for 5 targets, delivered packages, and avoided dense obstacles. Deployed FAST-LIO for localization and Ego-Planner for path planning.</p>
 <p><strong>Technologies Used:</strong> - ROS - FAST-LIO - Ego-Planner - MPC Controller - C++</p>
 </section>
-<section id="skills-demonstrated" class="level2 card fade-in delay-4">
-<h2 class="anchored" data-anchor-id="skills-demonstrated">Skills Demonstrated</h2>
-<section id="technical-skills" class="level3">
-<h3 class="anchored" data-anchor-id="technical-skills">Technical Skills</h3>
-<ul>
-<li><strong>Robotics</strong>: UAV control, path planning, obstacle avoidance</li>
-<li><strong>Programming</strong>: C++, Python, ROS, MATLAB</li>
-<li><strong>Control Systems</strong>: PID, MPC, LQR, Fuzzy Control</li>
-<li><strong>Simulation</strong>: Gazebo, ROS Gazebo, MATLAB Simulink</li>
-</ul>
-</section>
-<section id="project-management" class="level3">
-<h3 class="anchored" data-anchor-id="project-management">Project Management</h3>
-<ul>
-<li><strong>Leadership</strong>: Led multiple UAV projects from concept to implementation</li>
-<li><strong>Problem Solving</strong>: Developed solutions for wind disturbances and obstacle avoidance</li>
-<li><strong>Team Collaboration</strong>: Coordinated with team members for system integration</li>
-</ul>
-</section>
+<section id="rd-university-intelligent-robot-creativity-competition---uav-group-a-competition" class="level3 card fade-in delay-4">
+<h3 class="anchored" data-anchor-id="rd-university-intelligent-robot-creativity-competition---uav-group-a-competition">3rd University Intelligent Robot Creativity Competition - UAV Group A Competition</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Fuzzy_PID.gif" class="img-fluid figure-img"></p>
+<figcaption>UAV Competition</figcaption>
+</figure>
+</div>
+<p><strong>Project Description:</strong> Participated in the UAV Group A Competition, focusing on autonomous flight tasks with obstacle avoidance and target recognition. Developed robust flight control algorithms for UAVs in dynamic environments and implemented real-time obstacle detection and avoidance using sensor fusion.</p>
+<p><strong>Technologies Used:</strong> - ROS (Robot Operating System) - Computer Vision - Sensor Fusion - Autonomous Flight Control - C++</p>
 </section>
 
 

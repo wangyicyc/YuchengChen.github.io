@@ -26,7 +26,7 @@ website:
       - text: "Language"
         menu:
           - text: "English"
-            href: index.qmd
+            href: English.qmd
           - text: "中文"
             href: Chinese.qmd
       - text: "Portfolio"

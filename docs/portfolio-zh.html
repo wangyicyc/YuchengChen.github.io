@@ -100,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-language">    
         <li>
-    <a class="dropdown-item" href="./index.qmd">
+    <a class="dropdown-item" href="./English.html">
  <span class="dropdown-text">English</span></a>
   </li>  
         <li>
@@ -157,11 +157,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#风扰动下无人机目标搜索投放" id="toc-风扰动下无人机目标搜索投放" class="nav-link" data-scroll-target="#风扰动下无人机目标搜索投放">风扰动下无人机目标搜索+投放</a></li>
   <li><a href="#障碍物森林中的快递无人机" id="toc-障碍物森林中的快递无人机" class="nav-link" data-scroll-target="#障碍物森林中的快递无人机">障碍物森林中的快递无人机</a></li>
-  <li><a href="#展示技能" id="toc-展示技能" class="nav-link" data-scroll-target="#展示技能">展示技能</a>
-  <ul class="collapse">
-  <li><a href="#技术技能" id="toc-技术技能" class="nav-link" data-scroll-target="#技术技能">技术技能</a></li>
-  <li><a href="#项目管理" id="toc-项目管理" class="nav-link" data-scroll-target="#项目管理">项目管理</a></li>
-  </ul></li>
+  <li><a href="#第三届大学智能机器人创意大赛---无人机-a-组竞赛" id="toc-第三届大学智能机器人创意大赛---无人机-a-组竞赛" class="nav-link" data-scroll-target="#第三届大学智能机器人创意大赛---无人机-a-组竞赛">第三届大学智能机器人创意大赛 - 无人机 A 组竞赛</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://wangyicyc.github.io/YuchengChen.github.io/edit/main/portfolio-zh.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://wangyicyc.github.io/YuchengChen.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -195,12 +191,6 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="项目-gallery">项目 gallery</h2>
 <section id="多无人机联通遍历搜索" class="level3">
 <h3 class="anchored" data-anchor-id="多无人机联通遍历搜索">多无人机联通遍历搜索</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Multiple%20drones%20flying%20in%20coordinated%20formation%20over%20a%20landscape%2C%20high%20quality%2C%20realistic%20rendering&amp;image_size=landscape_16_9.png" class="img-fluid figure-img"></p>
-<figcaption>多无人机系统</figcaption>
-</figure>
-</div>
 <p><strong>项目描述：</strong> 部署分布式多无人机在一个信息地图中进行协同搜索，使无人轨迹分布对齐地图的信息分布，以获取更多信息。实现了基于频域分析的覆盖搜索算法，并通过基于概率的路径规划确保多机连通性。</p>
 <p><strong>使用技术：</strong> - ROS（机器人操作系统） - iLQR 轨迹优化 - Python/C++ - Gazebo 仿真</p>
 </section>
@@ -209,8 +199,8 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="风扰动下无人机目标搜索投放">风扰动下无人机目标搜索+投放</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Drone%20carrying%20package%20flying%20in%20windy%20conditions%2C%20searching%20for%20target%20landing%20zone%2C%20high%20quality%2C%20realistic%20rendering&amp;image_size=landscape_16_9.png" class="img-fluid figure-img"></p>
-<figcaption>无人机投放系统</figcaption>
+<p><img src="images/Fuzzy_PID.gif" class="img-fluid figure-img"></p>
+<figcaption>模糊 PID 控制</figcaption>
 </figure>
 </div>
 <p><strong>项目描述：</strong> 室外环境下，载重无人机自主飞行并在 8×5m 区域内寻找目标白桶投放载重物，完成后自主返航降落。实现了模糊 PID 控制器以应对风扰动。</p>
@@ -218,34 +208,13 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="障碍物森林中的快递无人机" class="level3 card fade-in delay-3">
 <h3 class="anchored" data-anchor-id="障碍物森林中的快递无人机">障碍物森林中的快递无人机</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Drone%20flying%20through%20indoor%20environment%20with%20obstacles%2C%20carrying%20small%20packages%2C%20high%20quality%2C%20realistic%20rendering&amp;image_size=landscape_16_9.png" class="img-fluid figure-img"></p>
-<figcaption>避障无人机</figcaption>
-</figure>
-</div>
-<p><strong>项目描述：</strong> 室内环境下，载重（3×100g 快递盒）无人机在 10×10m 区域执行任务：寻找 5 个目标并投放，同时躲避密集障碍物。部署了 FAST-LIO 进行定位，Ego-Planner 进行路径规划。</p>
+<p><img src="images/EGO-Planner.gif" class="img-fluid" alt="避障无人机"> <strong>项目描述：</strong> 室内环境下，载重（3×100g 快递盒）无人机在 10×10m 区域执行任务：寻找 5 个目标并投放，同时躲避密集障碍物。部署了 FAST-LIO 进行定位，Ego-Planner 进行路径规划。</p>
 <p><strong>使用技术：</strong> - ROS - FAST-LIO - Ego-Planner - MPC 控制器 - C++</p>
 </section>
-<section id="展示技能" class="level2 card fade-in delay-4">
-<h2 class="anchored" data-anchor-id="展示技能">展示技能</h2>
-<section id="技术技能" class="level3">
-<h3 class="anchored" data-anchor-id="技术技能">技术技能</h3>
-<ul>
-<li><strong>机器人技术</strong>：无人机控制、路径规划、避障</li>
-<li><strong>编程</strong>：C++、Python、ROS、MATLAB</li>
-<li><strong>控制系统</strong>：PID、MPC、LQR、模糊控制</li>
-<li><strong>仿真</strong>：Gazebo、ROS Gazebo、MATLAB Simulink</li>
-</ul>
-</section>
-<section id="项目管理" class="level3">
-<h3 class="anchored" data-anchor-id="项目管理">项目管理</h3>
-<ul>
-<li><strong>领导力</strong>：领导多个无人机项目从概念到实现</li>
-<li><strong>问题解决</strong>：开发了应对风扰动和避障的解决方案</li>
-<li><strong>团队协作</strong>：与团队成员协调系统集成</li>
-</ul>
-</section>
+<section id="第三届大学智能机器人创意大赛---无人机-a-组竞赛" class="level3 card fade-in delay-4">
+<h3 class="anchored" data-anchor-id="第三届大学智能机器人创意大赛---无人机-a-组竞赛">第三届大学智能机器人创意大赛 - 无人机 A 组竞赛</h3>
+<p><img src="images/VFH.gif" class="img-fluid" alt="无人机竞赛"> <strong>项目描述：</strong> 参与无人机 A 组竞赛，专注于具有避障和目标识别功能的自主飞行任务。开发了适用于动态环境的无人机鲁棒飞行控制算法，并利用传感器融合实现实时障碍物检测与避障。</p>
+<p><strong>使用技术：</strong> - ROS（机器人操作系统） - 计算机视觉 - 传感器融合 - 自主飞行控制 - C++</p>
 </section>
 
 
