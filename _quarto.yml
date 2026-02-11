@@ -23,7 +23,7 @@ website:
     logo: images/site-logo.png
     logo-alt: "Yucheng Chen"
     right: 
-      - text: "Language"
+      - text: "Resume"
         menu:
           - text: "English"
             href: English.qmd

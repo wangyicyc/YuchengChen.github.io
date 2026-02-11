@@ -29,6 +29,8 @@ Deployed distributed multi-UAVs for cooperative search in an information map, al
 ### Wind-Disturbed UAV Target Search & Delivery
 
 ![UAV Delivery System](images/Fuzzy_PID.gif)
+![Kalman Filter](images/KalmanFilter.png)
+
 **Project Description:**
 Outdoor environment: Load-carrying UAV autonomously flew and searched for target white barrels in an 8×5m area, delivered payloads, and returned to base for landing. Implemented fuzzy PID controller for wind disturbance rejection.
 
@@ -58,9 +60,11 @@ Indoor environment: Load-carrying UAV (3×100g express boxes) performed tasks in
 
 ::: {.card .fade-in .delay-4}
 ### 3rd University Intelligent Robot Creativity Competition - UAV Group A Competition
-
-![UAV Competition](images/Fuzzy_PID.gif)
-
+::: {.columns}
+::: {.column width="48%" style="padding-right: 20px;"}
+![UAV Competition](images/VFH.gif)
+:::
+::: {.column width="48%" style="padding-left: 20px;"}
 **Project Description:**
 Participated in the UAV Group A Competition, focusing on autonomous flight tasks with obstacle avoidance and target recognition. Developed robust flight control algorithms for UAVs in dynamic environments and implemented real-time obstacle detection and avoidance using sensor fusion.
 
@@ -70,5 +74,4 @@ Participated in the UAV Group A Competition, focusing on autonomous flight tasks
 - Sensor Fusion
 - Autonomous Flight Control
 - C++
-
 :::
