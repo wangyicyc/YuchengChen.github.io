@@ -54,8 +54,17 @@ Born in December 2003, undergraduate student in Mechanical Design, Manufacturing
 :::
 
 ::: {.card .fade-in .delay-2}
+## Internship
+### 2025.12 - Present
+- **Robosense** | Reinforcement Learning Algorithm Algorithm Intern  
+- **Main Work**:
+  1. **rsl_rl**: Utilized the rsl_rl library for reinforcement learning.
+  2. **Sim2Sim Gap**: Overcame the challenge of training models in a simulated environment and deploying them in a real-world setting.
+  3. **Real2Sim Gap**: Overcame the challenge of deploying models in a real-world environment and training them in a simulated environment.
+  4. **Reward Function Design**: Designed a reward function that guides the model to learn the optimal behavior.
+  5. **Model Training**: Trained the model using MLP and LSTM networks, ensuring the model to generalize to different environments.
+  
 ## Project Experience
-
 ### Multi-UAV Connected Coverage Search  
 **Project Leader**｜2025.09 – Present  
 - Deployed distributed multi-UAVs for cooperative search in an information map, aligning UAV trajectories with information distribution to acquire more information.  

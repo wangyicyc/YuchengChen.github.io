@@ -18,7 +18,7 @@
     "href": "resume-zh.html#实习经历",
     "title": "中文简历",
     "section": "实习经历",
-    "text": "实习经历\n\n2025.12 - 至今\n\nRobosense | 强化学习算法算法实习生\n\n主要工作："
+    "text": "实习经历\n\n2025.12 - 至今\n\nRobosense | 强化学习算法算法实习生\n\n主要工作：\n\nrsl_rl强化学习库使用：\nSim2Sim Gap攻克：从训练环境Isaac Gym过渡到仿真环境Mujoco下的验证，确保模型在不同环境下的泛化能力。\nReal2Sim Gap攻克：从训练环境Isaac Gym、仿真环境Mujoco过渡到真实环境。\n奖励函数设计：从真实环境接受反馈，从而设计奖励函数，引导模型学习到最优策略。\n模型训练：使用分别使用MLP和LSTM网络训练模型，确保模型在不同环境下的泛化能力。"
   },
   {
     "objectID": "resume-zh.html#主要项目经历",
@@ -138,6 +138,13 @@
     "title": "Yucheng Chen",
     "section": "Education Background & Contact",
     "text": "Education Background & Contact\n\nEducation Background\n\n2022.09 – 2026.06\nHuazhong University of Science and Technology (985)\nMechanical Design, Manufacturing and Automation (Robotics Direction) | Bachelor’s degree (Senior year)\n\nWeighted GPA: 90/100 (Top 10% in major)\nCore course grades:\n\nCalculus (I/II): 93 / 95\nMechanics of Materials: 92\nLinear Algebra: 91\nComplex Variables and Integral Transforms: 93\nTheoretical Mechanics: 96\nProbability Theory and Mathematical Statistics: 96\nComprehensive English: 93\n\n\n2026.09 – TBD\nShanghai Jiao Tong University (Admitted for postgraduate study)\nControl Science and Engineering (Master’s degree)\n\n\n\nContact\n\nEmail: Yucheng__Chen@163.com\nPhone: 18759135762\nZhihu: Chen Yucheng"
+  },
+  {
+    "objectID": "resume.html#internship",
+    "href": "resume.html#internship",
+    "title": "Yucheng Chen",
+    "section": "Internship",
+    "text": "Internship\n\n2025.12 - Present\n\nRobosense | Reinforcement Learning Algorithm Algorithm Intern\n\nMain Work:\n\nrsl_rl: Utilized the rsl_rl library for reinforcement learning.\nSim2Sim Gap: Overcame the challenge of training models in a simulated environment and deploying them in a real-world setting.\nReal2Sim Gap: Overcame the challenge of deploying models in a real-world environment and training them in a simulated environment.\nReward Function Design: Designed a reward function that guides the model to learn the optimal behavior.\nModel Training: Trained the model using MLP and LSTM networks, ensuring the model to generalize to different environments."
   },
   {
     "objectID": "resume.html#project-experience",
