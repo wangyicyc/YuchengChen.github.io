@@ -26,15 +26,15 @@ website:
       - text: "Resume"
         menu:
           - text: "English"
-            href: English.qmd
+            href: resume.qmd
           - text: "中文"
-            href: Chinese.qmd
-      - text: "Portfolio"
+            href: resume-zh.qmd
+      - text: "Project"
         menu:
           - text: "English"
-            href: portfolio.qmd
+            href: project.qmd
           - text: "中文"
-            href: portfolio-zh.qmd
+            href: project-zh.qmd
       - icon: github
         href: https://github.com
       - icon: envelope

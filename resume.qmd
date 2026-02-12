@@ -66,7 +66,7 @@ Born in December 2003, undergraduate student in Mechanical Design, Manufacturing
 
 ### Wind-Disturbed UAV Target Search and Delivery  
 **Project Leader**｜2024.07 – 2024.10  
-- Outdoor environment: Load-carrying UAV autonomously flew and searched for target white barrels in an 8×5m area, delivered payloads, and returned to base for landing.  
+- Outdoor environment: UAV carrying a 1.5L mineral water bottle autonomously flew on an 8m*80m runway, performing tasks including autonomous takeoff, searching for white barrels (30, 20, 15cm diameters) in an 8*5m area 30m away, reconnoitering dangerous objects 65m away, and autonomous return and landing.  
 - **Key Contributions**：  
   1. **Fuzzy PID Controller (C++)**: Implemented fuzzy rules to adaptively adjust PID coefficients for precise control under wind disturbances.  
   2. **Path Planning Algorithm VFH**: Solved current feasible points and generated smooth paths through B-spline curve optimization.  
@@ -74,7 +74,7 @@ Born in December 2003, undergraduate student in Mechanical Design, Manufacturing
 
 ### Obstacle Forest Express Delivery UAV  
 **Project Leader**｜2023.10 – 2024.05  
-- Indoor environment: Load-carrying UAV (3×100g express boxes) performed tasks in a 10×10m area: searched for 5 targets, delivered packages, and avoided dense obstacles.  
+- Indoor environment: UAV carrying 3×100g express boxes performed tasks in a 10×10m area, including autonomous takeoff, searching for 5 targets in a 10×8.5m area for delivery, and traversing a 10×1.5m corridor with two 80cm-wide narrow passages to reach the landing point.  
 - **Key Contributions**：  
   1. **ROS-based Flight Code (C++)**: Implemented obstacle avoidance and delivery tasks in obstacle forest and narrow corridor environments.  
   2. **Localization and Path Generation**: Deployed FAST-LIO and Ego-Planner for high-precision localization and obstacle avoidance path planning.  

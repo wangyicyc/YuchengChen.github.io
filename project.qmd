@@ -1,19 +1,10 @@
 ---
-title: "Portfolio"
+title: "Project Outcome Presentation"
 ---
 
-::: {.profile-card .fade-in}
-
-# Portfolio
-
-My project showcase and works
-
-:::
 
 ::: {.card .fade-in .delay-1}
-## Project Gallery
-
-### Multi-UAV Connected Coverage Search
+## Multi-UAV Connected Coverage Search
 **Project Description:**
 Deployed distributed multi-UAVs for cooperative search in an information map, aligning UAV trajectories with information distribution to acquire more information. Implemented frequency domain-based coverage search algorithm and ensured multi-UAV connectivity through probability-based path planning.
 
@@ -26,13 +17,17 @@ Deployed distributed multi-UAVs for cooperative search in an information map, al
 :::
 
 ::: {.card .fade-in .delay-2}
-### Wind-Disturbed UAV Target Search & Delivery
+## Wind-Disturbed UAV Target Search & Delivery
 
 ![UAV Delivery System](images/Fuzzy_PID.gif)
 ![Kalman Filter](images/KalmanFilter.png)
 
 **Project Description:**
-Outdoor environment: Load-carrying UAV autonomously flew and searched for target white barrels in an 8×5m area, delivered payloads, and returned to base for landing. Implemented fuzzy PID controller for wind disturbance rejection.
+Outdoor environment: UAV carrying a 1.5L mineral water bottle autonomously flew on an 8m*80m runway, performing the following tasks:
+1. UAV autonomously took off from the designated takeoff point
+2. Searched for white barrels for delivery in an 8*5m area 30m away from the takeoff point, with three white barrels (diameters: 30, 20, 15 cm) - smaller diameter barrels scored higher
+3. Reconnoitered dangerous objects in an 8*5 area 65m away from the takeoff point and remotely transmitted data for team members to fill in at the console
+4. After completing the above tasks, UAV autonomously returned to the takeoff point and landed
 
 **Technologies Used:**
 - C++
@@ -43,11 +38,14 @@ Outdoor environment: Load-carrying UAV autonomously flew and searched for target
 :::
 
 ::: {.card .fade-in .delay-3}
-### Obstacle Forest Express Delivery UAV
+## Obstacle Forest Express Delivery UAV
 
 ![Obstacle Avoidance Drone](images/EGO-Planner.gif)
 **Project Description:**
-Indoor environment: Load-carrying UAV (3×100g express boxes) performed tasks in a 10×10m area: searched for 5 targets, delivered packages, and avoided dense obstacles. Deployed FAST-LIO for localization and Ego-Planner for path planning.
+Indoor environment: UAV carrying 3×100g express boxes performed tasks in a 10×10m area, with the following specific tasks:
+1. Autonomously took off from the takeoff point
+2. Searched for 5 existing targets in a 10×8.5m area for delivery, with delivery scores calculated based on delivery accuracy and target weights, while avoiding dense obstacles in the area
+3. After completing task 2, proceeded to the entrance of a 10×1.5m corridor, traversed the corridor to reach the landing point for accurate landing, with two 80cm-wide narrow passages in the corridor
 
 **Technologies Used:**
 - ROS
@@ -59,7 +57,7 @@ Indoor environment: Load-carrying UAV (3×100g express boxes) performed tasks in
 :::
 
 ::: {.card .fade-in .delay-4}
-### 3rd University Intelligent Robot Creativity Competition - UAV Group A Competition
+## 3rd University Intelligent Robot Creativity Competition - UAV Group A Competition
 ::: {.columns}
 ::: {.column width="48%" style="padding-right: 20px;"}
 ![UAV Competition](images/VFH.gif)
