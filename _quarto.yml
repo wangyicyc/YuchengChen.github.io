@@ -24,17 +24,15 @@ website:
     logo-alt: "Yucheng Chen"
     right: 
       - text: "Resume"
+        href: resume.qmd
+      - text: "Project"
+        href: project.qmd
+      - text: "Language"
         menu:
           - text: "English"
             href: resume.qmd
           - text: "中文"
             href: resume-zh.qmd
-      - text: "Project"
-        menu:
-          - text: "English"
-            href: project.qmd
-          - text: "中文"
-            href: project-zh.qmd
       - icon: github
         href: https://github.com
       - icon: envelope
@@ -46,3 +44,6 @@ format:
     toc: true            # 启用目录
     toc-position: right  # 将目录放置在页面的右侧
     toc-depth: 3         # 设置目录的深度，数字越大，目录越详细
+    include-in-header:
+      - text: |
+          <script src="scripts/language-switcher.js"></script>

@@ -18,14 +18,14 @@
     "href": "resume-zh.html#实习经历",
     "title": "中文简历",
     "section": "实习经历",
-    "text": "实习经历\n\n2025.12 - 至今\n\nRobosense | 强化学习算法算法实习生\n\n主要工作：\n\nrsl_rl强化学习库使用：\nSim2Sim Gap攻克：从训练环境Isaac Gym过渡到仿真环境Mujoco下的验证，确保模型在不同环境下的泛化能力。\nReal2Sim Gap攻克：从训练环境Isaac Gym、仿真环境Mujoco过渡到真实环境。\n奖励函数设计：从真实环境接受反馈，从而设计奖励函数，引导模型学习到最优策略。\n模型训练：使用分别使用MLP和LSTM网络训练模型，确保模型在不同环境下的泛化能力。"
+    "text": "实习经历\n\n2025.12.10 - 至今\n\n速腾聚创(Robosense) | 强化学习算法算法实习生\n\n主要工作：\n\nSim2Sim Gap攻克：从训练环境Isaac Gym过渡到仿真环境Mujoco下的验证，确保模型在不同仿真环境下的泛化能力。\nReal2Sim Gap攻克：从训练环境Isaac Gym、仿真环境Mujoco过渡到真实环境。\n奖励函数设计：从真实环境接受反馈，从而设计奖励函数，引导模型学习到最优策略。\n模型训练：调用rsl_rl强化学习库, 分别使用多帧输入MLP的MLP和LSTM网络训练模型，确保模型对时间维度的感知能力。"
   },
   {
     "objectID": "resume-zh.html#主要项目经历",
     "href": "resume-zh.html#主要项目经历",
     "title": "中文简历",
     "section": "主要项目经历",
-    "text": "主要项目经历\n\n多无人机联通遍历搜索\n项目负责人｜2025.09 – 至今\n- 部署分布式多无人机在一个信息地图中进行协同搜索，使无人轨迹分布对齐地图的信息分布，以获取更多信息。\n- 主要工作：\n1. 遍历搜索：部署基于频域分析的无人机遍历搜索算法，提升对信息密集区域的覆盖效率。\n2. 多无人机连通：将无人机间的连通概率作为代价项引入路径规划器，保障多机通信与协同。\n3. 使用 iLQR 进行轨迹优化。\n\n\n风扰动下无人机目标搜索+投放\n项目负责人｜2024.07 – 2024.10\n描述项目：室外环境下，使无人机载重（一个1.5L矿泉水瓶）在8m80m的跑道上自主飞行，实现以下任务： 1. 无人机在指定起飞点自主起飞 2. 在距离起飞点30m远的85m区域内寻找白桶进行投放，白桶共三个（直径分别为30, 20,15），直径越小分值越高 3. 在距离起飞点65m远的8*5区域内侦查危险物，并远程传送数据，由参赛人员在控制台填写 4. 完成以上任务后无人机自主飞回起飞点并降落\n本人负责任务： 1. 模糊PID控制器编写(C++)：通过模糊规则⾃适应调整PID系数，实现⻛扰动下⽆⼈机精准控制 2. 编写路径规划算法VFH：依据VFH算法求解当前可⾏点，并通过B样条曲线优化出光滑路径 3. 部署滤波算法：通过卡尔曼滤波以及低通滤波器，实现对噪声的滤除作用，使控制器平滑输出\n\n\n障碍物森林中的快递无人机\n项目负责人｜2023.10 – 2024.05\n描述项目：室内环境下，使无人机载重（3个100g快递盒）在1010m的区域执行任务，具体任务如下： 1. 在起飞点自主起飞 2. 在108.5m的区域中寻找存在的5个标靶进行投放，投放得分由投放准确度与标靶自身权重计算，同时注意躲避该区域内的密集障碍物 3. 执行完任务2后，前往10*1.5m的长廊入口，穿越长廊抵达降落点准确降落，其中长廊中存在两个80cm宽的窄道\n本人负责工作： 1. Ubuntu下编写基于ROS的⻜⾏代码(C++)：执⾏障碍森林、狭窄⾛廊环境下避障任务及投放任务 2. 部署FAST-LIO及避障算法Ego-Planner : ⽆⼈机定位并⽣成可⾏路线，MPC控制器跟踪路径避障 3. 编写MPC控制器(C++)：依据目标点与约束条件在线计算对⽆⼈机加速度的控制，以跟踪全局路径"
+    "text": "主要项目经历\n\nActor-Critic算法 + MPC控制器实现无人机自主飞行\n项目负责人｜ 2026.02 – 2026.06 - 项目目标：结合强化学习与模型预测控制，实现无人机的敏捷飞行控制 - 主要工作： 1. 算法融合：将Actor-Critic强化学习算法与MPC控制器相结合，利用强化学习处理复杂环境的决策问题，同时利用MPC保证控制的稳定性和安全性 2. 可微分优化：实现了基于可微分优化的控制框架，使得MPC的优化过程可以被纳入强化学习的训练中 3. 敏捷飞行控制：开发了适用于无人机高速、高机动飞行的控制策略，能够在复杂环境中实现精准的轨迹跟踪 4. 仿真验证：在多种仿真环境中验证了算法的有效性，包括障碍躲避、轨迹跟踪等任务 - 技术栈：Python、PyTorch、ROS、MPC、强化学习（Actor-Critic）\n\n\n风扰动下无人机目标搜索+投放\n项目负责人｜2024.05 – 2024.10\n项目描述：** 室外环境下，使无人机载重（一个1.5L矿泉水瓶）在8m80m的跑道上自主飞行，实现以下任务： 1. 无人机在指定起飞点自主起飞 2. 在距离起飞点30m远的85m区域内寻找白桶进行投放，白桶共三个（直径分别为30, 20,15），直径越小分值越高 3. 在距离起飞点65m远的8*5区域内侦查危险物，并远程传送数据，由参赛人员在控制台填写 4. 完成以上任务后无人机自主飞回起飞点并降落\n本人负责任务： 1. 模糊PID控制器编写(C++)：通过模糊规则⾃适应调整PID系数，实现⻛扰动下⽆⼈机精准控制 2. 编写路径规划算法VFH：依据VFH算法求解当前可⾏点，并通过B样条曲线优化出光滑路径 3. 部署滤波算法：通过卡尔曼滤波以及低通滤波器，实现对噪声的滤除作用，使控制器平滑输出\n\n\n障碍物森林中的快递无人机\n项目负责人｜2023.10 – 2024.05\n描述项目：室内环境下，使无人机载重（3个100g快递盒）在1010m的区域执行任务，具体任务如下： 1. 在起飞点自主起飞 2. 在108.5m的区域中寻找存在的5个标靶进行投放，投放得分由投放准确度与标靶自身权重计算，同时注意躲避该区域内的密集障碍物 3. 执行完任务2后，前往10*1.5m的长廊入口，穿越长廊抵达降落点准确降落，其中长廊中存在两个80cm宽的窄道\n本人负责工作： 1. Ubuntu下编写基于ROS的⻜⾏代码(C++)：执⾏障碍森林、狭窄⾛廊环境下避障任务及投放任务 2. 部署FAST-LIO及避障算法Ego-Planner : ⽆⼈机定位并⽣成可⾏路线，MPC控制器跟踪路径避障 3. 编写MPC控制器(C++)：依据目标点与约束条件在线计算对⽆⼈机加速度的控制，以跟踪全局路径"
   },
   {
     "objectID": "resume-zh.html#研究兴趣与专业技能",
@@ -46,70 +46,84 @@
     "href": "project.html",
     "title": "Project Outcome Presentation",
     "section": "",
-    "text": "Project Description: Deployed distributed multi-UAVs for cooperative search in an information map, aligning UAV trajectories with information distribution to acquire more information. Implemented frequency domain-based coverage search algorithm and ensured multi-UAV connectivity through probability-based path planning.\nTechnologies Used: - ROS (Robot Operating System) - iLQR Trajectory Optimization - Python/C++ - Gazebo Simulation"
+    "text": "Project Leader｜ 2026.02 – 2026.06 Project Description: Combined reinforcement learning with model predictive control to achieve agile flight control for UAVs. Integrated Actor-Critic reinforcement learning algorithm with MPC controller, using reinforcement learning to handle decision-making in complex environments while using MPC to ensure control stability and safety. Implemented a control framework based on differentiable optimization, allowing MPC’s optimization process to be incorporated into reinforcement learning training.\nTechnologies Used: - Python - PyTorch - ROS (Robot Operating System) - MPC (Model Predictive Control) - Reinforcement Learning (Actor-Critic)\n:::\n:::"
   },
   {
-    "objectID": "project.html#multi-uav-connected-coverage-search",
-    "href": "project.html#multi-uav-connected-coverage-search",
+    "objectID": "project.html#actor-critic-algorithm-mpc-controller-for-uav-autonomous-flight",
+    "href": "project.html#actor-critic-algorithm-mpc-controller-for-uav-autonomous-flight",
     "title": "Project Outcome Presentation",
     "section": "",
-    "text": "Project Description: Deployed distributed multi-UAVs for cooperative search in an information map, aligning UAV trajectories with information distribution to acquire more information. Implemented frequency domain-based coverage search algorithm and ensured multi-UAV connectivity through probability-based path planning.\nTechnologies Used: - ROS (Robot Operating System) - iLQR Trajectory Optimization - Python/C++ - Gazebo Simulation"
+    "text": "Project Leader｜ 2026.02 – 2026.06 Project Description: Combined reinforcement learning with model predictive control to achieve agile flight control for UAVs. Integrated Actor-Critic reinforcement learning algorithm with MPC controller, using reinforcement learning to handle decision-making in complex environments while using MPC to ensure control stability and safety. Implemented a control framework based on differentiable optimization, allowing MPC’s optimization process to be incorporated into reinforcement learning training.\nTechnologies Used: - Python - PyTorch - ROS (Robot Operating System) - MPC (Model Predictive Control) - Reinforcement Learning (Actor-Critic)"
+  },
+  {
+    "objectID": "project.html#decentralized-multi-robot-ergodic-planning-for-exploration-of-unknown-dynamic-environmentsrss-2026-in-the-pipeline",
+    "href": "project.html#decentralized-multi-robot-ergodic-planning-for-exploration-of-unknown-dynamic-environmentsrss-2026-in-the-pipeline",
+    "title": "Project Outcome Presentation",
+    "section": "Decentralized Multi-Robot Ergodic Planning for Exploration of Unknown Dynamic Environments(RSS 2026 in the pipeline)",
+    "text": "Decentralized Multi-Robot Ergodic Planning for Exploration of Unknown Dynamic Environments(RSS 2026 in the pipeline)\nFirst Author｜2025.09 – 2026.02 Project Description: Deployed distributed multi-UAVs for cooperative search in an information map, aligning UAV trajectories with information distribution to acquire more information. Implemented frequency domain-based coverage search algorithm and ensured multi-UAV connectivity through probability-based path planning.  Technologies Used: - ROS (Robot Operating System) - iLQR Trajectory Optimization - Python/C++ - Gazebo Simulation"
   },
   {
     "objectID": "project.html#wind-disturbed-uav-target-search-delivery",
     "href": "project.html#wind-disturbed-uav-target-search-delivery",
     "title": "Project Outcome Presentation",
     "section": "Wind-Disturbed UAV Target Search & Delivery",
-    "text": "Wind-Disturbed UAV Target Search & Delivery\n \nProject Description: Outdoor environment: UAV carrying a 1.5L mineral water bottle autonomously flew on an 8m80m runway, performing the following tasks: 1. UAV autonomously took off from the designated takeoff point 2. Searched for white barrels for delivery in an 85m area 30m away from the takeoff point, with three white barrels (diameters: 30, 20, 15 cm) - smaller diameter barrels scored higher 3. Reconnoitered dangerous objects in an 8*5 area 65m away from the takeoff point and remotely transmitted data for team members to fill in at the console 4. After completing the above tasks, UAV autonomously returned to the takeoff point and landed\nTechnologies Used: - C++ - Fuzzy PID Control - VFH Path Planning - Kalman Filtering"
-  },
-  {
-    "objectID": "project.html#obstacle-forest-express-delivery-uav",
-    "href": "project.html#obstacle-forest-express-delivery-uav",
-    "title": "Project Outcome Presentation",
-    "section": "Obstacle Forest Express Delivery UAV",
-    "text": "Obstacle Forest Express Delivery UAV\n Project Description: Indoor environment: UAV carrying 3×100g express boxes performed tasks in a 10×10m area, with the following specific tasks: 1. Autonomously took off from the takeoff point 2. Searched for 5 existing targets in a 10×8.5m area for delivery, with delivery scores calculated based on delivery accuracy and target weights, while avoiding dense obstacles in the area 3. After completing task 2, proceeded to the entrance of a 10×1.5m corridor, traversed the corridor to reach the landing point for accurate landing, with two 80cm-wide narrow passages in the corridor\nTechnologies Used: - ROS - FAST-LIO - Ego-Planner - MPC Controller - C++"
+    "text": "Wind-Disturbed UAV Target Search & Delivery\nProject Leader｜2024.05 – 2024.10\n  Project Description: Outdoor environment: UAV carrying a 1.5L mineral water bottle autonomously flew on an 8m80m runway, performing the following tasks: 1. UAV autonomously took off from the designated takeoff point 2. Searched for white barrels for delivery in an 85m area 30m away from the takeoff point, with three white barrels (diameters: 30, 20, 15 cm) - smaller diameter barrels scored higher 3. Reconnoitered dangerous objects in an 8*5 area 65m away from the takeoff point and remotely transmitted data for team members to fill in at the console 4. After completing the above tasks, UAV autonomously returned to the takeoff point and landed\nTechnologies Used: - C++ - Fuzzy PID Control - VFH Path Planning - Kalman Filtering"
   },
   {
     "objectID": "project.html#rd-university-intelligent-robot-creativity-competition---uav-group-a-competition",
     "href": "project.html#rd-university-intelligent-robot-creativity-competition---uav-group-a-competition",
     "title": "Project Outcome Presentation",
     "section": "3rd University Intelligent Robot Creativity Competition - UAV Group A Competition",
-    "text": "3rd University Intelligent Robot Creativity Competition - UAV Group A Competition\n\n\n\n\n\nUAV Competition\n\n\n\nProject Description: Participated in the UAV Group A Competition, focusing on autonomous flight tasks with obstacle avoidance and target recognition. Developed robust flight control algorithms for UAVs in dynamic environments and implemented real-time obstacle detection and avoidance using sensor fusion.\nTechnologies Used: - ROS (Robot Operating System) - Computer Vision - Sensor Fusion - Autonomous Flight Control - C++"
+    "text": "3rd University Intelligent Robot Creativity Competition - UAV Group A Competition\nProject Leader｜ 2024.05 – 2024.8 ::: {.columns} ::: {.column width=“48%” style=“padding-right: 20px;”}"
+  },
+  {
+    "objectID": "project.html#obstacle-forest-express-delivery-uav",
+    "href": "project.html#obstacle-forest-express-delivery-uav",
+    "title": "Project Outcome Presentation",
+    "section": "Obstacle Forest Express Delivery UAV",
+    "text": "Obstacle Forest Express Delivery UAV\nProject Leader｜2023.10 – 2024.05\n Project Description: Indoor environment: UAV carrying 3×100g express boxes performed tasks in a 10×10m area, with the following specific tasks: 1. Autonomously took off from the takeoff point 2. Searched for 5 existing targets in a 10×8.5m area for delivery, with delivery scores calculated based on delivery accuracy and target weights, while avoiding dense obstacles in the area 3. After completing task 2, proceeded to the entrance of a 10×1.5m corridor, traversed the corridor to reach the landing point for accurate landing, with two 80cm-wide narrow passages in the corridor\nTechnologies Used: - ROS - FAST-LIO - Ego-Planner - MPC Controller - C++"
   },
   {
     "objectID": "project-zh.html",
     "href": "project-zh.html",
     "title": "项目成果展示",
     "section": "",
-    "text": "项目描述： 部署分布式多无人机在一个信息地图中进行协同搜索，使无人轨迹分布对齐地图的信息分布，以获取更多信息。实现了基于频域分析的覆盖搜索算法，并通过基于概率的路径规划确保多机连通性。\n使用技术： - ROS（机器人操作系统） - iLQR 轨迹优化 - Python/C++ - Gazebo 仿真"
+    "text": "项目负责人｜ 2026.02 – 2026.06 项目描述： 结合强化学习与模型预测控制，实现无人机的敏捷飞行控制。将Actor-Critic强化学习算法与MPC控制器相结合，利用强化学习处理复杂环境的决策问题，同时利用MPC保证控制的稳定性和安全性。实现了基于可微分优化的控制框架，使得MPC的优化过程可以被纳入强化学习的训练中。\n使用技术： - Python - PyTorch - ROS（机器人操作系统） - MPC（模型预测控制） - 强化学习（Actor-Critic）\n:::\n:::"
   },
   {
-    "objectID": "project-zh.html#多无人机联通遍历搜索",
-    "href": "project-zh.html#多无人机联通遍历搜索",
+    "objectID": "project-zh.html#actor-critic算法mpc控制器实现无人机自主飞行",
+    "href": "project-zh.html#actor-critic算法mpc控制器实现无人机自主飞行",
     "title": "项目成果展示",
     "section": "",
-    "text": "项目描述： 部署分布式多无人机在一个信息地图中进行协同搜索，使无人轨迹分布对齐地图的信息分布，以获取更多信息。实现了基于频域分析的覆盖搜索算法，并通过基于概率的路径规划确保多机连通性。\n使用技术： - ROS（机器人操作系统） - iLQR 轨迹优化 - Python/C++ - Gazebo 仿真"
+    "text": "项目负责人｜ 2026.02 – 2026.06 项目描述： 结合强化学习与模型预测控制，实现无人机的敏捷飞行控制。将Actor-Critic强化学习算法与MPC控制器相结合，利用强化学习处理复杂环境的决策问题，同时利用MPC保证控制的稳定性和安全性。实现了基于可微分优化的控制框架，使得MPC的优化过程可以被纳入强化学习的训练中。\n使用技术： - Python - PyTorch - ROS（机器人操作系统） - MPC（模型预测控制） - 强化学习（Actor-Critic）"
+  },
+  {
+    "objectID": "project-zh.html#未知动态环境下的去中心化多机器人遍历规划探索rss-2026在投",
+    "href": "project-zh.html#未知动态环境下的去中心化多机器人遍历规划探索rss-2026在投",
+    "title": "项目成果展示",
+    "section": "未知动态环境下的去中心化多机器人遍历规划探索(RSS 2026在投)",
+    "text": "未知动态环境下的去中心化多机器人遍历规划探索(RSS 2026在投)\n第一作者｜2025.09 – 2026.02 项目描述： 部署分布式多无人机在一个信息地图中进行协同搜索，使无人轨迹分布对齐地图的信息分布，以获取更多信息。实现了基于频域分析的覆盖搜索算法，并通过基于概率的路径规划确保多机连通性。  使用技术： - ROS（机器人操作系统） - iLQR 轨迹优化 - Python/C++ - Gazebo 仿真"
   },
   {
     "objectID": "project-zh.html#风扰动下无人机目标搜索投放",
     "href": "project-zh.html#风扰动下无人机目标搜索投放",
     "title": "项目成果展示",
     "section": "风扰动下无人机目标搜索+投放",
-    "text": "风扰动下无人机目标搜索+投放\n  项目描述： 室外环境下，使无人机载重（一个1.5L矿泉水瓶）在8m80m的跑道上自主飞行，实现以下任务： 1. 无人机在指定起飞点自主起飞 2. 在距离起飞点30m远的85m区域内寻找白桶进行投放，白桶共三个（直径分别为30, 20,15），直径越小分值越高 3. 在距离起飞点65m远的8*5区域内侦查危险物，并远程传送数据，由参赛人员在控制台填写 4. 完成以上任务后无人机自主飞回起飞点并降落\n使用技术： - C++ - 模糊 PID 控制 - VFH 路径规划 - 卡尔曼滤波"
-  },
-  {
-    "objectID": "project-zh.html#障碍物森林中的快递无人机",
-    "href": "project-zh.html#障碍物森林中的快递无人机",
-    "title": "项目成果展示",
-    "section": "障碍物森林中的快递无人机",
-    "text": "障碍物森林中的快递无人机\n 项目描述： 室内环境下，使无人机载重（3个100g快递盒）在1010m的区域执行任务，具体任务如下： 1. 在起飞点自主起飞 2. 在108.5m的区域中寻找存在的5个标靶进行投放，投放得分由投放准确度与标靶自身权重计算，同时注意躲避该区域内的密集障碍物 3. 执行完任务2后，前往10*1.5m的长廊入口，穿越长廊抵达降落点准确降落，其中长廊中存在两个80cm宽的窄道\n使用技术： - ROS - FAST-LIO - Ego-Planner - MPC 控制器 - C++"
+    "text": "风扰动下无人机目标搜索+投放\n项目负责人｜2024.05 – 2024.10\n  项目描述： 室外环境下，使无人机载重（一个1.5L矿泉水瓶）在8m80m的跑道上自主飞行，实现以下任务： 1. 无人机在指定起飞点自主起飞 2. 在距离起飞点30m远的85m区域内寻找白桶进行投放，白桶共三个（直径分别为30, 20,15），直径越小分值越高 3. 在距离起飞点65m远的8*5区域内侦查危险物，并远程传送数据，由参赛人员在控制台填写 4. 完成以上任务后无人机自主飞回起飞点并降落\n使用技术： - C++ - 模糊 PID 控制 - VFH 路径规划 - 卡尔曼滤波"
   },
   {
     "objectID": "project-zh.html#第三届高校智能机器人创意大赛---无人机-a-组竞赛",
     "href": "project-zh.html#第三届高校智能机器人创意大赛---无人机-a-组竞赛",
     "title": "项目成果展示",
     "section": "第三届高校智能机器人创意大赛 - 无人机 A 组竞赛",
-    "text": "第三届高校智能机器人创意大赛 - 无人机 A 组竞赛\n\n\n\n\n\n无人机竞赛\n\n\n\n项目描述： 参与无人机 A 组竞赛，专注于具有避障和目标识别功能的自主飞行任务。开发了适用于动态环境的无人机鲁棒飞行控制算法，并利用传感器融合实现实时障碍物检测与避障。\n使用技术： - ROS（机器人操作系统） - 计算机视觉 - 传感器融合 - 自主飞行控制 - C++"
+    "text": "第三届高校智能机器人创意大赛 - 无人机 A 组竞赛\n项目负责人｜ 2024.05 – 2024.8 ::: {.columns} ::: {.column width=“48%” style=“padding-right: 20px;”}"
+  },
+  {
+    "objectID": "project-zh.html#障碍物森林中的快递无人机",
+    "href": "project-zh.html#障碍物森林中的快递无人机",
+    "title": "项目成果展示",
+    "section": "障碍物森林中的快递无人机",
+    "text": "障碍物森林中的快递无人机\n项目负责人｜2023.10 – 2024.05\n 项目描述： 室内环境下，使无人机载重（3个100g快递盒）在1010m的区域执行任务，具体任务如下： 1. 在起飞点自主起飞 2. 在108.5m的区域中寻找存在的5个标靶进行投放，投放得分由投放准确度与标靶自身权重计算，同时注意躲避该区域内的密集障碍物 3. 执行完任务2后，前往10*1.5m的长廊入口，穿越长廊抵达降落点准确降落，其中长廊中存在两个80cm宽的窄道\n使用技术： - ROS - FAST-LIO - Ego-Planner - MPC 控制器 - C++"
   },
   {
     "objectID": "readme.html",
@@ -133,25 +147,25 @@
     "text": "Yucheng__Chen@163.com\n  \n  \n    \n     18759135762\n  \n  \n    \n     知乎\n  \n\n  \n  \n\n\nBorn in December 2003, undergraduate student in Mechanical Design, Manufacturing and Automation (Robotics Direction) at Huazhong University of Science and Technology, expected to graduate in June 2026. Admitted to Shanghai Jiao Tong University for master’s degree in Control Science and Engineering starting from September 2026."
   },
   {
-    "objectID": "resume.html#education-background-contact",
-    "href": "resume.html#education-background-contact",
+    "objectID": "resume.html#personal-information-education-background",
+    "href": "resume.html#personal-information-education-background",
     "title": "Yucheng Chen",
-    "section": "Education Background & Contact",
-    "text": "Education Background & Contact\n\nEducation Background\n\n2022.09 – 2026.06\nHuazhong University of Science and Technology (985)\nMechanical Design, Manufacturing and Automation (Robotics Direction) | Bachelor’s degree (Senior year)\n\nWeighted GPA: 90/100 (Top 10% in major)\nCore course grades:\n\nCalculus (I/II): 93 / 95\nMechanics of Materials: 92\nLinear Algebra: 91\nComplex Variables and Integral Transforms: 93\nTheoretical Mechanics: 96\nProbability Theory and Mathematical Statistics: 96\nComprehensive English: 93\n\n\n2026.09 – TBD\nShanghai Jiao Tong University (Admitted for postgraduate study)\nControl Science and Engineering (Master’s degree)\n\n\n\nContact\n\nEmail: Yucheng__Chen@163.com\nPhone: 18759135762\nZhihu: Chen Yucheng"
+    "section": "Personal Information & Education Background",
+    "text": "Personal Information & Education Background\n\nPersonal Information\n\nDate of Birth: December 2003\nPhone: 18759135762\nEmail: Yucheng__Chen@163.com\nEnglish Level: CET-6 (504 points)\nPersonal Website: https://wangyicyc.github.io/YuchengChen.github.io\n\n\n\nEducation Background\n\n2022.09 – 2026.06\nHuazhong University of Science and Technology (985)\nMechanical Design, Manufacturing and Automation (Robotics Direction) | Bachelor’s degree (Senior year)\n\nWeighted GPA: 90/100 (Top 10% in major)\nCore course grades:\n\nCalculus (I/II): 93 / 95\nMechanics of Materials: 92\nLinear Algebra: 91\nComplex Variables and Integral Transforms: 93\nTheoretical Mechanics: 96\nProbability Theory and Mathematical Statistics: 96\nComprehensive English: 93\n\n\n2026.09 – TBD\nShanghai Jiao Tong University (Admitted for postgraduate study)\nControl Science and Engineering (Master’s degree)\n\n\n\nContact\n\nEmail: Yucheng__Chen@163.com\nPhone: 18759135762\nZhihu: Chen Yucheng"
   },
   {
     "objectID": "resume.html#internship",
     "href": "resume.html#internship",
     "title": "Yucheng Chen",
     "section": "Internship",
-    "text": "Internship\n\n2025.12 - Present\n\nRobosense | Reinforcement Learning Algorithm Algorithm Intern\n\nMain Work:\n\nrsl_rl: Utilized the rsl_rl library for reinforcement learning.\nSim2Sim Gap: Overcame the challenge of training models in a simulated environment and deploying them in a real-world setting.\nReal2Sim Gap: Overcame the challenge of deploying models in a real-world environment and training them in a simulated environment.\nReward Function Design: Designed a reward function that guides the model to learn the optimal behavior.\nModel Training: Trained the model using MLP and LSTM networks, ensuring the model to generalize to different environments."
+    "text": "Internship\n\n2025.12.10 - Present\n\nRobosense | Reinforcement Learning Algorithm Intern\n\nMain Work:\n\nSim2Sim Gap: Overcame the challenge of transitioning from training environment Isaac Gym to simulation environment Mujoco for validation, ensuring model generalization across different simulation environments.\nReal2Sim Gap: Overcame the challenge of transitioning from training environment Isaac Gym and simulation environment Mujoco to real-world environment.\nReward Function Design: Designed reward functions based on feedback from real-world environment to guide models in learning optimal strategies.\nModel Training: Utilized rsl_rl reinforcement learning library to train models using both multi-frame input MLP and LSTM networks, ensuring models’ ability to perceive temporal dimensions."
   },
   {
     "objectID": "resume.html#project-experience",
     "href": "resume.html#project-experience",
     "title": "Yucheng Chen",
     "section": "Project Experience",
-    "text": "Project Experience\n\nMulti-UAV Connected Coverage Search\nProject Leader｜2025.09 – Present\n- Deployed distributed multi-UAVs for cooperative search in an information map, aligning UAV trajectories with information distribution to acquire more information.\n- Key Contributions：\n1. Coverage Search: Implemented frequency domain-based UAV coverage search algorithm to improve coverage efficiency in information-dense areas.\n2. Multi-UAV Connectivity: Introduced connectivity probability as a cost term into the path planner to ensure multi-UAV communication and cooperation.\n3. Used iLQR for trajectory optimization.\n\n\nWind-Disturbed UAV Target Search and Delivery\nProject Leader｜2024.07 – 2024.10\n- Outdoor environment: UAV carrying a 1.5L mineral water bottle autonomously flew on an 8m80m runway, performing tasks including autonomous takeoff, searching for white barrels (30, 20, 15cm diameters) in an 85m area 30m away, reconnoitering dangerous objects 65m away, and autonomous return and landing.\n- Key Contributions：\n1. Fuzzy PID Controller (C++): Implemented fuzzy rules to adaptively adjust PID coefficients for precise control under wind disturbances.\n2. Path Planning Algorithm VFH: Solved current feasible points and generated smooth paths through B-spline curve optimization.\n3. Filter Algorithm Deployment: Combined Kalman filter and low-pass filter to remove noise and smooth controller output.\n\n\nObstacle Forest Express Delivery UAV\nProject Leader｜2023.10 – 2024.05\n- Indoor environment: UAV carrying 3×100g express boxes performed tasks in a 10×10m area, including autonomous takeoff, searching for 5 targets in a 10×8.5m area for delivery, and traversing a 10×1.5m corridor with two 80cm-wide narrow passages to reach the landing point.\n- Key Contributions：\n1. ROS-based Flight Code (C++): Implemented obstacle avoidance and delivery tasks in obstacle forest and narrow corridor environments.\n2. Localization and Path Generation: Deployed FAST-LIO and Ego-Planner for high-precision localization and obstacle avoidance path planning.\n3. MPC Controller (C++): Computed control inputs online based on target points and constraints to achieve high-precision tracking of global paths.\n\n\n3rd University Intelligent Robot Creativity Competition - UAV Group A Competition\nParticipant｜2024.08 – 2024.11\n- Participated in the UAV Group A Competition, focusing on autonomous flight tasks with obstacle avoidance and target recognition.\n- Key Contributions：\n1. Autonomous Flight Control: Developed robust flight control algorithms for UAVs in dynamic environments.\n2. Obstacle Avoidance System: Implemented real-time obstacle detection and avoidance using sensor fusion.\n3. Target Recognition: Integrated computer vision systems for target detection and identification."
+    "text": "Project Experience\n\nActor-Critic Algorithm + MPC Controller for UAV Autonomous Flight\nProject Leader｜2026.02 – 2026.06 - Project Goal：Combine reinforcement learning with model predictive control to achieve agile flight control for UAVs - Key Contributions： 1. Algorithm Integration：Integrated Actor-Critic reinforcement learning algorithm with MPC controller, using reinforcement learning to handle decision-making in complex environments while using MPC to ensure control stability and safety 2. Differentiable Optimization：Implemented a control framework based on differentiable optimization, allowing MPC’s optimization process to be incorporated into reinforcement learning training 3. Agile Flight Control：Developed control strategies suitable for high-speed, high-maneuver flight of UAVs, enabling precise trajectory tracking in complex environments 4. Simulation Verification：Validated the effectiveness of the algorithm in various simulation environments, including obstacle avoidance and trajectory tracking tasks - Technologies：Python, PyTorch, ROS, MPC, Reinforcement Learning (Actor-Critic)\n\n\nWind-Disturbed UAV Target Search and Delivery\nProject Leader｜2024.05 – 2024.10\n- Outdoor environment: UAV carrying a 1.5L mineral water bottle autonomously flew on an 8m80m runway, performing tasks including autonomous takeoff, searching for white barrels (30, 20, 15cm diameters) in an 85m area 30m away, reconnoitering dangerous objects 65m away, and autonomous return and landing.\n- Key Contributions：\n1. Fuzzy PID Controller (C++): Implemented fuzzy rules to adaptively adjust PID coefficients for precise control under wind disturbances.\n2. Path Planning Algorithm VFH: Solved current feasible points and generated smooth paths through B-spline curve optimization.\n3. Filter Algorithm Deployment: Combined Kalman filter and low-pass filter to remove noise and smooth controller output.\n\n\nObstacle Forest Express Delivery UAV\nProject Leader｜2023.10 – 2024.05\n- Indoor environment: UAV carrying 3×100g express boxes performed tasks in a 10×10m area, including autonomous takeoff, searching for 5 targets in a 10×8.5m area for delivery, and traversing a 10×1.5m corridor with two 80cm-wide narrow passages to reach the landing point.\n- Key Contributions：\n1. ROS-based Flight Code (C++): Implemented obstacle avoidance and delivery tasks in obstacle forest and narrow corridor environments.\n2. Localization and Path Generation: Deployed FAST-LIO and Ego-Planner for high-precision localization and obstacle avoidance path planning.\n3. MPC Controller (C++): Computed control inputs online based on target points and constraints to achieve high-precision tracking of global paths."
   },
   {
     "objectID": "resume.html#research-interests-professional-skills",

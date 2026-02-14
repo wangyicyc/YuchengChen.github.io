@@ -69,6 +69,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="scripts/language-switcher.js"></script>
 
 
 </head>
@@ -94,32 +95,25 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./resume.html"> 
+<span class="menu-text">Resume</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./project.html"> 
+<span class="menu-text">Project</span></a>
+  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resume" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Resume</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-language" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Language</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resume">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-language">    
         <li>
     <a class="dropdown-item" href="./resume.html">
  <span class="dropdown-text">English</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./resume-zh.html">
- <span class="dropdown-text">中文</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Project</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-project">    
-        <li>
-    <a class="dropdown-item" href="./project.html">
- <span class="dropdown-text">English</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./project-zh.html">
  <span class="dropdown-text">中文</span></a>
   </li>  
     </ul>
@@ -239,36 +233,30 @@ ul.task-list li input[type="checkbox"] {
 <section id="实习经历" class="level2">
 <h2 class="anchored" data-anchor-id="实习经历">实习经历</h2>
 <section id="至今" class="level3">
-<h3 class="anchored" data-anchor-id="至今">2025.12 - 至今</h3>
+<h3 class="anchored" data-anchor-id="至今">2025.12.10 - 至今</h3>
 <ul>
-<li><strong>Robosense</strong> | 强化学习算法算法实习生<br>
+<li><strong>速腾聚创(Robosense)</strong> | 强化学习算法算法实习生<br>
 </li>
 <li><strong>主要工作</strong>：
 <ol type="1">
-<li><strong>rsl_rl强化学习库使用</strong>：</li>
-<li><strong>Sim2Sim Gap攻克</strong>：从训练环境Isaac Gym过渡到仿真环境Mujoco下的验证，确保模型在不同环境下的泛化能力。</li>
+<li><strong>Sim2Sim Gap攻克</strong>：从训练环境Isaac Gym过渡到仿真环境Mujoco下的验证，确保模型在不同仿真环境下的泛化能力。</li>
 <li><strong>Real2Sim Gap攻克</strong>：从训练环境Isaac Gym、仿真环境Mujoco过渡到真实环境。</li>
 <li><strong>奖励函数设计</strong>：从真实环境接受反馈，从而设计奖励函数，引导模型学习到最优策略。</li>
-<li><strong>模型训练</strong>：使用分别使用MLP和LSTM网络训练模型，确保模型在不同环境下的泛化能力。</li>
+<li><strong>模型训练</strong>：调用rsl_rl强化学习库, 分别使用多帧输入MLP的MLP和LSTM网络训练模型，确保模型对时间维度的感知能力。</li>
 </ol></li>
 </ul>
 </section>
 </section>
 <section id="主要项目经历" class="level2">
 <h2 class="anchored" data-anchor-id="主要项目经历">主要项目经历</h2>
-<section id="多无人机联通遍历搜索" class="level3">
-<h3 class="anchored" data-anchor-id="多无人机联通遍历搜索">多无人机联通遍历搜索</h3>
-<p><strong>项目负责人</strong>｜2025.09 – 至今<br>
-- 部署分布式多无人机在一个信息地图中进行协同搜索，使无人轨迹分布对齐地图的信息分布，以获取更多信息。<br>
-- <strong>主要工作</strong>：<br>
-1. <strong>遍历搜索</strong>：部署基于频域分析的无人机遍历搜索算法，提升对信息密集区域的覆盖效率。<br>
-2. <strong>多无人机连通</strong>：将无人机间的连通概率作为代价项引入路径规划器，保障多机通信与协同。<br>
-3. 使用 <strong>iLQR</strong> 进行轨迹优化。</p>
+<section id="actor-critic算法-mpc控制器实现无人机自主飞行" class="level3">
+<h3 class="anchored" data-anchor-id="actor-critic算法-mpc控制器实现无人机自主飞行">Actor-Critic算法 + MPC控制器实现无人机自主飞行</h3>
+<p><strong>项目负责人</strong>｜ 2026.02 – 2026.06 - <strong>项目目标</strong>：结合强化学习与模型预测控制，实现无人机的敏捷飞行控制 - <strong>主要工作</strong>： 1. <strong>算法融合</strong>：将Actor-Critic强化学习算法与MPC控制器相结合，利用强化学习处理复杂环境的决策问题，同时利用MPC保证控制的稳定性和安全性 2. <strong>可微分优化</strong>：实现了基于可微分优化的控制框架，使得MPC的优化过程可以被纳入强化学习的训练中 3. <strong>敏捷飞行控制</strong>：开发了适用于无人机高速、高机动飞行的控制策略，能够在复杂环境中实现精准的轨迹跟踪 4. <strong>仿真验证</strong>：在多种仿真环境中验证了算法的有效性，包括障碍躲避、轨迹跟踪等任务 - <strong>技术栈</strong>：Python、PyTorch、ROS、MPC、强化学习（Actor-Critic）</p>
 </section>
 <section id="风扰动下无人机目标搜索投放" class="level3">
 <h3 class="anchored" data-anchor-id="风扰动下无人机目标搜索投放">风扰动下无人机目标搜索+投放</h3>
-<p><strong>项目负责人</strong>｜2024.07 – 2024.10<br>
-描述项目：室外环境下，使无人机载重（一个1.5L矿泉水瓶）在8m<em>80m的跑道上自主飞行，实现以下任务： 1. 无人机在指定起飞点自主起飞 2. 在距离起飞点30m远的8</em>5m区域内寻找白桶进行投放，白桶共三个（直径分别为30, 20,15），直径越小分值越高 3. 在距离起飞点65m远的8*5区域内侦查危险物，并远程传送数据，由参赛人员在控制台填写 4. 完成以上任务后无人机自主飞回起飞点并降落</p>
+<p><strong>项目负责人</strong>｜2024.05 – 2024.10<br>
+<strong>项目描述</strong>：** 室外环境下，使无人机载重（一个1.5L矿泉水瓶）在8m<em>80m的跑道上自主飞行，实现以下任务： 1. 无人机在指定起飞点自主起飞 2. 在距离起飞点30m远的8</em>5m区域内寻找白桶进行投放，白桶共三个（直径分别为30, 20,15），直径越小分值越高 3. 在距离起飞点65m远的8*5区域内侦查危险物，并远程传送数据，由参赛人员在控制台填写 4. 完成以上任务后无人机自主飞回起飞点并降落</p>
 <p>本人负责任务： 1. 模糊PID控制器编写(C++)：通过模糊规则⾃适应调整PID系数，实现⻛扰动下⽆⼈机精准控制 2. 编写路径规划算法VFH：依据VFH算法求解当前可⾏点，并通过B样条曲线优化出光滑路径 3. 部署滤波算法：通过卡尔曼滤波以及低通滤波器，实现对噪声的滤除作用，使控制器平滑输出</p>
 </section>
 <section id="障碍物森林中的快递无人机" class="level3">

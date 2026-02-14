@@ -69,6 +69,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="scripts/language-switcher.js"></script>
 
 
 </head>
@@ -94,32 +95,25 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./resume.html"> 
+<span class="menu-text">Resume</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./project.html" aria-current="page"> 
+<span class="menu-text">Project</span></a>
+  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resume" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Resume</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-language" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Language</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resume">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-language">    
         <li>
     <a class="dropdown-item" href="./resume.html">
  <span class="dropdown-text">English</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./resume-zh.html">
- <span class="dropdown-text">中文</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Project</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-project">    
-        <li>
-    <a class="dropdown-item" href="./project.html">
- <span class="dropdown-text">English</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./project-zh.html">
  <span class="dropdown-text">中文</span></a>
   </li>  
     </ul>
@@ -150,10 +144,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#multi-uav-connected-coverage-search" id="toc-multi-uav-connected-coverage-search" class="nav-link active" data-scroll-target="#multi-uav-connected-coverage-search">Multi-UAV Connected Coverage Search</a></li>
+  <li><a href="#actor-critic-algorithm-mpc-controller-for-uav-autonomous-flight" id="toc-actor-critic-algorithm-mpc-controller-for-uav-autonomous-flight" class="nav-link active" data-scroll-target="#actor-critic-algorithm-mpc-controller-for-uav-autonomous-flight">Actor-Critic Algorithm + MPC Controller for UAV Autonomous Flight</a></li>
+  <li><a href="#decentralized-multi-robot-ergodic-planning-for-exploration-of-unknown-dynamic-environmentsrss-2026-in-the-pipeline" id="toc-decentralized-multi-robot-ergodic-planning-for-exploration-of-unknown-dynamic-environmentsrss-2026-in-the-pipeline" class="nav-link" data-scroll-target="#decentralized-multi-robot-ergodic-planning-for-exploration-of-unknown-dynamic-environmentsrss-2026-in-the-pipeline">Decentralized Multi-Robot Ergodic Planning for Exploration of Unknown Dynamic Environments(RSS 2026 in the pipeline)</a></li>
   <li><a href="#wind-disturbed-uav-target-search-delivery" id="toc-wind-disturbed-uav-target-search-delivery" class="nav-link" data-scroll-target="#wind-disturbed-uav-target-search-delivery">Wind-Disturbed UAV Target Search &amp; Delivery</a></li>
-  <li><a href="#obstacle-forest-express-delivery-uav" id="toc-obstacle-forest-express-delivery-uav" class="nav-link" data-scroll-target="#obstacle-forest-express-delivery-uav">Obstacle Forest Express Delivery UAV</a></li>
   <li><a href="#rd-university-intelligent-robot-creativity-competition---uav-group-a-competition" id="toc-rd-university-intelligent-robot-creativity-competition---uav-group-a-competition" class="nav-link" data-scroll-target="#rd-university-intelligent-robot-creativity-competition---uav-group-a-competition">3rd University Intelligent Robot Creativity Competition - UAV Group A Competition</a></li>
+  <li><a href="#obstacle-forest-express-delivery-uav" id="toc-obstacle-forest-express-delivery-uav" class="nav-link" data-scroll-target="#obstacle-forest-express-delivery-uav">Obstacle Forest Express Delivery UAV</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://wangyicyc.github.io/YuchengChen.github.io/edit/main/project.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://wangyicyc.github.io/YuchengChen.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -179,38 +174,39 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="multi-uav-connected-coverage-search" class="level2 card fade-in delay-1">
-<h2 class="anchored" data-anchor-id="multi-uav-connected-coverage-search">Multi-UAV Connected Coverage Search</h2>
-<p><strong>Project Description:</strong> Deployed distributed multi-UAVs for cooperative search in an information map, aligning UAV trajectories with information distribution to acquire more information. Implemented frequency domain-based coverage search algorithm and ensured multi-UAV connectivity through probability-based path planning.</p>
-<p><strong>Technologies Used:</strong> - ROS (Robot Operating System) - iLQR Trajectory Optimization - Python/C++ - Gazebo Simulation</p>
+<section id="actor-critic-algorithm-mpc-controller-for-uav-autonomous-flight" class="level2 card fade-in delay-1">
+<h2 class="anchored" data-anchor-id="actor-critic-algorithm-mpc-controller-for-uav-autonomous-flight">Actor-Critic Algorithm + MPC Controller for UAV Autonomous Flight</h2>
+<p><strong>Project Leader</strong>｜ 2026.02 – 2026.06 <strong>Project Description:</strong> Combined reinforcement learning with model predictive control to achieve agile flight control for UAVs. Integrated Actor-Critic reinforcement learning algorithm with MPC controller, using reinforcement learning to handle decision-making in complex environments while using MPC to ensure control stability and safety. Implemented a control framework based on differentiable optimization, allowing MPC’s optimization process to be incorporated into reinforcement learning training.</p>
+<p><strong>Technologies Used:</strong> - Python - PyTorch - ROS (Robot Operating System) - MPC (Model Predictive Control) - Reinforcement Learning (Actor-Critic)</p>
 </section>
-<section id="wind-disturbed-uav-target-search-delivery" class="level2 card fade-in delay-2">
+<section id="decentralized-multi-robot-ergodic-planning-for-exploration-of-unknown-dynamic-environmentsrss-2026-in-the-pipeline" class="level2 card fade-in delay-2">
+<h2 class="anchored" data-anchor-id="decentralized-multi-robot-ergodic-planning-for-exploration-of-unknown-dynamic-environmentsrss-2026-in-the-pipeline">Decentralized Multi-Robot Ergodic Planning for Exploration of Unknown Dynamic Environments(RSS 2026 in the pipeline)</h2>
+<p><strong>First Author</strong>｜2025.09 – 2026.02 <strong>Project Description:</strong> Deployed distributed multi-UAVs for cooperative search in an information map, aligning UAV trajectories with information distribution to acquire more information. Implemented frequency domain-based coverage search algorithm and ensured multi-UAV connectivity through probability-based path planning. <img src="images/iDMED.gif" class="img-fluid" alt="Numerical Simulation"> <strong>Technologies Used:</strong> - ROS (Robot Operating System) - iLQR Trajectory Optimization - Python/C++ - Gazebo Simulation</p>
+</section>
+<section id="wind-disturbed-uav-target-search-delivery" class="level2 card fade-in delay-3">
 <h2 class="anchored" data-anchor-id="wind-disturbed-uav-target-search-delivery">Wind-Disturbed UAV Target Search &amp; Delivery</h2>
-<p><img src="images/Fuzzy_PID.gif" class="img-fluid" alt="UAV Delivery System"> <img src="images/KalmanFilter.png" class="img-fluid" alt="Kalman Filter"></p>
-<p><strong>Project Description:</strong> Outdoor environment: UAV carrying a 1.5L mineral water bottle autonomously flew on an 8m<em>80m runway, performing the following tasks: 1. UAV autonomously took off from the designated takeoff point 2. Searched for white barrels for delivery in an 8</em>5m area 30m away from the takeoff point, with three white barrels (diameters: 30, 20, 15 cm) - smaller diameter barrels scored higher 3. Reconnoitered dangerous objects in an 8*5 area 65m away from the takeoff point and remotely transmitted data for team members to fill in at the console 4. After completing the above tasks, UAV autonomously returned to the takeoff point and landed</p>
+<p><strong>Project Leader</strong>｜2024.05 – 2024.10<br>
+<img src="images/Fuzzy_PID.gif" class="img-fluid" alt="Fuzzy PID Control"> <img src="images/KalmanFilter.png" class="img-fluid" alt="Kalman Filter"> <strong>Project Description:</strong> Outdoor environment: UAV carrying a 1.5L mineral water bottle autonomously flew on an 8m<em>80m runway, performing the following tasks: 1. UAV autonomously took off from the designated takeoff point 2. Searched for white barrels for delivery in an 8</em>5m area 30m away from the takeoff point, with three white barrels (diameters: 30, 20, 15 cm) - smaller diameter barrels scored higher 3. Reconnoitered dangerous objects in an 8*5 area 65m away from the takeoff point and remotely transmitted data for team members to fill in at the console 4. After completing the above tasks, UAV autonomously returned to the takeoff point and landed</p>
 <p><strong>Technologies Used:</strong> - C++ - Fuzzy PID Control - VFH Path Planning - Kalman Filtering</p>
-</section>
-<section id="obstacle-forest-express-delivery-uav" class="level2 card fade-in delay-3">
-<h2 class="anchored" data-anchor-id="obstacle-forest-express-delivery-uav">Obstacle Forest Express Delivery UAV</h2>
-<p><img src="images/EGO-Planner.gif" class="img-fluid" alt="Obstacle Avoidance Drone"> <strong>Project Description:</strong> Indoor environment: UAV carrying 3×100g express boxes performed tasks in a 10×10m area, with the following specific tasks: 1. Autonomously took off from the takeoff point 2. Searched for 5 existing targets in a 10×8.5m area for delivery, with delivery scores calculated based on delivery accuracy and target weights, while avoiding dense obstacles in the area 3. After completing task 2, proceeded to the entrance of a 10×1.5m corridor, traversed the corridor to reach the landing point for accurate landing, with two 80cm-wide narrow passages in the corridor</p>
-<p><strong>Technologies Used:</strong> - ROS - FAST-LIO - Ego-Planner - MPC Controller - C++</p>
 </section>
 <section id="rd-university-intelligent-robot-creativity-competition---uav-group-a-competition" class="level2 card fade-in delay-4">
 <h2 class="anchored" data-anchor-id="rd-university-intelligent-robot-creativity-competition---uav-group-a-competition">3rd University Intelligent Robot Creativity Competition - UAV Group A Competition</h2>
-<div class="columns">
-<div class="column" style="padding-right: 20px;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/VFH.gif" class="img-fluid figure-img"></p>
-<figcaption>UAV Competition</figcaption>
-</figure>
-</div>
-</div><div class="column" style="padding-left: 20px;">
+<p><strong>Project Leader</strong>｜ 2024.05 – 2024.8 ::: {.columns} ::: {.column width=“48%” style=“padding-right: 20px;”} <img src="images/VFH.gif" class="img-fluid" alt="UAV Competition"></p>
+</section>
+<div class="column" style="padding-left: 20px;">
 <p><strong>Project Description:</strong> Participated in the UAV Group A Competition, focusing on autonomous flight tasks with obstacle avoidance and target recognition. Developed robust flight control algorithms for UAVs in dynamic environments and implemented real-time obstacle detection and avoidance using sensor fusion.</p>
 <p><strong>Technologies Used:</strong> - ROS (Robot Operating System) - Computer Vision - Sensor Fusion - Autonomous Flight Control - C++</p>
 </div>
-</div>
+<p>:::</p>
+<p>:::</p>
+<section id="obstacle-forest-express-delivery-uav" class="level2 card fade-in delay-5">
+<h2 class="anchored" data-anchor-id="obstacle-forest-express-delivery-uav">Obstacle Forest Express Delivery UAV</h2>
+<p><strong>Project Leader</strong>｜2023.10 – 2024.05<br>
+<img src="images/EGO-Planner.gif" class="img-fluid" alt="Obstacle Avoidance Drone"> <strong>Project Description:</strong> Indoor environment: UAV carrying 3×100g express boxes performed tasks in a 10×10m area, with the following specific tasks: 1. Autonomously took off from the takeoff point 2. Searched for 5 existing targets in a 10×8.5m area for delivery, with delivery scores calculated based on delivery accuracy and target weights, while avoiding dense obstacles in the area 3. After completing task 2, proceeded to the entrance of a 10×1.5m corridor, traversed the corridor to reach the landing point for accurate landing, with two 80cm-wide narrow passages in the corridor</p>
+<p><strong>Technologies Used:</strong> - ROS - FAST-LIO - Ego-Planner - MPC Controller - C++</p>
 </section>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

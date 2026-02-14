@@ -27,7 +27,13 @@ Born in December 2003, undergraduate student in Mechanical Design, Manufacturing
 :::
 
 ::: {.card .fade-in .delay-1}
-## Education Background & Contact
+## Personal Information & Education Background
+### Personal Information
+- Date of Birth: December 2003
+- Phone: 18759135762
+- Email: Yucheng__Chen@163.com
+- English Level: CET-6 (504 points)
+- Personal Website: https://wangyicyc.github.io/YuchengChen.github.io
 
 ### Education Background
 - **2022.09 – 2026.06**  
@@ -55,26 +61,27 @@ Born in December 2003, undergraduate student in Mechanical Design, Manufacturing
 
 ::: {.card .fade-in .delay-2}
 ## Internship
-### 2025.12 - Present
-- **Robosense** | Reinforcement Learning Algorithm Algorithm Intern  
+### 2025.12.10 - Present
+- **Robosense** | Reinforcement Learning Algorithm Intern  
 - **Main Work**:
-  1. **rsl_rl**: Utilized the rsl_rl library for reinforcement learning.
-  2. **Sim2Sim Gap**: Overcame the challenge of training models in a simulated environment and deploying them in a real-world setting.
-  3. **Real2Sim Gap**: Overcame the challenge of deploying models in a real-world environment and training them in a simulated environment.
-  4. **Reward Function Design**: Designed a reward function that guides the model to learn the optimal behavior.
-  5. **Model Training**: Trained the model using MLP and LSTM networks, ensuring the model to generalize to different environments.
+  1. **Sim2Sim Gap**: Overcame the challenge of transitioning from training environment Isaac Gym to simulation environment Mujoco for validation, ensuring model generalization across different simulation environments.
+  2. **Real2Sim Gap**: Overcame the challenge of transitioning from training environment Isaac Gym and simulation environment Mujoco to real-world environment.
+  3. **Reward Function Design**: Designed reward functions based on feedback from real-world environment to guide models in learning optimal strategies.
+  4. **Model Training**: Utilized rsl_rl reinforcement learning library to train models using both multi-frame input MLP and LSTM networks, ensuring models' ability to perceive temporal dimensions.
   
 ## Project Experience
-### Multi-UAV Connected Coverage Search  
-**Project Leader**｜2025.09 – Present  
-- Deployed distributed multi-UAVs for cooperative search in an information map, aligning UAV trajectories with information distribution to acquire more information.  
-- **Key Contributions**：  
-  1. **Coverage Search**: Implemented frequency domain-based UAV coverage search algorithm to improve coverage efficiency in information-dense areas.  
-  2. **Multi-UAV Connectivity**: Introduced connectivity probability as a cost term into the path planner to ensure multi-UAV communication and cooperation.  
-  3. Used **iLQR** for trajectory optimization. 
+### Actor-Critic Algorithm + MPC Controller for UAV Autonomous Flight
+**Project Leader**｜2026.02 – 2026.06
+- **Project Goal**：Combine reinforcement learning with model predictive control to achieve agile flight control for UAVs
+- **Key Contributions**：
+  1. **Algorithm Integration**：Integrated Actor-Critic reinforcement learning algorithm with MPC controller, using reinforcement learning to handle decision-making in complex environments while using MPC to ensure control stability and safety
+  2. **Differentiable Optimization**：Implemented a control framework based on differentiable optimization, allowing MPC's optimization process to be incorporated into reinforcement learning training
+  3. **Agile Flight Control**：Developed control strategies suitable for high-speed, high-maneuver flight of UAVs, enabling precise trajectory tracking in complex environments
+  4. **Simulation Verification**：Validated the effectiveness of the algorithm in various simulation environments, including obstacle avoidance and trajectory tracking tasks
+- **Technologies**：Python, PyTorch, ROS, MPC, Reinforcement Learning (Actor-Critic)
 
 ### Wind-Disturbed UAV Target Search and Delivery  
-**Project Leader**｜2024.07 – 2024.10  
+**Project Leader**｜2024.05 – 2024.10  
 - Outdoor environment: UAV carrying a 1.5L mineral water bottle autonomously flew on an 8m*80m runway, performing tasks including autonomous takeoff, searching for white barrels (30, 20, 15cm diameters) in an 8*5m area 30m away, reconnoitering dangerous objects 65m away, and autonomous return and landing.  
 - **Key Contributions**：  
   1. **Fuzzy PID Controller (C++)**: Implemented fuzzy rules to adaptively adjust PID coefficients for precise control under wind disturbances.  
@@ -88,14 +95,6 @@ Born in December 2003, undergraduate student in Mechanical Design, Manufacturing
   1. **ROS-based Flight Code (C++)**: Implemented obstacle avoidance and delivery tasks in obstacle forest and narrow corridor environments.  
   2. **Localization and Path Generation**: Deployed FAST-LIO and Ego-Planner for high-precision localization and obstacle avoidance path planning.  
   3. **MPC Controller (C++)**: Computed control inputs online based on target points and constraints to achieve high-precision tracking of global paths. 
-
-### 3rd University Intelligent Robot Creativity Competition - UAV Group A Competition  
-**Participant**｜2024.08 – 2024.11  
-- Participated in the UAV Group A Competition, focusing on autonomous flight tasks with obstacle avoidance and target recognition.  
-- **Key Contributions**：  
-  1. **Autonomous Flight Control**: Developed robust flight control algorithms for UAVs in dynamic environments.  
-  2. **Obstacle Avoidance System**: Implemented real-time obstacle detection and avoidance using sensor fusion.  
-  3. **Target Recognition**: Integrated computer vision systems for target detection and identification. 
 
 :::
 

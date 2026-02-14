@@ -68,6 +68,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="scripts/language-switcher.js"></script>
 
 
 </head>
@@ -93,32 +94,25 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./resume.html" aria-current="page"> 
+<span class="menu-text">Resume</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./project.html"> 
+<span class="menu-text">Project</span></a>
+  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resume" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Resume</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-language" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Language</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resume">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-language">    
         <li>
     <a class="dropdown-item" href="./resume.html">
  <span class="dropdown-text">English</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./resume-zh.html">
- <span class="dropdown-text">中文</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Project</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-project">    
-        <li>
-    <a class="dropdown-item" href="./project.html">
- <span class="dropdown-text">English</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./project-zh.html">
  <span class="dropdown-text">中文</span></a>
   </li>  
     </ul>
@@ -150,8 +144,9 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#yucheng-chen" id="toc-yucheng-chen" class="nav-link active" data-scroll-target="#yucheng-chen">Yucheng Chen</a></li>
-  <li><a href="#education-background-contact" id="toc-education-background-contact" class="nav-link" data-scroll-target="#education-background-contact">Education Background &amp; Contact</a>
+  <li><a href="#personal-information-education-background" id="toc-personal-information-education-background" class="nav-link" data-scroll-target="#personal-information-education-background">Personal Information &amp; Education Background</a>
   <ul class="collapse">
+  <li><a href="#personal-information" id="toc-personal-information" class="nav-link" data-scroll-target="#personal-information">Personal Information</a></li>
   <li><a href="#education-background" id="toc-education-background" class="nav-link" data-scroll-target="#education-background">Education Background</a></li>
   <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
   </ul></li>
@@ -204,8 +199,18 @@ ul.task-list li input[type="checkbox"] {
 </div></div>
 </div>
 
-<section id="education-background-contact" class="level2 card fade-in delay-1">
-<h2 data-anchor-id="education-background-contact">Education Background &amp; Contact</h2>
+<section id="personal-information-education-background" class="level2 card fade-in delay-1">
+<h2 data-anchor-id="personal-information-education-background">Personal Information &amp; Education Background</h2>
+<section id="personal-information" class="level3">
+<h3 data-anchor-id="personal-information">Personal Information</h3>
+<ul>
+<li>Date of Birth: December 2003</li>
+<li>Phone: 18759135762</li>
+<li>Email: Yucheng__Chen@163.com</li>
+<li>English Level: CET-6 (504 points)</li>
+<li>Personal Website: https://wangyicyc.github.io/YuchengChen.github.io</li>
+</ul>
+</section>
 <section id="education-background" class="level3">
 <h3 data-anchor-id="education-background">Education Background</h3>
 <ul>
@@ -243,35 +248,29 @@ Control Science and Engineering (Master’s degree)</li>
 <section id="internship" class="level2">
 <h2 data-anchor-id="internship">Internship</h2>
 <section id="present" class="level3">
-<h3 data-anchor-id="present">2025.12 - Present</h3>
+<h3 data-anchor-id="present">2025.12.10 - Present</h3>
 <ul>
-<li><strong>Robosense</strong> | Reinforcement Learning Algorithm Algorithm Intern<br>
+<li><strong>Robosense</strong> | Reinforcement Learning Algorithm Intern<br>
 </li>
 <li><strong>Main Work</strong>:
 <ol type="1">
-<li><strong>rsl_rl</strong>: Utilized the rsl_rl library for reinforcement learning.</li>
-<li><strong>Sim2Sim Gap</strong>: Overcame the challenge of training models in a simulated environment and deploying them in a real-world setting.</li>
-<li><strong>Real2Sim Gap</strong>: Overcame the challenge of deploying models in a real-world environment and training them in a simulated environment.</li>
-<li><strong>Reward Function Design</strong>: Designed a reward function that guides the model to learn the optimal behavior.</li>
-<li><strong>Model Training</strong>: Trained the model using MLP and LSTM networks, ensuring the model to generalize to different environments.</li>
+<li><strong>Sim2Sim Gap</strong>: Overcame the challenge of transitioning from training environment Isaac Gym to simulation environment Mujoco for validation, ensuring model generalization across different simulation environments.</li>
+<li><strong>Real2Sim Gap</strong>: Overcame the challenge of transitioning from training environment Isaac Gym and simulation environment Mujoco to real-world environment.</li>
+<li><strong>Reward Function Design</strong>: Designed reward functions based on feedback from real-world environment to guide models in learning optimal strategies.</li>
+<li><strong>Model Training</strong>: Utilized rsl_rl reinforcement learning library to train models using both multi-frame input MLP and LSTM networks, ensuring models’ ability to perceive temporal dimensions.</li>
 </ol></li>
 </ul>
 </section>
 </section>
 <section id="project-experience" class="level2">
 <h2 data-anchor-id="project-experience">Project Experience</h2>
-<section id="multi-uav-connected-coverage-search" class="level3">
-<h3 data-anchor-id="multi-uav-connected-coverage-search">Multi-UAV Connected Coverage Search</h3>
-<p><strong>Project Leader</strong>｜2025.09 – Present<br>
-- Deployed distributed multi-UAVs for cooperative search in an information map, aligning UAV trajectories with information distribution to acquire more information.<br>
-- <strong>Key Contributions</strong>：<br>
-1. <strong>Coverage Search</strong>: Implemented frequency domain-based UAV coverage search algorithm to improve coverage efficiency in information-dense areas.<br>
-2. <strong>Multi-UAV Connectivity</strong>: Introduced connectivity probability as a cost term into the path planner to ensure multi-UAV communication and cooperation.<br>
-3. Used <strong>iLQR</strong> for trajectory optimization.</p>
+<section id="actor-critic-algorithm-mpc-controller-for-uav-autonomous-flight" class="level3">
+<h3 data-anchor-id="actor-critic-algorithm-mpc-controller-for-uav-autonomous-flight">Actor-Critic Algorithm + MPC Controller for UAV Autonomous Flight</h3>
+<p><strong>Project Leader</strong>｜2026.02 – 2026.06 - <strong>Project Goal</strong>：Combine reinforcement learning with model predictive control to achieve agile flight control for UAVs - <strong>Key Contributions</strong>： 1. <strong>Algorithm Integration</strong>：Integrated Actor-Critic reinforcement learning algorithm with MPC controller, using reinforcement learning to handle decision-making in complex environments while using MPC to ensure control stability and safety 2. <strong>Differentiable Optimization</strong>：Implemented a control framework based on differentiable optimization, allowing MPC’s optimization process to be incorporated into reinforcement learning training 3. <strong>Agile Flight Control</strong>：Developed control strategies suitable for high-speed, high-maneuver flight of UAVs, enabling precise trajectory tracking in complex environments 4. <strong>Simulation Verification</strong>：Validated the effectiveness of the algorithm in various simulation environments, including obstacle avoidance and trajectory tracking tasks - <strong>Technologies</strong>：Python, PyTorch, ROS, MPC, Reinforcement Learning (Actor-Critic)</p>
 </section>
 <section id="wind-disturbed-uav-target-search-and-delivery" class="level3">
 <h3 data-anchor-id="wind-disturbed-uav-target-search-and-delivery">Wind-Disturbed UAV Target Search and Delivery</h3>
-<p><strong>Project Leader</strong>｜2024.07 – 2024.10<br>
+<p><strong>Project Leader</strong>｜2024.05 – 2024.10<br>
 - Outdoor environment: UAV carrying a 1.5L mineral water bottle autonomously flew on an 8m<em>80m runway, performing tasks including autonomous takeoff, searching for white barrels (30, 20, 15cm diameters) in an 8</em>5m area 30m away, reconnoitering dangerous objects 65m away, and autonomous return and landing.<br>
 - <strong>Key Contributions</strong>：<br>
 1. <strong>Fuzzy PID Controller (C++)</strong>: Implemented fuzzy rules to adaptively adjust PID coefficients for precise control under wind disturbances.<br>
@@ -286,15 +285,6 @@ Control Science and Engineering (Master’s degree)</li>
 1. <strong>ROS-based Flight Code (C++)</strong>: Implemented obstacle avoidance and delivery tasks in obstacle forest and narrow corridor environments.<br>
 2. <strong>Localization and Path Generation</strong>: Deployed FAST-LIO and Ego-Planner for high-precision localization and obstacle avoidance path planning.<br>
 3. <strong>MPC Controller (C++)</strong>: Computed control inputs online based on target points and constraints to achieve high-precision tracking of global paths.</p>
-</section>
-<section id="rd-university-intelligent-robot-creativity-competition---uav-group-a-competition" class="level3">
-<h3 data-anchor-id="rd-university-intelligent-robot-creativity-competition---uav-group-a-competition">3rd University Intelligent Robot Creativity Competition - UAV Group A Competition</h3>
-<p><strong>Participant</strong>｜2024.08 – 2024.11<br>
-- Participated in the UAV Group A Competition, focusing on autonomous flight tasks with obstacle avoidance and target recognition.<br>
-- <strong>Key Contributions</strong>：<br>
-1. <strong>Autonomous Flight Control</strong>: Developed robust flight control algorithms for UAVs in dynamic environments.<br>
-2. <strong>Obstacle Avoidance System</strong>: Implemented real-time obstacle detection and avoidance using sensor fusion.<br>
-3. <strong>Target Recognition</strong>: Integrated computer vision systems for target detection and identification.</p>
 </section>
 </section>
 </div>
