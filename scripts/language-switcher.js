@@ -17,73 +17,75 @@
   
   // Update navigation links based on selected language
   function updateNavigationLinks(lang) {
-    const resumeLink = document.getElementById('resume-link');
-    const projectLink = document.getElementById('project-link');
-    
-    if (resumeLink) {
-      resumeLink.href = lang === 'zh' ? 'resume-zh.qmd' : 'resume.qmd';
-    }
-    
-    if (projectLink) {
-      projectLink.href = lang === 'zh' ? 'project-zh.qmd' : 'project.qmd';
-    }
+    // Find all menu text elements
+    const menuTexts = document.querySelectorAll('.menu-text');
+    menuTexts.forEach(menuText => {
+      const textContent = menuText.textContent.trim();
+      const link = menuText.closest('a');
+      
+      if (link) {
+        if (textContent === 'Resume' || textContent === '简历') {
+          link.href = lang === 'zh' ? './resume-zh.html' : './resume.html';
+        } else if (textContent === 'Project' || textContent === '项目') {
+          link.href = lang === 'zh' ? './project-zh.html' : './project.html';
+        }
+      }
+    });
   }
   
   // Update navigation text based on selected language
   function updateNavigationText(lang) {
-    const resumeLink = document.getElementById('resume-link');
-    const projectLink = document.getElementById('project-link');
-    const languageLink = document.getElementById('language-link');
-    const englishOption = document.getElementById('english-option');
-    const chineseOption = document.getElementById('chinese-option');
-    
-    if (resumeLink) {
-      resumeLink.textContent = lang === 'zh' ? '简历' : 'Resume';
-    }
-    
-    if (projectLink) {
-      projectLink.textContent = lang === 'zh' ? '项目' : 'Project';
-    }
-    
-    if (languageLink) {
-      languageLink.textContent = lang === 'zh' ? '语言' : 'Language';
-    }
-    
-    if (englishOption) {
-      englishOption.textContent = 'English';
-    }
-    
-    if (chineseOption) {
-      chineseOption.textContent = '中文';
-    }
+    // Find and update all menu text elements
+    const menuTexts = document.querySelectorAll('.menu-text');
+    menuTexts.forEach(menuText => {
+      const textContent = menuText.textContent.trim();
+      
+      if (textContent === 'Resume' || textContent === '简历') {
+        menuText.textContent = lang === 'zh' ? '简历' : 'Resume';
+      } else if (textContent === 'Project' || textContent === '项目') {
+        menuText.textContent = lang === 'zh' ? '项目' : 'Project';
+      } else if (textContent === 'Language' || textContent === '语言') {
+        menuText.textContent = lang === 'zh' ? '语言' : 'Language';
+      }
+    });
   }
   
   // Add click event listeners to language menu items
   function setupLanguageMenu() {
-    const englishOption = document.getElementById('english-option');
-    const chineseOption = document.getElementById('chinese-option');
-    
-    if (englishOption) {
-      englishOption.addEventListener('click', function(e) {
-        localStorage.setItem('preferredLanguage', 'en');
-      });
-    }
-    
-    if (chineseOption) {
-      chineseOption.addEventListener('click', function(e) {
-        localStorage.setItem('preferredLanguage', 'zh');
-      });
-    }
+    // Find language dropdown items
+    const dropdownTexts = document.querySelectorAll('.dropdown-text');
+    dropdownTexts.forEach(dropdownText => {
+      const textContent = dropdownText.textContent.trim();
+      const optionLink = dropdownText.closest('a');
+      
+      if (optionLink) {
+        if (textContent === 'English') {
+          optionLink.addEventListener('click', function(e) {
+            localStorage.setItem('preferredLanguage', 'en');
+          });
+        } else if (textContent === '中文') {
+          optionLink.addEventListener('click', function(e) {
+            localStorage.setItem('preferredLanguage', 'zh');
+          });
+        }
+      }
+    });
   }
   
   // Initialize language switcher when DOM is loaded
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function() {
-      setDefaultLanguage();
-      setupLanguageMenu();
+      // Wait a bit for the DOM to fully load
+      setTimeout(() => {
+        setDefaultLanguage();
+        setupLanguageMenu();
+      }, 100);
     });
   } else {
-    setDefaultLanguage();
-    setupLanguageMenu();
+    // Wait a bit for the DOM to fully load
+    setTimeout(() => {
+      setDefaultLanguage();
+      setupLanguageMenu();
+    }, 100);
   }
 })();
