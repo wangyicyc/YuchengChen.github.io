@@ -47,29 +47,28 @@ Outdoor environment: UAV carrying a 1.5L mineral water bottle autonomously flew 
 - Fuzzy PID Control
 - VFH Path Planning
 - Kalman Filtering
-
 :::
 
 ::: {.card .fade-in .delay-4}
 ## 3rd University Intelligent Robot Creativity Competition - UAV Group A Competition
 **Project Leader**｜ 2024.05 – 2024.8
+
 ::: {.columns}
-::: {.column width="48%" style="padding-right: 20px;"}
+::: { .column style="width: 48%; padding-right: 20px;" }
 ![UAV Competition](images/VFH.gif)
 :::
-::: {.column width="48%" style="padding-left: 20px;"}
-**Project Description:**
+::: { .column style="width: 48%; padding-left: 20px;" }
+**Project Description:**  
 Participated in the UAV Group A Competition, focusing on autonomous flight tasks with obstacle avoidance and target recognition. Developed robust flight control algorithms for UAVs in dynamic environments and implemented real-time obstacle detection and avoidance using sensor fusion.
 
-**Technologies Used:**
-- ROS (Robot Operating System)
-- Computer Vision
-- Sensor Fusion
-- Autonomous Flight Control
+**Technologies Used:**  
+- ROS (Robot Operating System)  
+- Computer Vision  
+- Sensor Fusion  
+- Autonomous Flight Control  
 - C++
 :::
 :::
-
 :::
 
 ::: {.card .fade-in .delay-5}
