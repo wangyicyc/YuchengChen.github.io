@@ -25,14 +25,19 @@ website:
     right: 
       - text: "Resume"
         href: resume.qmd
+        id: "resume-link"
       - text: "Project"
         href: project.qmd
+        id: "project-link"
       - text: "Language"
+        id: "language-link"
         menu:
           - text: "English"
             href: resume.qmd
+            id: "english-option"
           - text: "中文"
             href: resume-zh.qmd
+            id: "chinese-option"
       - icon: github
         href: https://github.com
       - icon: envelope
