@@ -41,14 +41,8 @@ Born in December 2003, undergraduate student in Mechanical Design, Manufacturing
   Mechanical Design, Manufacturing and Automation (Robotics Direction) | Bachelor's degree (Senior year)
   - Weighted GPA: 90/100 (Top 10% in major)
   - Core course grades:
-    - Calculus (I/II): 93 / 95
-    - Mechanics of Materials: 92
-    - Linear Algebra: 91
-    - Complex Variables and Integral Transforms: 93
-    - Theoretical Mechanics: 96
-    - Probability Theory and Mathematical Statistics: 96
-    - Comprehensive English: 93
-
+    - Calculus (I/II): 93 / 95  |  Linear Algebra: 91  |  Complex Variables and Integral Transforms: 93
+    - Theoretical Mechanics: 96  |  Probability Theory and Mathematical Statistics: 96  |  Comprehensive English: 93
 - **2026.09 – TBD**  
   **Shanghai Jiao Tong University (Admitted for postgraduate study)**  
   Control Science and Engineering (Master's degree)
