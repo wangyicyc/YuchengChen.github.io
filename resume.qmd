@@ -57,38 +57,45 @@ Born in December 2003, undergraduate student in Mechanical Design, Manufacturing
 ## Internship
 ### 2025.12.10 - Present
 - **Robosense** | Reinforcement Learning Algorithm Intern  
+- **Project**: Tennis Ball-catching Cart Reinforcement Learning Model Training and Deployment
 - **Main Work**:
-  1. **Sim2Sim Gap**: Overcame the challenge of transitioning from training environment Isaac Gym to simulation environment Mujoco for validation, ensuring model generalization across different simulation environments.
-  2. **Real2Sim Gap**: Overcame the challenge of transitioning from training environment Isaac Gym and simulation environment Mujoco to real-world environment.
-  3. **Reward Function Design**: Designed reward functions based on feedback from real-world environment to guide models in learning optimal strategies.
-  4. **Model Training**: Utilized rsl_rl reinforcement learning library to train models using both multi-frame input MLP and LSTM networks, ensuring models' ability to perceive temporal dimensions.
+  1. **Reinforcement Learning Model Training**: Implemented PPO algorithm based on rsl_rl reinforcement learning library in Isaac Gym training environment to train the cart for tennis ball-catching automatic control
+  2. **Cross-environment Model Migration**: Conducted Sim2Sim Gap research, migrating models from Isaac Gym training environment to Mujoco simulation environment to verify model performance in different simulation environments
+  3. **Virtual to Real Environment Transfer**: Conducted Real2Sim Gap research, deploying models from virtual training environment to real physical environment for verification
+  4. **Reward Function Design**: Designed reward functions based on real-world environment feedback to guide models in learning control strategies
   
 ## Project Experience
 ### Actor-Critic Algorithm + MPC Controller for UAV Autonomous Flight
-**Project Leader**｜2026.02 – 2026.06
-- **Project Goal**：Combine reinforcement learning with model predictive control to achieve agile flight control for UAVs
-- **Key Contributions**：
-  1. **Algorithm Integration**：Integrated Actor-Critic reinforcement learning algorithm with MPC controller, using reinforcement learning to handle decision-making in complex environments while using MPC to ensure control stability and safety
-  2. **Differentiable Optimization**：Implemented a control framework based on differentiable optimization, allowing MPC's optimization process to be incorporated into reinforcement learning training
-  3. **Agile Flight Control**：Developed control strategies suitable for high-speed, high-maneuver flight of UAVs, enabling precise trajectory tracking in complex environments
-  4. **Simulation Verification**：Validated the effectiveness of the algorithm in various simulation environments, including obstacle avoidance and trajectory tracking tasks
+**Project Leader**｜2026.02 – 2026.06  
+**Project Description**：Combine reinforcement learning with model predictive control technology to enhance UAV flight robustness in complex environments, especially for scenarios with disturbed positioning information  
+**Key Contributions**：  
+  1. **Algorithm Integration**：Integrated Actor-Critic reinforcement learning algorithm with MPC controller, using reinforcement learning to adaptively adjust the cost function of MPC control strategies, enhancing the system's ability to adapt to environmental changes  
+  2. **Differentiable Optimization**：Developed a control framework based on differentiable optimization, incorporating MPC's optimization process into the reinforcement learning training pipeline  
+  3. **Model Training**：Conducted reinforcement learning training using PPO algorithm, constructing Actor-Critic models with MLP and Transformer network structures respectively  
 - **Technologies**：Python, PyTorch, ROS, MPC, Reinforcement Learning (Actor-Critic)
 
 ### Wind-Disturbed UAV Target Search and Delivery  
 **Project Leader**｜2024.05 – 2024.10  
-- Outdoor environment: UAV carrying a 1.5L mineral water bottle autonomously flew on an 8m*80m runway, performing tasks including autonomous takeoff, searching for white barrels (30, 20, 15cm diameters) in an 8*5m area 30m away, reconnoitering dangerous objects 65m away, and autonomous return and landing.  
-- **Key Contributions**：  
-  1. **Fuzzy PID Controller (C++)**: Implemented fuzzy rules to adaptively adjust PID coefficients for precise control under wind disturbances.  
-  2. **Path Planning Algorithm VFH**: Solved current feasible points and generated smooth paths through B-spline curve optimization.  
-  3. **Filter Algorithm Deployment**: Combined Kalman filter and low-pass filter to remove noise and smooth controller output. 
+**Project Description**：Outdoor environment: UAV carrying a 1.5L mineral water bottle autonomously flew on an 8m*80m runway, performing the following tasks:  
+1. UAV autonomously took off from the designated takeoff point  
+2. Searched for white barrels for delivery in an 8*5m area 30m away from the takeoff point, with three white barrels (diameters: 30, 20, 15 cm) - smaller diameter barrels scored higher  
+3. Reconnoitered dangerous objects in an 8*5 area 65m away from the takeoff point and remotely transmitted data for team members to fill in at the console  
+4. After completing the above tasks, UAV autonomously returned to the takeoff point and landed  
+**Key Contributions**：  
+1. **Fuzzy PID Controller (C++)**: Implemented fuzzy rules to adaptively adjust PID coefficients for precise control of UAVs under wind disturbances  
+2. **Path Planning Algorithm VFH**: Solved current feasible points based on VFH algorithm and generated smooth paths through B-spline curve optimization  
+3. **Filter Algorithm Deployment**: Combined Kalman filter and low-pass filter to remove noise and smooth controller output  
 
 ### Obstacle Forest Express Delivery UAV  
 **Project Leader**｜2023.10 – 2024.05  
-- Indoor environment: UAV carrying 3×100g express boxes performed tasks in a 10×10m area, including autonomous takeoff, searching for 5 targets in a 10×8.5m area for delivery, and traversing a 10×1.5m corridor with two 80cm-wide narrow passages to reach the landing point.  
-- **Key Contributions**：  
-  1. **ROS-based Flight Code (C++)**: Implemented obstacle avoidance and delivery tasks in obstacle forest and narrow corridor environments.  
-  2. **Localization and Path Generation**: Deployed FAST-LIO and Ego-Planner for high-precision localization and obstacle avoidance path planning.  
-  3. **MPC Controller (C++)**: Computed control inputs online based on target points and constraints to achieve high-precision tracking of global paths. 
+**Project Description**：Indoor environment: UAV carrying 3×100g express boxes performed tasks in a 10×10m area, including:  
+  1. Autonomous takeoff from the takeoff point  
+  2. Searching for 5 existing targets in a 10×8.5m area for delivery, with delivery scores calculated based on delivery accuracy and target weights, while avoiding dense obstacles in the area  
+  3. After completing task 2, proceeding to the entrance of a 10×1.5m corridor, traversing the corridor to reach the landing point for accurate landing, with two 80cm-wide narrow passages in the corridor  
+**Key Contributions**：  
+  1. **ROS-based Flight Code (C++)**: Implemented obstacle avoidance and delivery tasks in obstacle forest and narrow corridor environments  
+  2. **Localization and Path Generation**: Deployed FAST-LIO and Ego-Planner for UAV localization and feasible route generation, with MPC controller tracking paths for obstacle avoidance  
+  3. **MPC Controller (C++)**: Computed control inputs for UAV acceleration online based on target points and constraints to track global paths  
 
 :::
 

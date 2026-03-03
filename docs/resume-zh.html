@@ -226,14 +226,15 @@ ul.task-list li input[type="checkbox"] {
 <section id="速腾聚创robosense" class="level3">
 <h3 class="anchored" data-anchor-id="速腾聚创robosense">速腾聚创(Robosense)</h3>
 <ul>
-<li><strong>强化学习算法算法实习生</strong> | 2025.12.10 - 至今<br>
+<li><strong>强化学习算法实习生</strong> | 2025.12.10 - 至今<br>
 </li>
-<li><strong>主要工作</strong>:
+<li><strong>项目描述</strong>：网球接打小车的强化学习模型训练与部署</li>
+<li><strong>主要工作</strong>：
 <ol type="1">
-<li><strong>Sim2Sim Gap攻克</strong>：从训练环境Isaac Gym过渡到仿真环境Mujoco下的验证，确保模型在不同仿真环境下的泛化能力。</li>
-<li><strong>Real2Sim Gap攻克</strong>：从训练环境Isaac Gym、仿真环境Mujoco过渡到真实环境。</li>
-<li><strong>奖励函数设计</strong>：从真实环境接受反馈，从而设计奖励函数，引导模型学习到最优策略。</li>
-<li><strong>模型训练</strong>：调用rsl_rl强化学习库, 分别使用多帧输入MLP的MLP和LSTM网络训练模型，确保模型对时间维度的感知能力。</li>
+<li><strong>强化学习模型训练</strong>：在Isaac Gym训练环境下，基于rsl_rl强化学习库实现PPO算法，训练小车完成网球接打自动控制任务。</li>
+<li><strong>Sim2Sim Gap研究</strong>：将模型从Isaac Gym训练环境迁移到Mujoco仿真环境，验证模型在不同仿真环境下的表现，实现跨环境泛化能力。</li>
+<li><strong>Real2Sim Gap研究</strong>：将模型从虚拟训练环境部署到真实物理环境并进行验证，验证模型在真实环境下的表现。</li>
+<li><strong>奖励函数设计</strong>：基于真实环境反馈设计奖励函数，引导模型学习控制策略，提升小车的接球成功率。</li>
 </ol></li>
 </ul>
 </section>
@@ -242,35 +243,37 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="主要项目经历">主要项目经历</h2>
 <section id="actor-critic算法-mpc控制器实现无人机自主飞行" class="level3">
 <h3 class="anchored" data-anchor-id="actor-critic算法-mpc控制器实现无人机自主飞行">Actor-Critic算法 + MPC控制器实现无人机自主飞行</h3>
-<ul>
-<li><strong>项目负责人</strong>｜ 2026.02 – 2026.06<br>
-</li>
-<li><strong>项目目标</strong>：结合强化学习与模型预测控制，实现无人机的敏捷飞行控制<br>
-</li>
-<li><strong>主要工作</strong>:
-<ol type="1">
-<li><strong>算法融合</strong>：将Actor-Critic强化学习算法与MPC控制器相结合，利用强化学习处理复杂环境的决策问题，同时利用MPC保证控制的稳定性和安全性<br>
-</li>
-<li><strong>可微分优化</strong>：实现了基于可微分优化的控制框架，使得MPC的优化过程可以被纳入强化学习的训练中<br>
-</li>
-<li><strong>敏捷飞行控制</strong>：开发了适用于无人机高速、高机动飞行的控制策略，能够在复杂环境中实现精准的轨迹跟踪</li>
-<li><strong>仿真验证</strong>：在多种仿真环境中验证了算法的有效性，包括障碍躲避、轨迹跟踪等任务<br>
-</li>
-</ol></li>
-<li><strong>技术栈</strong>：Python、PyTorch、ROS、MPC、强化学习（Actor-Critic）</li>
-</ul>
+<p><strong>项目负责人</strong>｜ 2026.02 – 2026.06<br>
+<strong>项目描述</strong>：结合强化学习与模型预测控制技术，提升无人机在复杂环境下的飞行鲁棒性，尤其针对定位信息受干扰的场景<br>
+<strong>本人负责任务</strong>：<br>
+1. <strong>算法融合</strong>：将Actor-Critic强化学习算法与MPC控制器相结合，利用强化学习自适应调整MPC控制策略的代价函数，增强系统对环境变化的适应能力<br>
+2. <strong>可微分优化</strong>：开发基于可微分优化的控制框架，将MPC的优化过程纳入强化学习的训练流程中<br>
+3. <strong>模型训练</strong>：采用PPO算法进行强化学习训练，分别使用MLP和Transformer网络结构构建Actor-Critic模型</p>
 </section>
 <section id="风扰动下无人机目标搜索投放" class="level3">
 <h3 class="anchored" data-anchor-id="风扰动下无人机目标搜索投放">风扰动下无人机目标搜索+投放</h3>
 <p><strong>项目负责人</strong>｜2024.05 – 2024.10<br>
-<strong>项目描述</strong>：** 室外环境下，使无人机载重（一个1.5L矿泉水瓶）在8m<em>80m的跑道上自主飞行，实现以下任务： 1. 无人机在指定起飞点自主起飞 2. 在距离起飞点30m远的8</em>5m区域内寻找白桶进行投放，白桶共三个（直径分别为30, 20,15），直径越小分值越高 3. 在距离起飞点65m远的8*5区域内侦查危险物，并远程传送数据，由参赛人员在控制台填写 4. 完成以上任务后无人机自主飞回起飞点并降落</p>
-<p>本人负责任务： 1. 模糊PID控制器编写(C++)：通过模糊规则⾃适应调整PID系数，实现⻛扰动下⽆⼈机精准控制 2. 编写路径规划算法VFH：依据VFH算法求解当前可⾏点，并通过B样条曲线优化出光滑路径 3. 部署滤波算法：通过卡尔曼滤波以及低通滤波器，实现对噪声的滤除作用，使控制器平滑输出</p>
+<strong>项目描述</strong>：室外环境下，使无人机载重（一个1.5L矿泉水瓶）在8m<em>80m的跑道上自主飞行，实现以下任务：<br>
+1. 无人机在指定起飞点自主起飞<br>
+2. 在距离起飞点30m远的8</em>5m区域内寻找白桶进行投放，白桶共三个（直径分别为30, 20,15），直径越小分值越高<br>
+3. 在距离起飞点65m远的8*5区域内侦查危险物，并远程传送数据，由参赛人员在控制台填写<br>
+4. 完成以上任务后无人机自主飞回起飞点并降落</p>
+<p><strong>本人负责任务</strong>：<br>
+1. <strong>模糊PID控制器编写(C++)</strong>：通过模糊规则⾃适应调整PID系数，实现⻛扰动下⽆⼈机精准控制<br>
+2. <strong>编写路径规划算法VFH</strong>：依据VFH算法求解当前可⾏点，并通过B样条曲线优化出光滑路径<br>
+3. <strong>部署滤波算法</strong>：通过卡尔曼滤波以及低通滤波器，实现对噪声的滤除作用，使控制器平滑输出</p>
 </section>
 <section id="障碍物森林中的快递无人机" class="level3">
 <h3 class="anchored" data-anchor-id="障碍物森林中的快递无人机">障碍物森林中的快递无人机</h3>
 <p><strong>项目负责人</strong>｜2023.10 – 2024.05<br>
-描述项目：室内环境下，使无人机载重（3个100g快递盒）在10<em>10m的区域执行任务，具体任务如下： 1. 在起飞点自主起飞 2. 在10</em>8.5m的区域中寻找存在的5个标靶进行投放，投放得分由投放准确度与标靶自身权重计算，同时注意躲避该区域内的密集障碍物 3. 执行完任务2后，前往10*1.5m的长廊入口，穿越长廊抵达降落点准确降落，其中长廊中存在两个80cm宽的窄道</p>
-<p>本人负责工作： 1. Ubuntu下编写基于ROS的⻜⾏代码(C++)：执⾏障碍森林、狭窄⾛廊环境下避障任务及投放任务 2. 部署FAST-LIO及避障算法Ego-Planner : ⽆⼈机定位并⽣成可⾏路线，MPC控制器跟踪路径避障 3. 编写MPC控制器(C++)：依据目标点与约束条件在线计算对⽆⼈机加速度的控制，以跟踪全局路径</p>
+<strong>项目描述</strong>：室内环境下，使无人机载重（3个100g快递盒）在10<em>10m的区域执行任务，具体任务如下：<br>
+1. 在起飞点自主起飞<br>
+2. 在10</em>8.5m的区域中寻找存在的5个标靶进行投放，投放得分由投放准确度与标靶自身权重计算，同时注意躲避该区域内的密集障碍物<br>
+3. 执行完任务2后，前往10*1.5m的长廊入口，穿越长廊抵达降落点准确降落，其中长廊中存在两个80cm宽的窄道</p>
+<p><strong>本人负责任务</strong>：<br>
+1. <strong>Ubuntu下编写基于ROS的⻜⾏代码(C++)</strong>：执⾏障碍森林、狭窄⾛廊环境下避障任务及投放任务<br>
+2. <strong>部署FAST-LIO及避障算法Ego-Planner</strong> : ⽆⼈机定位并⽣成可⾏路线，MPC控制器跟踪路径避障<br>
+3. <strong>编写MPC控制器(C++)</strong>：依据目标点与约束条件在线计算对⽆⼈机加速度的控制，以跟踪全局路径</p>
 </section>
 </section>
 </div>
