@@ -69,10 +69,10 @@ Born in December 2003, undergraduate student in Mechanical Design, Manufacturing
 **Project Leader**｜2026.02 – 2026.06  
 **Project Description**：Combine reinforcement learning with model predictive control technology to enhance UAV flight robustness in complex environments, especially for scenarios with disturbed positioning information  
 **Key Contributions**：  
-  1. **Algorithm Integration**：Integrated Actor-Critic reinforcement learning algorithm with MPC controller, using reinforcement learning to adaptively adjust the cost function of MPC control strategies, enhancing the system's ability to adapt to environmental changes  
-  2. **Differentiable Optimization**：Developed a control framework based on differentiable optimization, incorporating MPC's optimization process into the reinforcement learning training pipeline  
-  3. **Model Training**：Conducted reinforcement learning training using PPO algorithm, constructing Actor-Critic models with MLP and Transformer network structures respectively  
-- **Technologies**：Python, PyTorch, ROS, MPC, Reinforcement Learning (Actor-Critic)
+  1. **Algorithm Integration**：Integrated Actor-Critic reinforcement learning algorithm with MPC controller, using reinforcement learning to adaptively adjust the cost function of MPC, enhancing the system's ability to adapt to environmental changes  
+  2. **Model Training**：Conducted reinforcement learning training using PPO algorithm, constructing Actor-Critic models with MLP network structure  
+  3. **Differentiable MPC**：Adopted differentiable MPC framework, incorporating MPC's optimization process into the reinforcement learning training pipeline  
+  4. **C++ and Python Integration**：Implemented differentiable MPC controller in C++ and integrated it into reinforcement learning training (Python) using Pybind11 library, improving training and model inference efficiency  
 
 ### Wind-Disturbed UAV Target Search and Delivery  
 **Project Leader**｜2024.05 – 2024.10  
