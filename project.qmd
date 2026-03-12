@@ -2,7 +2,7 @@
 title: "Project Outcome Presentation"
 ---
 ::: {.card .fade-in .delay-1}
-## Actor-Critic Algorithm + MPC Controller for UAV Autonomous Flight
+## Adaptive MPC Controller Based on Reinforcement Learning (PPO)
 **Project Leader**｜ 2026.02 – 2026.06  
 **Project Description:**  
 Combined reinforcement learning with model predictive control technology to enhance UAV flight robustness in complex environments, especially for scenarios with disturbed positioning information. Integrated Actor-Critic reinforcement learning algorithm with MPC controller, using reinforcement learning to adaptively adjust the cost function of MPC, enhancing the system's ability to adapt to environmental changes. Conducted reinforcement learning training using PPO algorithm, constructing Actor-Critic models with MLP network structure. Adopted differentiable MPC framework, incorporating MPC's optimization process into the reinforcement learning training pipeline. Implemented differentiable MPC controller in C++ and integrated it into reinforcement learning training (Python) using Pybind11 library, improving training and model inference efficiency.

@@ -65,7 +65,7 @@ Born in December 2003, undergraduate student in Mechanical Design, Manufacturing
   4. **Reward Function Design**: Designed reward functions based on real-world environment feedback to guide models in learning control strategies
   
 ## Project Experience
-### Actor-Critic Algorithm + MPC Controller for UAV Autonomous Flight
+### Adaptive MPC Controller Based on Reinforcement Learning (PPO)
 **Project Leader**｜2026.02 – 2026.06  
 **Project Description**：Combine reinforcement learning with model predictive control technology to enhance UAV flight robustness in complex environments, especially for scenarios with disturbed positioning information  
 **Key Contributions**：  
@@ -107,7 +107,7 @@ Born in December 2003, undergraduate student in Mechanical Design, Manufacturing
 - Reinforcement Learning
 
 ### Professional Skills
-- **Robot Operating System**: Proficient in ROS (ROS1), familiar with Ubuntu command line and Gazebo simulation  
+- **Robot Operating System**: Proficient in ROS, familiar with Ubuntu command line and Gazebo simulation  
 - **Reinforcement Learning Algorithms**: Familiar with Actor-Critic, TRPO, PPO, SAC, DDPG, etc.  
 - **Robotics Fundamentals**: Mastered IK (Inverse Kinematics), rotation matrices, quaternions, etc.  
 - **Optimal Control Methods**: Familiar with LQR, MPC, iLQR, DDP controllers
