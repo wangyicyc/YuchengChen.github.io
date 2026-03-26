@@ -6,10 +6,9 @@ title: "Project Outcome Presentation"
 **Project Leader**｜ 2025.12 – now 
 ![Numerical Simulation](images/acmpc.gif) 
 **Project Description:**  
-Combined reinforcement learning with model predictive control technology to enhance UAV flight robustness in complex environments, especially for scenarios with disturbed positioning information. Integrated Actor-Critic reinforcement learning algorithm with MPC controller, using reinforcement learning to adaptively adjust the cost function of MPC, enhancing the system's ability to adapt to environmental changes. Conducted reinforcement learning training using PPO algorithm, constructing Actor-Critic models with MLP network structure. Adopted differentiable MPC framework, incorporating MPC's optimization process into the reinforcement learning training pipeline. Implemented differentiable MPC controller in C++ and integrated it into reinforcement learning training (Python) using Pybind11 library, improving training and model inference efficiency.
+Combined reinforcement learning with model predictive control technology to enhance UAV flight robustness in complex environments, especially for scenarios with disturbed positioning information. Integrated Actor-Critic reinforcement learning algorithm with MPC controller, using reinforcement learning to adaptively adjust the cost function of MPC, enhancing the system's ability to adapt to environmental changes. Conducted reinforcement learning training using PPO algorithm, constructing Actor-Critic models with MLP network structure. Adopted differentiable MPC framework, incorporating MPC's optimization process into the reinforcement learning training pipeline. Implemented differentiable MPC controller in C++ and integrated it into reinforcement learning training (Python), improving training and model inference efficiency.
 
-**Technologies Used:**Python, C++, PyTorch, Differentiable MPC, Reinforcement Learning (PPO), Pybind11
-
+**Technologies Used:**Python, C++, PyTorch, Differentiable MPC, Reinforcement Learning (PPO)
 :::
 
 ::: {.card .fade-in .delay-2}
