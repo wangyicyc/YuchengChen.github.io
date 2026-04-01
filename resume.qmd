@@ -61,7 +61,7 @@ Born in December 2003, undergraduate student in Mechanical Design, Manufacturing
 - **Main Work**:  
   1. **Training of Reinforcement Learning Model**: In the Isaac Gym training environment, the PPO algorithm was implemented based on the rsl_rl reinforcement learning library to train the car to complete the automatic control task of tennis reception.  
   2. **Simulation Environment Migration**: Transferring the original simulation environment based on Isaac Gym to the more high-fidelity MujocoLab (taking into account the high-fidelity feature of Mujoco and the GPU parallel computing capability)
-  3. **Research on Real2Sim Gap**: The model was deployed from the virtual training environment to the real physical environment and verified to validate its performance in the real environment.  
+  3. **Research on Sim2Real Gap**: The model was deployed from the virtual training environment to the real physical environment and verified to validate its performance in the real environment.  
   4. **Design of Tennis Simulator**: During the training process, the dynamics model of the tennis was independently designed in the simulation environment, and an optimizer was designed to optimize the parameters based on the real trajectory data.  
  
    
