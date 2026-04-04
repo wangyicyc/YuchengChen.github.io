@@ -11,6 +11,12 @@ Combined reinforcement learning with model predictive control technology to enha
 2. Conducted reinforcement learning training using PPO algorithm, constructing Actor-Critic models with MLP network structure.   
 3. Implemented differentiable MPC controller in C++ and integrated it into reinforcement learning training (Python), improving training and model inference efficiency.
 
+**Key Contributions**：  
+  1. **Algorithm Integration**：Integrated Actor-Critic reinforcement learning algorithm with MPC controller, using reinforcement learning to adaptively adjust the cost function of MPC, enhancing the system's ability to adapt to environmental changes  
+  2. **Model Training**：Conducted reinforcement learning training using PPO algorithm, constructing Actor-Critic models with MLP network structure  
+  3. **Differentiable MPC**：Adopted differentiable MPC framework, incorporating MPC's optimization process into the reinforcement learning training pipeline  
+  4. **C++ and Python Integration**：Implemented differentiable MPC controller in C++ and integrated it into reinforcement learning training (Python), improving training and model inference efficiency  
+
 **Technologies Used:**Python, C++, PyTorch, Differentiable MPC, Reinforcement Learning (PPO)
 :::
 
@@ -40,6 +46,12 @@ Outdoor environment: UAV carrying a 1.5L mineral water bottle autonomously flew 
 3. Reconnoitered dangerous objects in an 8*5 area 65m away from the takeoff point and remotely transmitted data for team members to fill in at the console.  
 4. After completing the above tasks, UAV autonomously returned to the takeoff point and landed.  
 Among them: It is stipulated to use a unified unmanned aerial vehicle platform (equipped with dual-lens fisheye cameras and two-dimensional laser radar)  
+
+**Key Contributions**：  
+1. **Fuzzy PID Controller (C++)**: Implemented fuzzy rules to adaptively adjust PID coefficients for precise control of UAVs under wind disturbances  
+2. **Path Planning Algorithm VFH**: Solved current feasible points based on VFH algorithm and generated smooth paths through B-spline curve optimization  
+3. **Filter Algorithm Deployment**: Combined Kalman filter and low-pass filter to remove noise and smooth controller output  
+
 **Technologies Used:**C++, Fuzzy PID Control, VFH Path Planning, Kalman Filtering
 :::
 
@@ -58,9 +70,12 @@ In a 5x5-meter area, two static obstacles are randomly placed. The drone is requ
 2. After reaching the destination area, identify the target and land.
 3. During the flight, it must not avoid colliding with the obstacles.
 
+**Key Contributions**：  
+1. **Design obstacle avoidance algorithm VFH**: Solve the feasible direction and obtain path through B-spline.
+2. **Design PID Controller** : introduce integral separation,differential first modules to achieve precise control.
+
 **Technologies Used:**  
-- ROS, C++  
-- VFH Path Planning: Based on 2D radar information, provide a collision avoidance path  
+- ROS, C++, VFH Path Planning
 :::
 :::
 :::
@@ -74,6 +89,11 @@ Indoor environment: UAV carrying 3×100g express boxes performed tasks in a 10×
 1. Autonomously took off from the takeoff point.  
 2. Searched for 5 existing targets in a 10×8.5m area for delivery, with delivery scores calculated based on delivery accuracy and target weights, while avoiding dense obstacles in the area.  
 3. After completing task 2, proceeded to the entrance of a 10×1.5m corridor, traversed the corridor to reach the landing point for accurate landing, with two 80cm-wide narrow passages in the corridor.  
+
+**Key Contributions**：  
+  1. **ROS-based Flight Code (C++)**: Implemented obstacle avoidance and delivery tasks in obstacle forest and narrow corridor environments  
+  2. **Localization and Path Generation**: Deployed FAST-LIO and Ego-Planner for UAV localization and feasible route generation, with MPC controller tracking paths for obstacle avoidance  
+  3. **MPC Controller (C++)**: Computed control inputs for UAV acceleration online based on target points and constraints to track global paths  
 
 **Technologies Used:**ROS, FAST-LIO, Ego-Planner, MPC Controller, C++
 

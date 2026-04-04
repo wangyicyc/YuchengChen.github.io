@@ -181,6 +181,11 @@ Combined reinforcement learning with model predictive control technology to enha
 1. Integrated Actor-Critic reinforcement learning algorithm with MPC controller, using reinforcement learning to adaptively adjust the cost function of MPC, enhancing the system’s ability to adapt to environmental changes.<br>
 2. Conducted reinforcement learning training using PPO algorithm, constructing Actor-Critic models with MLP network structure.<br>
 3. Implemented differentiable MPC controller in C++ and integrated it into reinforcement learning training (Python), improving training and model inference efficiency.</p>
+<p><strong>Key Contributions</strong>：<br>
+1. <strong>Algorithm Integration</strong>：Integrated Actor-Critic reinforcement learning algorithm with MPC controller, using reinforcement learning to adaptively adjust the cost function of MPC, enhancing the system’s ability to adapt to environmental changes<br>
+2. <strong>Model Training</strong>：Conducted reinforcement learning training using PPO algorithm, constructing Actor-Critic models with MLP network structure<br>
+3. <strong>Differentiable MPC</strong>：Adopted differentiable MPC framework, incorporating MPC’s optimization process into the reinforcement learning training pipeline<br>
+4. <strong>C++ and Python Integration</strong>：Implemented differentiable MPC controller in C++ and integrated it into reinforcement learning training (Python), improving training and model inference efficiency</p>
 <p><strong>Technologies Used:</strong>Python, C++, PyTorch, Differentiable MPC, Reinforcement Learning (PPO)</p>
 </section>
 <section id="decentralized-multi-robot-ergodic-planning-for-exploration-of-unknown-dynamic-environmentsrss-2026-in-the-pipeline" class="level2 card fade-in delay-2">
@@ -202,8 +207,12 @@ Deploying collaborative search of distributed robots: Within the framework of ex
 2. Searched for white barrels for delivery in an 8</em>5m area 30m away from the takeoff point, with three white barrels (diameters: 30, 20, 15 cm) - smaller diameter barrels scored higher.<br>
 3. Reconnoitered dangerous objects in an 8*5 area 65m away from the takeoff point and remotely transmitted data for team members to fill in at the console.<br>
 4. After completing the above tasks, UAV autonomously returned to the takeoff point and landed.<br>
-Among them: It is stipulated to use a unified unmanned aerial vehicle platform (equipped with dual-lens fisheye cameras and two-dimensional laser radar)<br>
-<strong>Technologies Used:</strong>C++, Fuzzy PID Control, VFH Path Planning, Kalman Filtering</p>
+Among them: It is stipulated to use a unified unmanned aerial vehicle platform (equipped with dual-lens fisheye cameras and two-dimensional laser radar)</p>
+<p><strong>Key Contributions</strong>：<br>
+1. <strong>Fuzzy PID Controller (C++)</strong>: Implemented fuzzy rules to adaptively adjust PID coefficients for precise control of UAVs under wind disturbances<br>
+2. <strong>Path Planning Algorithm VFH</strong>: Solved current feasible points based on VFH algorithm and generated smooth paths through B-spline curve optimization<br>
+3. <strong>Filter Algorithm Deployment</strong>: Combined Kalman filter and low-pass filter to remove noise and smooth controller output</p>
+<p><strong>Technologies Used:</strong>C++, Fuzzy PID Control, VFH Path Planning, Kalman Filtering</p>
 </section>
 <section id="rd-university-intelligent-robot-creativity-competition---uav-group-a-competition" class="level2 card fade-in delay-4">
 <h2 class="anchored" data-anchor-id="rd-university-intelligent-robot-creativity-competition---uav-group-a-competition">3rd University Intelligent Robot Creativity Competition - UAV Group A Competition</h2>
@@ -219,9 +228,10 @@ Among them: It is stipulated to use a unified unmanned aerial vehicle platform (
 </div><div class="column" style="width: 48%; padding-left: 20px;">
 <p><strong>Project Description:</strong><br>
 In a 5x5-meter area, two static obstacles are randomly placed. The drone is required to complete the following tasks independently: 1. Pass through a circular ring with a diameter of one meter on the field. 2. After reaching the destination area, identify the target and land. 3. During the flight, it must not avoid colliding with the obstacles.</p>
+<p><strong>Key Contributions</strong>：<br>
+1. <strong>Design obstacle avoidance algorithm VFH</strong>: Solve the feasible direction and obtain path through B-spline. 2. <strong>Design PID Controller</strong> : introduce integral separation,differential first modules to achieve precise control.</p>
 <p><strong>Technologies Used:</strong><br>
-- ROS, C++<br>
-- VFH Path Planning: Based on 2D radar information, provide a collision avoidance path</p>
+- ROS, C++, VFH Path Planning</p>
 </div>
 </div>
 </section>
@@ -232,6 +242,10 @@ In a 5x5-meter area, two static obstacles are randomly placed. The drone is requ
 1. Autonomously took off from the takeoff point.<br>
 2. Searched for 5 existing targets in a 10×8.5m area for delivery, with delivery scores calculated based on delivery accuracy and target weights, while avoiding dense obstacles in the area.<br>
 3. After completing task 2, proceeded to the entrance of a 10×1.5m corridor, traversed the corridor to reach the landing point for accurate landing, with two 80cm-wide narrow passages in the corridor.</p>
+<p><strong>Key Contributions</strong>：<br>
+1. <strong>ROS-based Flight Code (C++)</strong>: Implemented obstacle avoidance and delivery tasks in obstacle forest and narrow corridor environments<br>
+2. <strong>Localization and Path Generation</strong>: Deployed FAST-LIO and Ego-Planner for UAV localization and feasible route generation, with MPC controller tracking paths for obstacle avoidance<br>
+3. <strong>MPC Controller (C++)</strong>: Computed control inputs for UAV acceleration online based on target points and constraints to track global paths</p>
 <p><strong>Technologies Used:</strong>ROS, FAST-LIO, Ego-Planner, MPC Controller, C++</p>
 </section>
 
