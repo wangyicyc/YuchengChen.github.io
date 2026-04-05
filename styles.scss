@@ -311,3 +311,46 @@ h4 {
 .delay-3 {
   animation-delay: 0.6s;
 }
+
+/* 右侧目录（TOC）—— 紧凑排版 */
+#TOC {
+  font-size: 0.8rem;
+  line-height: 2.5;  /* 加大行间距 */
+}
+
+#TOC .nav-link {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: $theme-neutral-600;
+  transition: color 0.2s ease;
+  padding: 6px 6px;  /* 加大垂直内边距 */
+  border-left: 2px solid transparent;
+}
+
+#TOC .nav-link:hover,
+#TOC .nav-link.active {
+  color: $theme-primary;
+  border-left-color: $theme-primary;
+  background: none;
+  text-decoration: none;
+}
+
+/* 拉宽右侧目录整栏，不动主内容区 */
+#quarto-margin-sidebar {
+  width: 400px !important;
+  flex: 0 0 400px !important;
+}
+
+#TOC ul {
+  padding-left: 0.8rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+#TOC li {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  list-style: none;
+}
