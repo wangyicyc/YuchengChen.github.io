@@ -54,7 +54,7 @@ Born in December 2003, undergraduate student in Mechanical Design, Manufacturing
 
 ::: {.card .fade-in .delay-2}
 ## Internship
-### 2025.12.10 - Present
+### 2025.12.10 - 2026.4.10      
 - **Robosense** | Reinforcement Learning Algorithm Intern  
 - **Project**: Tennis Ball-catching Cart Reinforcement Learning Model Training and Deployment
 - **Main Work**:  
@@ -66,7 +66,7 @@ Born in December 2003, undergraduate student in Mechanical Design, Manufacturing
    
 ## Project Experience
 ### Adaptive MPC Controller Based on Reinforcement Learning (PPO)
-**Project Leader**｜2025.12 – now  
+**Project Leader**｜2025.12 – 2026.03  
 **Project Description**：Combine reinforcement learning with model predictive control technology to enhance UAV flight robustness in complex environments, especially for scenarios with disturbed positioning information  
 **Key Contributions**：  
   1. **Algorithm Integration**：Integrated Actor-Critic reinforcement learning algorithm with MPC controller, using reinforcement learning to adaptively adjust the cost function of MPC, enhancing the system's ability to adapt to environmental changes  

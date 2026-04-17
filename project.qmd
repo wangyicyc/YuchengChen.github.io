@@ -3,7 +3,7 @@ title: "Project Outcome Presentation"
 ---
 ::: {.card .fade-in .delay-1}
 ## Adaptive MPC Controller Based on Reinforcement Learning (PPO)
-**Project Leader**｜ 2025.12 – now 
+**Project Leader**｜ 2025.12 – 2026.03   
 ![Numerical Simulation](images/acmpc.gif) 
 **Project Description:**  
 Combined reinforcement learning with model predictive control technology to enhance UAV flight robustness in complex environments, especially for scenarios with disturbed positioning information.   
