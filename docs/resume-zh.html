@@ -240,7 +240,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>2026.09 – 待定</strong><br>
 <strong>上海交通大学（保研待入学）</strong><br>
 控制科学与工程（硕士）<br>
-一篇RSS在投(一作): Decentralized Multi-Robot Ergodic Planning for Exploration of Unknown Dynamic Environments</li>
+<!-- 一篇RSS在投(一作): Decentralized Multi-Robot Ergodic Planning for Exploration of Unknown Dynamic Environments --></li>
 </ul>
 </section>
 </section>
@@ -255,8 +255,9 @@ ul.task-list li input[type="checkbox"] {
 <ol type="1">
 <li><strong>强化学习模型训练</strong>：在Isaac Gym训练环境下，基于rsl_rl强化学习库实现PPO算法，训练小车完成网球接打自动控制任务。<br>
 </li>
-<li><strong>仿真环境迁移</strong>: 将原先基于Isaac Gym的仿真环境迁移到更高保真的MujocoLab(兼顾了Mujoco的高保真与GPU并行计算的特点)</li>
 <li><strong>Sim2Real Gap研究</strong>：将模型从虚拟训练环境部署到真实物理环境并进行验证，验证模型在真实环境下的表现。<br>
+</li>
+<li><strong>仿真环境迁移</strong>：将原先基于Isaac Gym的仿真环境迁移到更高保真的MujocoLab(兼顾了Mujoco的高保真与GPU并行计算的特点)<br>
 </li>
 <li><strong>网球轨迹仿真器设计</strong>：训练过程中独立于仿真环境，自行设计网球的动力学模型，并设计优化器结合真实轨迹数据优化其中参数。<br>
 </li>
@@ -274,7 +275,7 @@ ul.task-list li input[type="checkbox"] {
 1. <strong>算法融合</strong>：将Actor-Critic网络与MPC控制器相结合，利用学习的方式自适应调整MPC的代价函数，增强系统对环境变化的适应能力。<br>
 2. <strong>模型训练</strong>：采用PPO算法并使用MLP网络结构构建Actor-Critic模型，进行强化学习训练。<br>
 3. <strong>可微分MPC</strong>：采用可微分MPC的框架，将MPC的优化过程纳入强化学习的训练流程中。<br>
-4. <strong>C++与python融合</strong>：使用C++实现可微分MPC控制器加入到强化学习的训练中(python)，提高训练与模型推理效率。</p>
+4. <strong>C++与Python融合</strong>：使用C++实现可微分MPC控制器加入到强化学习的训练中(Python)，提高训练与模型推理效率。</p>
 </section>
 <section id="风扰动下无人机目标搜索投放" class="level3">
 <h3 data-anchor-id="风扰动下无人机目标搜索投放">风扰动下无人机目标搜索+投放</h3>
