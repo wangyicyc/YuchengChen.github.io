@@ -188,14 +188,11 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="未知动态环境下的分布式多机器人遍历规划探索rss-2026在投">未知动态环境下的分布式多机器人遍历规划探索(RSS 2026在投)</h2>
 <p><strong>第一作者</strong>｜2025.09 – 2026.02<br>
 <img src="images/iDMED.gif" class="img-fluid" alt="数值仿真演示"><br>
-<strong>项目描述：</strong><br>
-部署分布式多机器人的协同搜索: 在遍历搜索的框架下，针对未知动态环境与分布式机器人两个要点提出统一的框架。其中融合了:<br>
-- 贝叶斯滤波器<br>
-- 通信转发机制<br>
-- 基于真值与贝叶斯估计的信念信息<br>
-- 包含时间信息的衰减遍历指标<br>
-- 概率连通性<br>
-- iLQR求解器</p>
+<strong>项目描述：</strong> 在未知的动态环境中，通过两两局部通信实现分布式多机器人的遍历搜索规划问题。<br>
+<strong>本人负责任务</strong>：<br>
+1. <strong>遍历搜索</strong>：部署基于频域分析的遍历搜索算法并利用iLQR求解，实现机器人对信息地图的探索。<br>
+2. <strong>滚动优化</strong>：机器人实时更新动态信息并融合(贝叶斯滤波)，基于实时与衰减的历史信息滚动优化。<br>
+3. <strong>分布式多机器人系统</strong>：将机器人间的连通性以概率形式引入路径规划器，优化多机器人建立连接交换各自局部信息，保障分布式机器人通信与协同问题。</p>
 </section>
 <section id="风扰动下无人机目标搜索与物资投放" class="level2 card fade-in delay-3">
 <h2 class="anchored" data-anchor-id="风扰动下无人机目标搜索与物资投放">风扰动下无人机目标搜索与物资投放</h2>
@@ -205,8 +202,8 @@ ul.task-list li input[type="checkbox"] {
 3. 在距离起飞点65m远的8*5区域内侦查危险物，并远程传送数据，由参赛人员在控制台填写。<br>
 4. 完成以上任务后无人机自主飞回起飞点并降落。</p>
 <p><strong>本人负责任务</strong>：<br>
-1. <strong>模糊PID控制器编写(C++)</strong>：通过模糊规则⾃适应调整PID系数，实现⻛扰动下⽆⼈机精准控制<br>
-2. <strong>编写路径规划算法VFH</strong>：依据VFH算法求解当前可⾏点，并通过B样条曲线优化出光滑路径<br>
+1. <strong>模糊PID控制器编写(C++)</strong>：通过模糊规则自适应调整PID系数，实现风扰动下无人机精准控制<br>
+2. <strong>编写路径规划算法VFH</strong>：依据VFH算法求解当前可行点，并通过B样条曲线优化出光滑路径<br>
 3. <strong>部署滤波算法</strong>：通过卡尔曼滤波以及低通滤波器，实现对噪声的滤除作用，使控制器平滑输出</p>
 <p><strong>技术栈：</strong>C++, 模糊 PID 控制, VFH 路径规划, 卡尔曼滤波</p>
 </section>
@@ -229,8 +226,8 @@ ul.task-list li input[type="checkbox"] {
 3. 飞行过程中不得避免与障碍物的碰撞<br>
 其中: 规定使用统一无人机平台(搭载双目鱼眼相机以及二维激光雷达)</p>
 <p><strong>本人负责任务</strong>：<br>
-1. <strong>编写避障算法VFH</strong>：依据VFH算法求解当前可⾏点，通过B样条曲线得出光滑路径，实现UAV避障功能。<br>
-2. <strong>串级PID控制器编写(C++)</strong>：编写位置、速度环PID并引⼊积分分离、微分先⾏模块实现⽆⼈机精确控制。</p>
+1. <strong>编写避障算法VFH</strong>：依据VFH算法求解当前可行点，通过B样条曲线得出光滑路径，实现UAV避障功能。<br>
+2. <strong>串级PID控制器编写(C++)</strong>：编写位置、速度环PID并引入积分分离、微分先行模块实现无人机精确控制。</p>
 <p><strong>技术栈：</strong><br>
 - ROS, C++,VFH 路径规划</p>
 </div>
@@ -244,9 +241,9 @@ ul.task-list li input[type="checkbox"] {
 2. 在10</em>8.5m的区域中寻找存在的5个标靶进行投放，投放得分由投放准确度与标靶自身权重计算，同时注意躲避该区域内的密集障碍物。<br>
 3. 执行完任务2后，前往10*1.5m的长廊入口，穿越长廊抵达降落点准确降落，其中长廊中存在两个80cm宽的窄道。</p>
 <p><strong>本人负责任务</strong>：<br>
-1. <strong>Ubuntu下编写基于ROS的⻜⾏代码(C++)</strong>：执⾏障碍森林、狭窄⾛廊环境下避障任务及投放任务<br>
-2. <strong>部署FAST-LIO及避障算法Ego-Planner</strong> : ⽆⼈机定位并⽣成可⾏路线，MPC控制器跟踪路径避障<br>
-3. <strong>编写MPC控制器(C++)</strong>：依据目标点与约束条件在线计算对⽆⼈机加速度的控制，以跟踪全局路径</p>
+1. <strong>Ubuntu下编写基于ROS的飞行代码(C++)</strong>：执行障碍森林、狭窄走廊环境下避障任务及投放任务<br>
+2. <strong>部署FAST-LIO及避障算法Ego-Planner</strong> : 无人机定位并生成可行路线，MPC控制器跟踪路径避障<br>
+3. <strong>编写MPC控制器(C++)</strong>：依据目标点与约束条件在线计算对无人机加速度的控制，以跟踪全局路径</p>
 <p><strong>技术栈：</strong>ROS, FAST-LIO, Ego-Planner, MPC 控制器, C++</p>
 </section>
 
