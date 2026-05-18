@@ -286,8 +286,8 @@ ul.task-list li input[type="checkbox"] {
 3. 在距离起飞点65m远的8*5区域内侦查危险物，并远程传送数据，由参赛人员在控制台填写<br>
 4. 完成以上任务后无人机自主飞回起飞点并降落</p>
 <p><strong>本人负责任务</strong>：<br>
-1. <strong>模糊PID控制器编写(C++)</strong>：通过模糊规则⾃适应调整PID系数，实现⻛扰动下⽆⼈机精准控制<br>
-2. <strong>编写路径规划算法VFH</strong>：依据VFH算法求解当前可⾏点，并通过B样条曲线优化出光滑路径<br>
+1. <strong>模糊PID控制器编写(C++)</strong>：通过模糊规则自适应调整PID系数，实现风扰动下无人机精准控制<br>
+2. <strong>编写路径规划算法VFH</strong>：依据VFH算法求解当前可行点，并通过B样条曲线优化出光滑路径<br>
 3. <strong>部署滤波算法</strong>：通过卡尔曼滤波以及低通滤波器，实现对噪声的滤除作用，使控制器平滑输出</p>
 </section>
 <section id="障碍物森林中的快递无人机" class="level3">
@@ -298,9 +298,9 @@ ul.task-list li input[type="checkbox"] {
 2. 在10 </em> 8.5m的区域中寻找存在的5个标靶进行投放，投放得分由投放准确度与标靶自身权重计算，同时注意躲避该区域内的密集障碍物<br>
 3. 执行完任务2后，前往10*1.5m的长廊入口，穿越长廊抵达降落点准确降落，其中长廊中存在两个80cm宽的窄道</p>
 <p><strong>本人负责任务</strong>：<br>
-1. <strong>Ubuntu下编写基于ROS的⻜⾏代码(C++)</strong>：执⾏障碍森林、狭窄⾛廊环境下避障任务及投放任务<br>
-2. <strong>部署FAST-LIO及避障算法Ego-Planner</strong> : ⽆⼈机定位并⽣成可⾏路线，MPC控制器跟踪路径避障<br>
-3. <strong>编写MPC控制器(C++)</strong>：依据目标点与约束条件在线计算对⽆⼈机加速度的控制，以跟踪全局路径</p>
+1. <strong>Ubuntu下编写基于ROS的飞行代码(C++)</strong>：执行障碍森林、狭窄走廊环境下避障任务及投放任务<br>
+2. <strong>部署FAST-LIO及避障算法Ego-Planner</strong> : 无人机定位并生成可行路线，MPC控制器跟踪路径避障<br>
+3. <strong>编写MPC控制器(C++)</strong>：依据目标点与约束条件在线计算对无人机加速度的控制，以跟踪全局路径</p>
 </section>
 </section>
 <section id="研究兴趣与专业技能" class="level2 card fade-in delay-4">
