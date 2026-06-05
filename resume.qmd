@@ -63,10 +63,10 @@ Born in December 2003, undergraduate student in Mechanical Design, Manufacturing
 
 **Project**: Tennis ball-catching cart — RL model training and deployment
 
-1. **RL model training**: In Isaac Gym, implemented PPO on the rsl_rl library to train the cart for automatic tennis-reception control.
-2. **Simulation migration**: Ported the Isaac Gym environment to the higher-fidelity MujocoLab (Mujoco fidelity + GPU-parallel compute).
-3. **Sim2Real gap**: Deployed the model from simulation to the real platform and validated real-world performance.
-4. **Tennis simulator**: Designed a standalone tennis dynamics model and an optimizer that tunes its parameters against real trajectory data.
+1. **RL model training**: In Isaac Gym, implemented PPO on the rsl_rl library to train the cart for automatic tennis-reception control.  
+2. **Sim2Real gap**: Deployed the model from simulation to the real platform and validated real-world performance(Accuracy rate of catching the ball).
+3. **Simulation migration**: Ported the Isaac Gym environment to the higher-fidelity MujocoLab (Mujoco fidelity + GPU-parallel compute).  
+4. **Tennis simulator**: Designed a standalone tennis dynamics model and an optimizer that tunes its parameters against real trajectory data.  
 :::
 :::
 :::

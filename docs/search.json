@@ -53,7 +53,7 @@
     "href": "resume-zh.html#实习经历",
     "title": "个人简历",
     "section": "实习经历",
-    "text": "实习经历\n\n\n2025.12.10 – 2026.04.10 深圳市速腾聚创科技有限公司 (Robosense) · 强化学习算法实习生\n项目：网球接打小车的强化学习模型训练与部署\n\n强化学习模型训练：在 Isaac Gym 训练环境下，基于 rsl_rl 库实现 PPO 算法，训练小车完成网球接打自动控制任务。\nSim2Real Gap 研究：将模型从虚拟训练环境部署到真实物理环境并验证其在真实环境下的表现。\n仿真环境迁移：将原先基于 Isaac Gym 的仿真环境迁移到更高保真的 MujocoLab（兼顾 Mujoco 高保真与 GPU 并行计算）。\n网球轨迹仿真器设计：独立于仿真环境自行设计网球动力学模型，并设计优化器结合真实轨迹数据优化其参数。"
+    "text": "实习经历\n\n\n2025.12.10 – 2026.04.10 深圳市速腾聚创科技有限公司 (Robosense) · 强化学习算法实习生\n项目：网球接打小车的强化学习模型训练与部署\n\n强化学习模型训练：在 Isaac Gym 训练环境下，基于 rsl_rl 库实现 PPO 算法，训练小车完成网球接打自动控制任务。\n\nSim2Real Gap 研究：将模型从虚拟训练环境部署到真实物理环境并验证其在真实环境下的表现(接球成功率)。\n\n仿真环境迁移：将原先基于 Isaac Gym 的仿真环境迁移到更高保真的 MujocoLab（兼顾 Mujoco 高保真与 GPU 并行计算）。\n\n网球轨迹仿真器设计：独立于仿真环境自行设计网球动力学模型，并设计优化器结合真实轨迹数据优化其参数。"
   },
   {
     "objectID": "resume-zh.html#主要项目经历",
@@ -137,7 +137,7 @@
     "href": "resume.html#internship",
     "title": "Resume",
     "section": "Internship",
-    "text": "Internship\n\n\n2025.12.10 – 2026.04.10 Robosense · Reinforcement Learning Algorithm Intern\nProject: Tennis ball-catching cart — RL model training and deployment\n\nRL model training: In Isaac Gym, implemented PPO on the rsl_rl library to train the cart for automatic tennis-reception control.\nSimulation migration: Ported the Isaac Gym environment to the higher-fidelity MujocoLab (Mujoco fidelity + GPU-parallel compute).\nSim2Real gap: Deployed the model from simulation to the real platform and validated real-world performance.\nTennis simulator: Designed a standalone tennis dynamics model and an optimizer that tunes its parameters against real trajectory data."
+    "text": "Internship\n\n\n2025.12.10 – 2026.04.10 Robosense · Reinforcement Learning Algorithm Intern\nProject: Tennis ball-catching cart — RL model training and deployment\n\nRL model training: In Isaac Gym, implemented PPO on the rsl_rl library to train the cart for automatic tennis-reception control.\n\nSim2Real gap: Deployed the model from simulation to the real platform and validated real-world performance(Accuracy rate of catching the ball).\nSimulation migration: Ported the Isaac Gym environment to the higher-fidelity MujocoLab (Mujoco fidelity + GPU-parallel compute).\n\nTennis simulator: Designed a standalone tennis dynamics model and an optimizer that tunes its parameters against real trajectory data."
   },
   {
     "objectID": "resume.html#project-experience",
