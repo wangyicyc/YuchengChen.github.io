@@ -1,0 +1,118 @@
+---
+title: "Project Outcome Presentation"
+---
+
+::: {.card .fade-in .delay-1}
+## Adaptive MPC Controller Based on Reinforcement Learning (PPO)
+
+::: {.project-card__meta}
+[Project Lead]{.tag} [2025.12 – 2026.03]{.tag}
+:::
+
+::: {.project-card__media}
+![](images/VFH.gif){fig-alt="VFH obstacle avoidance demonstration" loading="lazy"}
+:::
+
+**Project Description:** Combined reinforcement learning with model predictive
+control to enhance UAV flight robustness in complex environments, especially
+under disturbed positioning information.
+
+**Key Contributions:**
+
+1. **Algorithm Integration**: Integrated an Actor-Critic RL algorithm with the MPC controller, using RL to adaptively adjust the MPC cost function so the system adapts to environmental change.
+2. **Model Training**: Trained with PPO, constructing Actor-Critic models on an MLP network.
+3. **Differentiable MPC**: Adopted a differentiable MPC framework, folding the MPC optimization into the RL training pipeline.
+4. **C++ / Python Integration**: Implemented the differentiable MPC controller in C++ and integrated it into RL training (Python), improving training and inference efficiency.
+
+::: {.skill-badges}
+[Python]{.tag} [C++]{.tag} [PyTorch]{.tag} [Differentiable MPC]{.tag} [PPO]{.tag}
+:::
+:::
+
+::: {.card .fade-in .delay-2}
+## Decentralized Multi-Robot Ergodic Planning for Exploration of Unknown Dynamic Environments
+
+::: {.project-card__meta}
+[First Author · RAL (in submission)]{.tag .tag--accent} [2025.09 – 2026.02]{.tag}
+:::
+
+::: {.project-card__media}
+![](images/iDMED.gif){fig-alt="Decentralized multi-robot ergodic planning simulation" loading="lazy"}
+:::
+
+**Project Description:** A unified framework for distributed collaborative search
+that handles two challenges at once — unknown dynamic environments and
+decentralized robots. It integrates:
+
+- Bayesian filter
+- Communication-forwarding mechanism
+- Belief built from ground truth and Bayesian estimation
+- Time-decaying ergodic metric
+- Probabilistic connectivity
+- iLQR solver
+
+::: {.skill-badges}
+[Ergodic Control]{.tag} [iLQR]{.tag} [Bayesian Filter]{.tag} [Multi-Robot]{.tag}
+:::
+:::
+
+::: {.card .fade-in .delay-3}
+## Wind-Disturbed UAV Target Search & Delivery
+
+::: {.project-card__meta}
+[Project Lead]{.tag} [2024.05 – 2024.10]{.tag}
+:::
+
+::: {.project-card__media}
+![](images/Fuzzy_PID.gif){fig-alt="Fuzzy PID control demonstration" loading="lazy"}
+:::
+
+**Project Description:** Outdoor environment. A UAV carrying a 1.5L bottle flew
+autonomously over an 8m × 80m runway to:
+
+1. Take off autonomously from the designated point.
+2. Search an 8 × 5m area 30m out and deliver to one of three white barrels (Ø 30, 20, 15 cm) — smaller barrels scored higher.
+3. Reconnoiter hazards in an 8 × 5m area 65m out and transmit data to the console.
+4. Return autonomously and land.
+
+A unified UAV platform was required (dual fisheye cameras + 2D LiDAR).
+
+**Key Contributions:**
+
+1. **Fuzzy PID Controller (C++)**: Fuzzy rules adaptively tune PID coefficients for precise control under wind disturbance.
+2. **VFH Path Planning**: Solved feasible points via VFH and smoothed paths with B-spline optimization.
+3. **Filtering**: Combined Kalman and low-pass filters to denoise and smooth the controller output.
+
+::: {.skill-badges}
+[C++]{.tag} [Fuzzy PID]{.tag} [VFH]{.tag} [Kalman Filter]{.tag}
+:::
+:::
+
+::: {.card .fade-in .delay-4}
+## Obstacle Forest Express Delivery UAV
+
+::: {.project-card__meta}
+[Project Lead]{.tag} [2023.10 – 2024.05]{.tag}
+:::
+
+::: {.project-card__media}
+![](images/EGO-Planner.gif){fig-alt="EGO-Planner obstacle avoidance demonstration" loading="lazy"}
+:::
+
+**Project Description:** Indoor environment. A UAV carrying 3 × 100g boxes
+operated in a 10 × 10m area:
+
+1. Take off autonomously from the takeoff point.
+2. Search a 10 × 8.5m area for 5 targets and deliver — scored by accuracy and target weight — while avoiding dense obstacles.
+3. Enter a 10 × 1.5m corridor, traverse it (two 80cm-wide narrow passages), and land precisely.
+
+**Key Contributions:**
+
+1. **ROS Flight Code (C++)**: Obstacle avoidance and delivery in obstacle-forest and narrow-corridor environments.
+2. **Localization & Path Generation**: FAST-LIO and Ego-Planner for localization and feasible routes, with an MPC controller tracking paths for obstacle avoidance.
+3. **MPC Controller (C++)**: Computes UAV acceleration inputs online from targets and constraints to track the global path.
+
+::: {.skill-badges}
+[ROS]{.tag} [FAST-LIO]{.tag} [Ego-Planner]{.tag} [MPC]{.tag} [C++]{.tag}
+:::
+:::

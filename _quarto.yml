@@ -1,0 +1,58 @@
+project:
+  type: website
+  output-dir: docs
+  
+website:
+  page-navigation: true
+  title: "Yucheng Chen"
+  site-url: https://wangyicyc.github.io/YuchengChen.github.io
+  favicon: images/site-logo.png
+  repo-url: https://github.com/wangyicyc/YuchengChen.github.io
+  repo-actions: [edit, issue]
+  
+  page-footer:
+    left: |
+      © 2026 Yucheng Chen<br>
+      All rights reserved
+    right: |
+      Made with [Quarto](https://quarto.org/)<br>
+    
+  navbar:
+    background: "#4361ee"
+    search: true
+    logo: images/site-logo.png
+    logo-alt: "Yucheng Chen"
+    left:
+      - text: "Home"
+        href: index.qmd
+        id: "home-link"
+    right:
+      - text: "Resume"
+        href: resume.qmd
+        id: "resume-link"
+      - text: "Project"
+        href: project.qmd
+        id: "project-link"
+      - text: "Language"
+        id: "language-link"
+        menu:
+          - text: "English"
+            href: index.qmd
+            id: "english-option"
+          - text: "中文"
+            href: index-zh.qmd
+            id: "chinese-option"
+      - icon: github
+        href: https://github.com/wangyicyc
+      - icon: envelope
+        href: mailto:Yucheng__Chen@163.com
+
+format:
+  html:
+    theme: styles.scss
+    toc: true            # 启用目录
+    toc-position: right  # 将目录放置在页面的右侧
+    toc-depth: 3         # 设置目录的深度，数字越大，目录越详细
+    include-in-header:
+      - text: |
+          <script src="scripts/language-switcher.js"></script>

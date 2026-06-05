@@ -1,0 +1,190 @@
+---
+title: "Resume"
+image: images/yuchengchen_2025.jpg
+about:
+  id: hero-heading
+  template: trestles
+  image-width: 12em
+  image-shape: round
+  links:
+    - icon: mailbox
+      text: "Yucheng__Chen@163.com"
+      href: "mailto:Yucheng__Chen@163.com"
+    - icon: phone
+      text: "18759135762"
+      href: "tel:18759135762"
+    - icon: brands zhihu
+      text: "知乎"
+      href: "https://www.zhihu.com/people/chen-yu-cheng-67-47"  
+---
+
+::: {#hero-heading .profile-card .fade-in}
+
+# Self-introduction
+
+Born in December 2003, undergraduate student in Mechanical Design, Manufacturing and Automation (Robotics Direction) at Huazhong University of Science and Technology, expected to graduate in June 2026. Admitted to Shanghai Jiao Tong University for master's degree in Control Science and Engineering starting from September 2026. The current research directions are: optimal control, path planning, and reinforcement learning. A first-author paper on planning and control is currently under review at RAL (IEEE Robotics and Automation Letters).
+:::
+
+::: {.card .fade-in .delay-1}
+## Personal Information & Education
+
+### Personal Information
+- Date of Birth: December 2003
+- Email: Yucheng__Chen@163.com
+- Phone: 18759135762
+- English: CET-6 (504)
+- Website: <https://wangyicyc.github.io/YuchengChen.github.io>
+- Zhihu: [Chen Yucheng](https://www.zhihu.com/people/chen-yu-cheng-67-47)
+
+### Education
+
+::: {.timeline}
+::: {.timeline__item .timeline__item--active}
+[2026.09 – present]{.timeline__when}
+[Shanghai Jiao Tong University]{.timeline__org} · MS, Control Science & Engineering (incoming)
+:::
+::: {.timeline__item}
+[2022.09 – 2026.06]{.timeline__when}
+[Huazhong University of Science and Technology (985)]{.timeline__org} · BEng, Mechatronics (Robotics)
+
+- Weighted GPA: 90/100 (top 10% in major)
+- Core courses: Calculus I/II 93 / 95 · Linear Algebra 91 · Complex Variables & Integral Transforms 93 · Theoretical Mechanics 96 · Probability & Statistics 96 · Comprehensive English 93
+:::
+:::
+:::
+
+::: {.card .fade-in .delay-2}
+## Internship
+
+::: {.timeline}
+::: {.timeline__item .timeline__item--active}
+[2025.12.10 – 2026.04.10]{.timeline__when}
+[Robosense]{.timeline__org} · Reinforcement Learning Algorithm Intern
+
+**Project**: Tennis ball-catching cart — RL model training and deployment
+
+1. **RL model training**: In Isaac Gym, implemented PPO on the rsl_rl library to train the cart for automatic tennis-reception control.
+2. **Simulation migration**: Ported the Isaac Gym environment to the higher-fidelity MujocoLab (Mujoco fidelity + GPU-parallel compute).
+3. **Sim2Real gap**: Deployed the model from simulation to the real platform and validated real-world performance.
+4. **Tennis simulator**: Designed a standalone tennis dynamics model and an optimizer that tunes its parameters against real trajectory data.
+:::
+:::
+:::
+
+::: {.card .fade-in .delay-3}
+## Project Experience
+
+### Adaptive MPC Controller Based on Reinforcement Learning (PPO)
+
+::: {.project-card__meta}
+[Project Lead]{.tag} [2025.12 – 2026.03]{.tag}
+:::
+
+:::: {.columns}
+::: {.column width="34%"}
+![](images/VFH.gif){fig-alt="VFH obstacle avoidance demonstration" loading="lazy" width="100%"}
+:::
+::: {.column width="4%"}
+:::
+::: {.column width="62%"}
+**Project Description**: Combine reinforcement learning with model predictive control to enhance UAV flight robustness in complex environments, especially under disturbed positioning information.
+
+**Key Contributions**:
+
+1. **Algorithm Integration**: Integrated an Actor-Critic RL algorithm with the MPC controller, using RL to adaptively adjust the MPC cost function.
+2. **Model Training**: Trained with PPO, building Actor-Critic models on an MLP network.
+3. **Differentiable MPC**: Folded the MPC optimization into the RL training pipeline via a differentiable MPC framework.
+4. **C++ / Python Integration**: Implemented the differentiable MPC controller in C++ and integrated it into RL training (Python), improving efficiency.
+:::
+::::
+
+### Wind-Disturbed UAV Target Search and Delivery
+
+::: {.project-card__meta}
+[Project Lead]{.tag} [2024.05 – 2024.10]{.tag}
+:::
+
+::: {.project-card__media}
+![](images/Fuzzy_PID.gif){fig-alt="Fuzzy PID control demonstration" loading="lazy" width="100%"}
+:::
+
+**Project Description**：Outdoor environment: UAV carrying a 1.5L mineral water bottle autonomously flew on an 8mx80m runway, performing the following tasks:  
+1. UAV autonomously took off from the designated takeoff point  
+2. Searched for white barrels for delivery in an 8x5m area 30m away from the takeoff point, with three white barrels (diameters: 30, 20, 15 cm) - smaller diameter barrels scored higher  
+3. Reconnoitered dangerous objects in an 8x5 area 65m away from the takeoff point and remotely transmitted data for team members to fill in at the console  
+4. After completing the above tasks, UAV autonomously returned to the takeoff point and landed  
+**Key Contributions**：  
+1. **Fuzzy PID Controller (C++)**: Implemented fuzzy rules to adaptively adjust PID coefficients for precise control of UAVs under wind disturbances  
+2. **Path Planning Algorithm VFH**: Solved current feasible points based on VFH algorithm and generated smooth paths through B-spline curve optimization  
+3. **Filter Algorithm Deployment**: Combined Kalman filter and low-pass filter to remove noise and smooth controller output  
+
+### Obstacle Forest Express Delivery UAV
+
+::: {.project-card__meta}
+[Project Lead]{.tag} [2023.10 – 2024.05]{.tag}
+:::
+
+::: {.project-card__media}
+![](images/EGO-Planner.gif){fig-alt="EGO-Planner obstacle avoidance demonstration" loading="lazy" width="100%"}
+:::
+
+**Project Description**：Indoor environment: UAV carrying 3×100g express boxes performed tasks in a 10×10m area, including:  
+  1. Autonomous takeoff from the takeoff point  
+  2. Searching for 5 existing targets in a 10×8.5m area for delivery, with delivery scores calculated based on delivery accuracy and target weights, while avoiding dense obstacles in the area  
+  3. After completing task 2, proceeding to the entrance of a 10×1.5m corridor, traversing the corridor to reach the landing point for accurate landing, with two 80cm-wide narrow passages in the corridor  
+**Key Contributions**：  
+  1. **ROS-based Flight Code (C++)**: Implemented obstacle avoidance and delivery tasks in obstacle forest and narrow corridor environments  
+  2. **Localization and Path Generation**: Deployed FAST-LIO and Ego-Planner for UAV localization and feasible route generation, with MPC controller tracking paths for obstacle avoidance  
+  3. **MPC Controller (C++)**: Computed control inputs for UAV acceleration online based on target points and constraints to track global paths  
+
+:::
+
+:::: {.card .fade-in .delay-4}
+## Research Interests & Professional Skills
+
+### Research Interests
+
+::: {.skill-badges}
+[Optimal Control]{.tag} [Path Planning]{.tag} [Reinforcement Learning]{.tag}
+:::
+
+### Professional Skills
+
+**Robotics & Systems**
+
+::: {.skill-badges}
+[Ubuntu]{.tag} [ROS1]{.tag} [ROS2]{.tag} [IK]{.tag} [Rotation Matrices]{.tag} [Quaternions]{.tag}
+:::
+
+**Simulation**
+
+::: {.skill-badges}
+[Gazebo]{.tag} [Isaac Gym]{.tag} [Mujoco]{.tag}
+:::
+
+**Reinforcement Learning**
+
+::: {.skill-badges}
+[Actor-Critic]{.tag} [TRPO]{.tag} [PPO]{.tag} [SAC]{.tag}
+:::
+
+**Optimal Control**
+
+::: {.skill-badges}
+[LQR]{.tag} [MPC]{.tag} [iLQR]{.tag} [DDP]{.tag}
+:::
+::::
+
+::: {.card .fade-in .delay-5}
+## Awards and Honors
+
+- **China Robot Competition and ROBOCUP Robot World Cup China Selection**  
+  - National Second Prize (2023)  
+  - National Third Prize (2024)  
+- **China University Student Aircraft Design Innovation Competition**  
+  - Individual/Team First Prize (2023)  
+- **Scholarships**  
+  - Jiyuan Scholarship (2023.10)  
+  - Academic Excellence Scholarship (2023.10)  
+  - Freshman Academic Excellence Scholarship (2023.03)
+:::

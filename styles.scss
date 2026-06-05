@@ -1,0 +1,466 @@
+/*-- scss:defaults --*/
+
+/* 主题颜色定义 - 现代清新配色（保留 #4361ee 蓝色主调） */
+$theme-primary: #4361ee;      /* 主色调：蓝色 */
+$theme-primary-light: #4895ef;
+$theme-primary-dark: #3a0ca3;
+
+$theme-accent: #f72585;       /* 火花色：粉色（仅少量点缀使用） */
+
+$theme-neutral-100: #f6f8fc;
+$theme-neutral-200: #e9ecef;
+$theme-neutral-300: #dee2e6;
+$theme-neutral-400: #ced4da;
+$theme-neutral-500: #adb5bd;
+$theme-neutral-600: #5a6473;
+$theme-neutral-700: #495057;
+$theme-neutral-800: #1f2430;
+$theme-neutral-900: #121620;
+
+/* 主要背景和字体颜色 */
+$body-bg: $theme-neutral-100;
+$body-color: $theme-neutral-800;
+$headings-color: $theme-primary-dark;
+$link-color: $theme-primary;
+$link-hover-color: $theme-primary-dark;
+
+/* 代码样式 */
+$code-color: $theme-primary-dark;
+$code-bg: $theme-neutral-200;
+$code-block-bg-alpha: -0.8;
+$background-color: $theme-neutral-100;
+
+/* 导航栏 */
+$navbar-bg: $theme-primary;
+$navbar-color: white;
+
+/* 提示框颜色 */
+$callout-color-note: $theme-primary-light;
+$callout-color-tip: $theme-primary;
+
+/* 字体设置 —— 仅保留实际使用的三套字体，减少渲染阻塞 */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+$font-family-sans-serif: 'Lato', sans-serif;
+$font-family-monospace: 'Source Code Pro', monospace;
+$font-headings: 'Montserrat', sans-serif;
+
+$font-size-root: 16px;
+
+/*-- scss:rules --*/
+
+/* ============================================================
+   设计令牌层（Design Tokens）
+   颜色 / 间距 / 字阶 / 圆角 / 阴影 —— 组件统一引用
+   ============================================================ */
+:root {
+  --c-primary:#4361ee;
+  --c-primary-light:#4895ef;
+  --c-primary-dark:#3a0ca3;
+  --c-accent:#f72585;                 /* 火花色，少量点缀 */
+
+  --c-ink:#1f2430;
+  --c-muted:#5a6473;
+  --c-line:#e6e9ef;
+  --c-surface:#ffffff;
+  --c-bg:#f6f8fc;
+
+  --space-1:.25rem; --space-2:.5rem; --space-3:.75rem; --space-4:1rem;
+  --space-5:1.5rem; --space-6:2rem;  --space-7:3rem;   --space-8:4rem; --space-9:6rem;
+
+  --fs-xs:.8rem; --fs-sm:.9rem; --fs-base:1rem; --fs-lg:1.2rem;
+  --fs-xl:1.5rem; --fs-2xl:2rem; --fs-3xl:2.75rem;
+
+  --r-sm:6px; --r-md:10px; --r-lg:16px; --r-pill:999px;
+
+  --sh-1:0 1px 2px rgba(16,24,40,.06),0 1px 3px rgba(16,24,40,.10);
+  --sh-2:0 4px 12px rgba(16,24,40,.08),0 2px 4px rgba(16,24,40,.06);
+  --sh-3:0 12px 28px rgba(16,24,40,.12);
+
+  --measure:70ch;
+  --maxw:1080px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+
+/* ============================================================
+   基础排版
+   ============================================================ */
+body {
+  line-height: 1.65;
+  color: var(--c-ink);
+  font-family: $font-family-sans-serif;
+  background: var(--c-bg);
+}
+
+ul, ol { line-height: 1.65; }
+
+a {
+  color: var(--c-primary);
+  text-decoration: none;
+  transition: color 0.2s var(--ease);
+}
+a:hover {
+  color: var(--c-primary-dark);
+  text-decoration: underline;
+}
+
+code {
+  color: var(--c-primary-dark);
+  background-color: var(--c-line);
+  padding: 2px 6px;
+  border-radius: var(--r-sm);
+  font-family: $font-family-monospace;
+  font-size: 0.9em;
+}
+
+h1, h2, h3, h4 {
+  font-family: $font-headings;
+  color: var(--c-primary-dark);
+}
+h1 { font-size: var(--fs-3xl); font-weight: 700; line-height: 1.15; margin-bottom: var(--space-4); }
+h2 { font-size: var(--fs-2xl); font-weight: 600; margin-bottom: var(--space-3); }
+h3 { font-size: var(--fs-xl); font-weight: 600; color: var(--c-primary); margin-bottom: var(--space-2); }
+h4 { font-size: var(--fs-lg); font-weight: 600; color: var(--c-primary); margin-bottom: var(--space-2); }
+
+/* 阅读宽度约束 */
+main.content { max-width: var(--maxw); }
+.card > p,
+.card > ul,
+.card > ol,
+.timeline__item p { max-width: var(--measure); }
+
+/* ============================================================
+   卡片
+   ============================================================ */
+.card {
+  background: var(--c-surface);
+  border: 1px solid var(--c-line);
+  border-radius: var(--r-lg);
+  box-shadow: var(--sh-1);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+  transition: transform .25s var(--ease), box-shadow .25s var(--ease);
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--sh-2);
+}
+.card > h2:first-child,
+.card > h3:first-child { margin-top: 0; }
+
+/* ============================================================
+   英雄区（首页 landing）
+   ============================================================ */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--space-8);
+  align-items: center;
+  padding: var(--space-9) 0 var(--space-7);
+}
+.hero__name {
+  font-family: $font-headings;
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 var(--space-3);
+  color: var(--c-primary-dark);
+}
+.hero__tagline {
+  font-size: var(--fs-lg);
+  color: var(--c-muted);
+  max-width: 46ch;
+  margin-bottom: var(--space-5);
+}
+.hero__photo img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: var(--r-pill);
+  box-shadow: var(--sh-3);
+  border: 4px solid #fff;
+}
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--space-5);
+    padding-top: var(--space-7);
+  }
+  .hero__photo { order: -1; }
+  .hero__photo img { width: 160px; height: 160px; }
+  .hero__tagline { margin-inline: auto; }
+  .hero__actions { justify-content: center; }
+}
+
+/* ============================================================
+   标签 / 技能徽章 chip
+   ============================================================ */
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-3) 0;
+  padding: 0;
+  list-style: none;
+}
+.tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  line-height: 1;
+  padding: .4em .8em;
+  border-radius: var(--r-pill);
+  background: rgba(67,97,238,.08);
+  color: var(--c-primary-dark);
+  border: 1px solid rgba(67,97,238,.18);
+}
+.tag--accent {
+  background: rgba(247,37,133,.08);
+  color: var(--c-accent);
+  border-color: rgba(247,37,133,.22);
+}
+
+/* ============================================================
+   按钮
+   ============================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5em;
+  padding: .6em 1.15em;
+  border-radius: var(--r-md);
+  font-weight: 600;
+  transition: all .2s var(--ease);
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.btn-primary {
+  background: var(--c-primary);
+  color: #fff;
+  box-shadow: var(--sh-1);
+}
+.btn-primary:hover {
+  background: var(--c-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--sh-2);
+  color: #fff;
+  text-decoration: none;
+}
+.btn-ghost {
+  background: #fff;
+  color: var(--c-primary);
+  border-color: var(--c-line);
+}
+.btn-ghost:hover {
+  border-color: var(--c-primary);
+  background: rgba(67,97,238,.04);
+  text-decoration: none;
+}
+
+/* ============================================================
+   时间线（教育 / 经历）
+   ============================================================ */
+.timeline {
+  position: relative;
+  margin: var(--space-4) 0;
+  padding-left: var(--space-6);
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 7px; top: 4px; bottom: 4px;
+  width: 2px;
+  background: var(--c-line);
+}
+.timeline__item {
+  position: relative;
+  padding-bottom: var(--space-5);
+}
+.timeline__item:last-child { padding-bottom: 0; }
+.timeline__item::before {
+  content: "";
+  position: absolute;
+  left: calc(-1 * var(--space-6) + 1px);
+  top: .35em;
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid var(--c-primary);
+}
+.timeline__item--active::before {
+  border-color: var(--c-accent);
+  background: var(--c-accent);
+}
+.timeline__when {
+  display: block;
+  font-size: var(--fs-sm);
+  color: var(--c-muted);
+  font-weight: 600;
+}
+.timeline__org { color: var(--c-primary-dark); font-weight: 600; }
+
+/* ============================================================
+   项目网格（首页 selected work 缩略）
+   ============================================================ */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-6);
+}
+@media (max-width: 560px) {
+  .project-grid { grid-template-columns: 1fr; }
+}
+.project-card__media img {
+  width: 100%;
+  border-radius: var(--r-md);
+  border: 1px solid var(--c-line);
+  background: var(--c-bg);
+}
+.project-card__meta {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  color: var(--c-muted);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+}
+
+/* ============================================================
+   个人信息卡片（保留渐变背景，微调）
+   ============================================================ */
+.profile-card {
+  text-align: center;
+  padding: var(--space-8) var(--space-5);
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: var(--r-lg);
+  margin-bottom: var(--space-7);
+}
+
+/* ============================================================
+   导航栏
+   ============================================================ */
+.navbar {
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar a {
+  color: #f0f4ff !important;
+  font-weight: 500;
+  transition: color 0.2s var(--ease);
+  padding: 8px 12px !important;
+}
+.navbar a:hover {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: var(--r-sm);
+}
+.navbar .dropdown-menu {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: var(--r-md);
+  box-shadow: var(--sh-2);
+  margin-top: 8px;
+}
+.navbar .dropdown-item {
+  color: #333 !important;
+  padding: 10px 16px;
+  transition: all 0.2s var(--ease);
+}
+.navbar .dropdown-item:hover {
+  color: var(--c-primary) !important;
+  background-color: #f8f9fa !important;
+}
+
+/* ============================================================
+   页脚
+   ============================================================ */
+.page-footer {
+  background-color: var(--c-ink);
+  color: white;
+  padding: 30px 0;
+  margin-top: var(--space-9);
+}
+
+/* ============================================================
+   动画（fade-in + 分级延迟 delay-1..8）
+   ============================================================ */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: none; }
+}
+.fade-in { animation: fadeIn .6s var(--ease) both; }
+
+@for $i from 1 through 8 {
+  .delay-#{$i} { animation-delay: #{$i * 0.12}s; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in,
+  [class*="delay-"] {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .card, .card:hover { transition: none; transform: none; }
+}
+
+/* ============================================================
+   右侧目录（TOC）
+   ============================================================ */
+#TOC {
+  font-size: 0.8rem;
+  line-height: 2.2;
+}
+#TOC .nav-link {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--c-muted);
+  transition: color 0.2s var(--ease);
+  padding: 6px 6px;
+  border-left: 2px solid transparent;
+}
+#TOC .nav-link:hover,
+#TOC .nav-link.active {
+  color: var(--c-primary);
+  border-left-color: var(--c-primary);
+  background: none;
+  text-decoration: none;
+}
+#quarto-margin-sidebar {
+  width: 260px !important;
+  flex: 0 0 260px !important;
+}
+#TOC ul {
+  padding-left: 0.8rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+#TOC li {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* ============================================================
+   响应式
+   ============================================================ */
+@media (max-width: 768px) {
+  .profile-card { padding: var(--space-7) var(--space-4); }
+  h1 { font-size: var(--fs-2xl); }
+  h2 { font-size: var(--fs-xl); }
+  h3 { font-size: var(--fs-lg); }
+  .card { padding: var(--space-5); }
+}

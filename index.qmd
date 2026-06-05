@@ -1,0 +1,56 @@
+---
+pagetitle: "Yucheng Chen"
+toc: false
+page-layout: full
+---
+
+::: {.hero .fade-in}
+::: {.hero__intro}
+# Yucheng Chen {.hero__name}
+
+::: {.hero__tagline}
+Robotics undergraduate at HUST, incoming Control Science MS at SJTU. I work on
+optimal control, motion planning, and reinforcement learning for agile
+autonomous flight.
+:::
+
+::: {.skill-badges}
+[Optimal Control]{.tag} [Path Planning]{.tag} [Reinforcement Learning]{.tag} [RAL · first author (in submission)]{.tag .tag--accent}
+:::
+
+::: {.hero__actions}
+[Resume](resume.html){.btn .btn-primary}
+[Projects](project.html){.btn .btn-ghost}
+[Email](mailto:Yucheng__Chen@163.com){.btn .btn-ghost}
+[Zhihu](https://www.zhihu.com/people/chen-yu-cheng-67-47){.btn .btn-ghost}
+:::
+:::
+
+::: {.hero__photo}
+![](images/yuchengchen_2025.jpg){fig-alt="Yucheng Chen"}
+:::
+:::
+
+## Selected Work
+
+::: {.project-grid}
+::: {.card .fade-in .delay-1}
+### Decentralized Multi-Robot Ergodic Planning
+
+First author, RAL (in submission). A unified framework for distributed
+multi-robot ergodic exploration of unknown dynamic environments — Bayesian
+belief fusion, probabilistic connectivity, and an iLQR solver.
+
+[Read more →](project.html){.btn .btn-ghost}
+:::
+
+::: {.card .fade-in .delay-2}
+### RL-Adaptive MPC Controller
+
+Project lead. A differentiable MPC controller embedded inside a PPO training
+loop, letting reinforcement learning reshape the MPC cost online for robust UAV
+flight under disturbed localization.
+
+[Read more →](project.html){.btn .btn-ghost}
+:::
+:::

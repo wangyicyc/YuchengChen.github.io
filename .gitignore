@@ -1,0 +1,17 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+
+/.quarto/
+
+**/*.quarto_ipynb
+.gstack/
+
+# 临时/构建产物
+.hugo_build.lock
+
+# 与网站发布无关的本地文档
+*.pdf
+*.docx
